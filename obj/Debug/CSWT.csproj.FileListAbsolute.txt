@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\CSWT\bin\Debug\CSWT.exe.config
+C:\Users\User\Desktop\CSWT\bin\Debug\CSWT.exe
+C:\Users\User\Desktop\CSWT\bin\Debug\CSWT.pdb
+C:\Users\User\Desktop\CSWT\obj\Debug\CSWT.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\CSWT\obj\Debug\CSWT.Properties.Resources.resources
+C:\Users\User\Desktop\CSWT\obj\Debug\CSWT.csproj.GenerateResource.cache
+C:\Users\User\Desktop\CSWT\obj\Debug\CSWT.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\CSWT\obj\Debug\CSWT.exe
+C:\Users\User\Desktop\CSWT\obj\Debug\CSWT.pdb
+C:\Users\User\Desktop\CSWT\obj\Debug\CSWT.HomeForm.resources
