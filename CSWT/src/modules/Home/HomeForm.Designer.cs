@@ -29,32 +29,63 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.drugPanel = new System.Windows.Forms.Panel();
+            this.openSignUpButton = new System.Windows.Forms.Button();
+            this.openSignInButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.PictureBox();
-            this.openSignInButton = new System.Windows.Forms.Button();
-            this.openSignUpButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.childrenPanel = new System.Windows.Forms.Panel();
+            this.drugPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // drugPanel
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.openSignUpButton);
-            this.panel1.Controls.Add(this.openSignInButton);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.exitButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1424, 53);
-            this.panel1.TabIndex = 0;
+            this.drugPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.drugPanel.Controls.Add(this.openSignUpButton);
+            this.drugPanel.Controls.Add(this.openSignInButton);
+            this.drugPanel.Controls.Add(this.label1);
+            this.drugPanel.Controls.Add(this.exitButton);
+            this.drugPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.drugPanel.Location = new System.Drawing.Point(0, 0);
+            this.drugPanel.Name = "drugPanel";
+            this.drugPanel.Size = new System.Drawing.Size(1424, 53);
+            this.drugPanel.TabIndex = 0;
+            // 
+            // openSignUpButton
+            // 
+            this.openSignUpButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openSignUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openSignUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openSignUpButton.FlatAppearance.BorderSize = 0;
+            this.openSignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openSignUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openSignUpButton.Location = new System.Drawing.Point(289, 12);
+            this.openSignUpButton.Name = "openSignUpButton";
+            this.openSignUpButton.Size = new System.Drawing.Size(143, 30);
+            this.openSignUpButton.TabIndex = 3;
+            this.openSignUpButton.Text = "Регистрация";
+            this.openSignUpButton.UseVisualStyleBackColor = false;
+            this.openSignUpButton.Click += new System.EventHandler(this.openSignUpButton_Click);
+            // 
+            // openSignInButton
+            // 
+            this.openSignInButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openSignInButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openSignInButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openSignInButton.FlatAppearance.BorderSize = 0;
+            this.openSignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openSignInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openSignInButton.Location = new System.Drawing.Point(128, 12);
+            this.openSignInButton.Name = "openSignInButton";
+            this.openSignInButton.Size = new System.Drawing.Size(143, 30);
+            this.openSignInButton.TabIndex = 3;
+            this.openSignInButton.Text = "Вход";
+            this.openSignInButton.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -80,36 +111,6 @@
             this.exitButton.TabIndex = 1;
             this.exitButton.TabStop = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // openSignInButton
-            // 
-            this.openSignInButton.BackColor = System.Drawing.Color.PowderBlue;
-            this.openSignInButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openSignInButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openSignInButton.FlatAppearance.BorderSize = 0;
-            this.openSignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openSignInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSignInButton.Location = new System.Drawing.Point(128, 12);
-            this.openSignInButton.Name = "openSignInButton";
-            this.openSignInButton.Size = new System.Drawing.Size(143, 30);
-            this.openSignInButton.TabIndex = 3;
-            this.openSignInButton.Text = "Вход";
-            this.openSignInButton.UseVisualStyleBackColor = false;
-            // 
-            // openSignUpButton
-            // 
-            this.openSignUpButton.BackColor = System.Drawing.Color.PowderBlue;
-            this.openSignUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openSignUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openSignUpButton.FlatAppearance.BorderSize = 0;
-            this.openSignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openSignUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSignUpButton.Location = new System.Drawing.Point(289, 12);
-            this.openSignUpButton.Name = "openSignUpButton";
-            this.openSignUpButton.Size = new System.Drawing.Size(143, 30);
-            this.openSignUpButton.TabIndex = 3;
-            this.openSignUpButton.Text = "Регистрация";
-            this.openSignUpButton.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -147,13 +148,14 @@
             this.panel5.Size = new System.Drawing.Size(23, 672);
             this.panel5.TabIndex = 4;
             // 
-            // panel6
+            // childrenPanel
             // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(23, 76);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1378, 672);
-            this.panel6.TabIndex = 5;
+            this.childrenPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.childrenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.childrenPanel.Location = new System.Drawing.Point(23, 76);
+            this.childrenPanel.Name = "childrenPanel";
+            this.childrenPanel.Size = new System.Drawing.Size(1378, 672);
+            this.childrenPanel.TabIndex = 5;
             // 
             // HomeForm
             // 
@@ -161,17 +163,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1424, 771);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.childrenPanel);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.drugPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeForm";
             this.Text = "Home";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.drugPanel.ResumeLayout(false);
+            this.drugPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             this.ResumeLayout(false);
 
@@ -179,7 +181,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel drugPanel;
         private System.Windows.Forms.PictureBox exitButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button openSignInButton;
@@ -188,7 +190,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel childrenPanel;
     }
 }
 

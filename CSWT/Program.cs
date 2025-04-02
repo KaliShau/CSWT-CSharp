@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CSWT.src.core.db;
+using CSWT.src.core.form;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CSWT
 {
@@ -16,7 +20,31 @@ namespace CSWT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomeForm());
+
+            var services = new ServiceCollection();
+            var assembly = Assembly.GetExecutingAssembly();
+
+            assembly.GetTypes()
+                .Where(t => t.Name.EndsWith("Model") && !t.IsAbstract)
+                .ToList()
+                .ForEach(type => services.AddSingleton(type));
+
+            assembly.GetTypes()
+                .Where(t => t.Name.EndsWith("Controller") && !t.IsAbstract)
+                .ToList()
+                .ForEach(type => services.AddTransient(type));
+
+            assembly.GetTypes()
+                .Where(t => t.IsSubclassOf(typeof(Form)) && !t.IsAbstract)
+                .ToList()
+                .ForEach(type => services.AddTransient(type));
+
+            services.AddSingleton<FormManager>();
+            services.AddSingleton<DatabaseRepository>();
+
+            var provider = services.BuildServiceProvider();
+
+            Application.Run(provider.GetRequiredService<HomeForm>());
         }
     }
 }
