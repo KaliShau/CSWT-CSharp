@@ -51,3 +51,7 @@ C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.csproj.CoreCompileInputs.
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.csproj.Up2Date
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.exe
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.pdb
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.SignUp.SignUpForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.SignIn.SignInForm.resources
