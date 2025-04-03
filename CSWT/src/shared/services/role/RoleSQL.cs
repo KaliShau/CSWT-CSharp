@@ -11,5 +11,9 @@ namespace CSWT.src.shared.services.role
         public string GetRoleByRoleName = @"
             SELECT * FROM Roles WHERE role_name = @role_name;
         ";
+
+        public string GetRoleByID = @"
+            SELECT * FROM Roles WHERE ID = @ID;
+        ";
     }
 }

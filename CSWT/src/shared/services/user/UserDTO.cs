@@ -8,7 +8,7 @@ namespace CSWT.src.shared.dto
 {
     public class UserDTO
     {
-        public string ID {  get; set; }
+        public int ID {  get; set; }
         public DateTime created_at { get; set; }
         public DateTime updated_at { get; set; }
         public string username { get; set; }
@@ -18,6 +18,8 @@ namespace CSWT.src.shared.dto
         public string last_name { get; set; }
         public string phone_number { get; set; }
         public int role_id { get; set; }
+
+        public string role_name { get; set; }
 
     }
 }

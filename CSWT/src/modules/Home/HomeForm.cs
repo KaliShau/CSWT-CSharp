@@ -32,5 +32,10 @@ namespace CSWT
         {
             _controller.OpenSignUp(childrenPanel);
         }
+
+        private void openSignInButton_Click(object sender, EventArgs e)
+        {
+            _controller.OpenSignIn(childrenPanel);
+        }
     }
 }

@@ -30,6 +30,11 @@ namespace CSWT
                 .ForEach(type => services.AddSingleton(type));
 
             assembly.GetTypes()
+                .Where(t => t.Name.EndsWith("Service") && !t.IsAbstract)
+                .ToList()
+                .ForEach(type => services.AddSingleton(type));
+
+            assembly.GetTypes()
                 .Where(t => t.Name.EndsWith("Controller") && !t.IsAbstract)
                 .ToList()
                 .ForEach(type => services.AddTransient(type));
@@ -41,6 +46,7 @@ namespace CSWT
 
             services.AddSingleton<FormManager>();
             services.AddSingleton<DatabaseRepository>();
+            services.AddSingleton<UserContext>();
 
             var provider = services.BuildServiceProvider();
 

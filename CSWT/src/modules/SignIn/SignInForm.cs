@@ -12,9 +12,21 @@ namespace CSWT.src.modules.SignIn
 {
     public partial class SignInForm : Form
     {
-        public SignInForm()
+        SignInController _controller;
+        public SignInForm(SignInController controller)
         {
             InitializeComponent();
+            _controller = controller;
+        }
+
+        private void signInButton_Click(object sender, EventArgs e)
+        {
+            string username = usernameBox.Text;
+            string password = passwordBox.Text;
+
+            var lines = new List<Panel> { usernameLine, passwordLine};
+
+            _controller.SignIn(username, password, lines);
         }
     }
 }

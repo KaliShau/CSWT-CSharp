@@ -86,6 +86,7 @@
             this.openSignInButton.TabIndex = 3;
             this.openSignInButton.Text = "Вход";
             this.openSignInButton.UseVisualStyleBackColor = false;
+            this.openSignInButton.Click += new System.EventHandler(this.openSignInButton_Click);
             // 
             // label1
             // 
