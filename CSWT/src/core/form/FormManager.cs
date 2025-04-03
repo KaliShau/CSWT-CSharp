@@ -17,13 +17,37 @@ namespace CSWT.src.core.form
         public FormManager(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
+
+        }
+        public void SetMainForm(HomeForm homeForm)
+        {
+            _currentForm = homeForm;
         }
 
         public void OpenForm<TForm>() where TForm : Form
         {
-            _currentForm?.Close();
+            if (typeof(TForm) == typeof(HomeForm))
+            {
+                if (_currentForm is HomeForm homeForm)
+                {
+                    homeForm.Show();
+                    return;
+                }
+            }
+
+            if (_currentForm is HomeForm)
+            {
+                _currentForm.Hide();
+            }
+            else
+            {
+                _currentForm?.Close();
+            }
+
             _childrenForm?.Close();
+
             _currentForm = _serviceProvider.GetRequiredService<TForm>();
+
             _currentForm.Show();
         }
 

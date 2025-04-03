@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CSWT.src.core.db;
+using CSWT.src.core.form;
+using CSWT.src.modules.Main;
 using CSWT.src.shared.utils;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -12,9 +15,13 @@ namespace CSWT.src.modules.SignIn
     public class SignInController
     {
         SignInModel _model;
-        public SignInController(SignInModel model)
+        FormManager _formManager;
+        UserContext _userContext;
+        public SignInController(SignInModel model, FormManager formManager, UserContext userContext)
         {
             _model = model;
+            _formManager = formManager;
+            _userContext = userContext;
         }
 
         public void SignIn(string username, string password, List<Panel> lines)
@@ -32,7 +39,8 @@ namespace CSWT.src.modules.SignIn
 
             if (user != null)
             {
-                MessageBox.Show(user.email);
+                _userContext.CurrentUser = user;
+                _formManager.OpenForm<MainForm>();
             } else
             {
                 MessageBox.Show("Ошибка входа!");

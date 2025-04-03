@@ -102,6 +102,14 @@
     <Compile Include="src\core\db\DatabaseRepository.cs" />
     <Compile Include="src\core\db\UserContext.cs" />
     <Compile Include="src\core\form\FormManager.cs" />
+    <Compile Include="src\modules\CreateTicket\CreateTicketController.cs" />
+    <Compile Include="src\modules\CreateTicket\CreateTicketModel.cs" />
+    <Compile Include="src\modules\CreateTicket\CreateTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\CreateTicket\CreateTicketForm.Designer.cs">
+      <DependentUpon>CreateTicketForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\modules\Home\HomeController.cs" />
     <Compile Include="src\modules\Home\HomeForm.cs">
       <SubType>Form</SubType>
@@ -111,6 +119,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\modules\Main\MainController.cs" />
+    <Compile Include="src\modules\Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\modules\SignIn\SignInController.cs" />
     <Compile Include="src\modules\SignIn\SignInForm.cs">
       <SubType>Form</SubType>
@@ -127,6 +142,9 @@
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\SignUp\SignUpModel.cs" />
+    <Compile Include="src\shared\services\priority\PriorityDTO.cs" />
+    <Compile Include="src\shared\services\priority\PriorityService.cs" />
+    <Compile Include="src\shared\services\priority\PrioritySQL.cs" />
     <Compile Include="src\shared\services\role\RoleDTO.cs" />
     <Compile Include="src\shared\services\user\UserDTO.cs" />
     <Compile Include="src\shared\services\role\RoleService.cs" />
@@ -135,6 +153,9 @@
     <Compile Include="src\shared\services\user\UserSQL.cs" />
     <Compile Include="src\shared\utils\AddDragControl.cs" />
     <Compile Include="src\shared\utils\ValidField.cs" />
+    <EmbeddedResource Include="src\modules\CreateTicket\CreateTicketForm.resx">
+      <DependentUpon>CreateTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Home\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +168,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="src\modules\Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignIn\SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </EmbeddedResource>

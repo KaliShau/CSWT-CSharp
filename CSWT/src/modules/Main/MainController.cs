@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using CSWT.src.core.form;
 using CSWT.src.modules.SignIn;
 using CSWT.src.modules.SignUp;
 using CSWT.src.shared.utils;
+using System.Windows.Forms;
+using CSWT.src.modules.CreateTicket;
 
-namespace CSWT.src.modules.Home
+namespace CSWT.src.modules.Main
 {
     public class MainController
     {
@@ -24,13 +25,10 @@ namespace CSWT.src.modules.Home
             AddDragControl.EnableDrag(panel, form);
         }
 
-        public void OpenSignUp(Panel childrenPanel)
+        public void OpenCreateTicker(Panel childrenPanel)
         {
-            _formManager.OpenChidrenForm<SignUpForm>(childrenPanel);
+            _formManager.OpenChidrenForm<CreateTicketForm>(childrenPanel);
         }
-        public void OpenSignIn(Panel childrenPanel)
-        {
-            _formManager.OpenChidrenForm<SignInForm>(childrenPanel);
-        }
+
     }
 }

@@ -12,9 +12,6 @@ namespace CSWT
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -49,8 +46,11 @@ namespace CSWT
             services.AddSingleton<UserContext>();
 
             var provider = services.BuildServiceProvider();
+            var formManager = provider.GetRequiredService<FormManager>();
+            var homeForm = provider.GetRequiredService<HomeForm>();
+            formManager.SetMainForm(homeForm);
 
-            Application.Run(provider.GetRequiredService<HomeForm>());
+            Application.Run(homeForm);
         }
     }
 }

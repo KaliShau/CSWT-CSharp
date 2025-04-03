@@ -7,18 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CSWT.src.modules.Home;
-using CSWT.src.shared.utils;
 
-namespace CSWT
+namespace CSWT.src.modules.Main
 {
-    public partial class HomeForm : Form
+    public partial class MainForm : Form
     {
         MainController _controller;
-        public HomeForm(MainController controller)
+        public MainForm(MainController controller)
         {
             InitializeComponent();
             _controller = controller;
+
 
             controller.DrugForm(drugPanel, this);
         }
@@ -28,14 +27,9 @@ namespace CSWT
             Application.Exit();
         }
 
-        private void openSignUpButton_Click(object sender, EventArgs e)
+        private void openCreateTicket_Click(object sender, EventArgs e)
         {
-            _controller.OpenSignUp(childrenPanel);
-        }
-
-        private void openSignInButton_Click(object sender, EventArgs e)
-        {
-            _controller.OpenSignIn(childrenPanel);
+            _controller.OpenCreateTicker(childrenPanel);
         }
     }
 }

@@ -55,3 +55,5 @@ C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Microsoft.Extensions.Dependenc
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.SignUp.SignUpForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.SignIn.SignInForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Main.MainForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.CreateTicket.CreateTicketForm.resources
