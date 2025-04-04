@@ -76,5 +76,34 @@ namespace CSWT.src.shared.services.ticket
                 )
             ORDER BY t.created_at DESC;
         ";
+    
+        public string GetTicketByID = @"
+             SELECT 
+                t.ID,
+                t.created_at,
+                t.updated_at,
+                t.title,
+                t.description,
+                t.solution,
+                t.closed_at,
+                t.client_id,
+                c.first_name AS client_name,
+                p.priority_name,
+                s.status_name,
+                t.assigned_to,
+                u.first_name AS assigned_user_name
+            FROM 
+                Tickets t
+            LEFT JOIN 
+                Users c ON t.client_id = c.ID
+            LEFT JOIN 
+                Priorities p ON t.priority_id = p.ID
+            LEFT JOIN 
+                Statuses s ON t.status_id = s.ID
+            LEFT JOIN 
+                Users u ON t.assigned_to = u.ID
+            WHERE 
+                t.ID = @ID;
+        ";
     }
 }

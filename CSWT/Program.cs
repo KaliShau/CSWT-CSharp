@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CSWT.src.core;
 using CSWT.src.core.db;
 using CSWT.src.core.form;
 using Microsoft.Extensions.DependencyInjection;
@@ -44,6 +45,8 @@ namespace CSWT
             services.AddSingleton<FormManager>();
             services.AddSingleton<DatabaseRepository>();
             services.AddSingleton<UserContext>();
+            services.AddSingleton<FormContext>();
+            services.AddScoped<SessionContext>();
 
             var provider = services.BuildServiceProvider();
             var formManager = provider.GetRequiredService<FormManager>();

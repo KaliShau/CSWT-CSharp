@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CSWT.src.shared.services.ticket;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CSWT.src.modules.MyTickets
 {
@@ -33,6 +35,12 @@ namespace CSWT.src.modules.MyTickets
             {
                 _controller.Search(TicketsList, searchTerm);
             }
+        }
+
+        private void TicketsList_DoubleClick(object sender, EventArgs e)
+        {
+            var selectedTicket = (TicketWithJoinDTO)TicketsList.SelectedItems[0].Tag;
+            _controller.OpenTicket(selectedTicket.ID);
         }
     }
 }

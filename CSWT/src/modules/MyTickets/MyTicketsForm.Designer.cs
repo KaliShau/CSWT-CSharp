@@ -45,6 +45,7 @@
             this.TicketsList.Size = new System.Drawing.Size(1155, 550);
             this.TicketsList.TabIndex = 0;
             this.TicketsList.UseCompatibleStateImageBehavior = false;
+            this.TicketsList.DoubleClick += new System.EventHandler(this.TicketsList_DoubleClick);
             // 
             // label1
             // 
