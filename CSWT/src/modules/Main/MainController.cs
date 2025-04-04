@@ -9,6 +9,7 @@ using CSWT.src.modules.SignUp;
 using CSWT.src.shared.utils;
 using System.Windows.Forms;
 using CSWT.src.modules.CreateTicket;
+using CSWT.src.modules.MyTickets;
 
 namespace CSWT.src.modules.Main
 {
@@ -28,6 +29,10 @@ namespace CSWT.src.modules.Main
         public void OpenCreateTicker(Panel childrenPanel)
         {
             _formManager.OpenChidrenForm<CreateTicketForm>(childrenPanel);
+        }
+        public void OpenMyTickets(Panel childrenPanel)
+        {
+            _formManager.OpenChidrenForm<MyTicketsForm>(childrenPanel);
         }
 
     }
