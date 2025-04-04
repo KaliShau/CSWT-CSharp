@@ -40,7 +40,7 @@ namespace CSWT.src.shared.services.user
                 new NpgsqlParameter("@password", password),
                 new NpgsqlParameter("@first_name", first_name),
                 new NpgsqlParameter("@email", email),
-                new NpgsqlParameter("role_id",  role_id)
+                new NpgsqlParameter("@role_id",  role_id)
             };
 
             _repository.Execute(_sql.SignUp, parameters);

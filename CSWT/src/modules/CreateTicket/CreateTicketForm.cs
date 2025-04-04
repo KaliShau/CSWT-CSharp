@@ -23,7 +23,10 @@ namespace CSWT.src.modules.CreateTicket
         private void createTicketButton_Click(object sender, EventArgs e)
         {
             int priorityID = Convert.ToInt32(priorityBox.SelectedValue);
-            _controller.CreateTicket(priorityID);
+            string title = titleBox.Text;
+            string description = descriptionBox.Text;
+
+            _controller.CreateTicket(priorityID, title, description);
         }
     }
 }

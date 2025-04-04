@@ -146,6 +146,12 @@
     <Compile Include="src\shared\services\priority\PriorityService.cs" />
     <Compile Include="src\shared\services\priority\PrioritySQL.cs" />
     <Compile Include="src\shared\services\role\RoleDTO.cs" />
+    <Compile Include="src\shared\services\status\StatusDTO.cs" />
+    <Compile Include="src\shared\services\status\StatusService.cs" />
+    <Compile Include="src\shared\services\status\StatusSQL.cs" />
+    <Compile Include="src\shared\services\ticket\TicketDTO.cs" />
+    <Compile Include="src\shared\services\ticket\TicketService.cs" />
+    <Compile Include="src\shared\services\ticket\TicketSQL.cs" />
     <Compile Include="src\shared\services\user\UserDTO.cs" />
     <Compile Include="src\shared\services\role\RoleService.cs" />
     <Compile Include="src\shared\services\role\RoleSQL.cs" />

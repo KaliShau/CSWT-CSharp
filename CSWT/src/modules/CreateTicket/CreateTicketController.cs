@@ -1,13 +1,16 @@
 ﻿using System.Windows.Forms;
+using CSWT.src.core.db;
 
 namespace CSWT.src.modules.CreateTicket
 {
     public class CreateTicketController
     {
         CreateTicketModel _model;
-        public CreateTicketController(CreateTicketModel model)
+        UserContext _userContext;
+        public CreateTicketController(CreateTicketModel model, UserContext userContext)
         {
             _model = model;
+            _userContext = userContext;
         }
 
         public void PrioritiesAddBox(ComboBox priorityBox)
@@ -26,9 +29,10 @@ namespace CSWT.src.modules.CreateTicket
             priorityBox.ValueMember = "ID";
         }
 
-        public void CreateTicket(int ID)
+        public void CreateTicket(int priority_id, string title, string description)
         {
-            var priority = _model.GetPriority(ID);
+            var priority = _model.GetPriorityByID(priority_id);
+            var status = _model.GetStatusByStatusName("Новая");
 
             if (priority == null)
             {
@@ -36,7 +40,14 @@ namespace CSWT.src.modules.CreateTicket
                 return;
             }
 
-            MessageBox.Show(priority.priority_name);
+            if (status == null)
+            {
+                MessageBox.Show("Статус не найден!");
+                return;
+            }
+
+            _model.CreateTicket(title, description, _userContext.CurrentUser.ID, priority.ID, status.ID);
+            MessageBox.Show("Заявка создана!");
         }
     }
 }
