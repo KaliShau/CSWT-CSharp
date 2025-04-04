@@ -31,5 +31,10 @@ namespace CSWT.src.modules.Main
         {
             _controller.OpenCreateTicker(childrenPanel);
         }
+
+        private void openMyTickets_Click(object sender, EventArgs e)
+        {
+            _controller.OpenMyTickets(childrenPanel);
+        }
     }
 }

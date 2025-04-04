@@ -126,6 +126,14 @@
     <Compile Include="src\modules\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\modules\MyTickets\MyTicketsController.cs" />
+    <Compile Include="src\modules\MyTickets\MyTicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\MyTickets\MyTicketsForm.Designer.cs">
+      <DependentUpon>MyTicketsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\MyTickets\MyTicketsModel.cs" />
     <Compile Include="src\modules\SignIn\SignInController.cs" />
     <Compile Include="src\modules\SignIn\SignInForm.cs">
       <SubType>Form</SubType>
@@ -176,6 +184,9 @@
     </Compile>
     <EmbeddedResource Include="src\modules\Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\MyTickets\MyTicketsForm.resx">
+      <DependentUpon>MyTicketsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignIn\SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
