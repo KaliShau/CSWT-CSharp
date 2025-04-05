@@ -14,8 +14,8 @@ namespace CSWT.src.modules.Ticket
 {
     public enum EnumInitTicket
     {
-        UpdateSolution,
-        NoUpdateSolution
+        Update,
+        NoUpdate
     }
     public class TicketController
     {
@@ -27,24 +27,19 @@ namespace CSWT.src.modules.Ticket
             _userContext = userContext;
         }
 
-        public void InitTicket(EnumInitTicket initMode, int ID, TextBox titleBox, TextBox descriptionBox, TextBox assignedBox, TextBox solutionBox, Label createdAtLabel)
+        public void InitTicket(EnumInitTicket initMode, int ID, TextBox titleBox, TextBox descriptionBox, TextBox solutionBox, Label createdAtLabel, Button updateButton, TextBox priorityBox, TextBox statusBox)
         {
-            assignedBox.Enabled = false;
+            solutionBox.Enabled = false;
+            priorityBox.Enabled = false;
+            statusBox.Enabled = false;
 
             var ticket = _model.GetTicketByID(ID);
 
+            priorityBox.Text = ticket.priority_name;
+            statusBox.Text = ticket.status_name;
             titleBox.Text = ticket.title;
             descriptionBox.Text = ticket.description;
             createdAtLabel.Text = Convert.ToString(ticket.created_at);
-
-            if (ticket.assigned_user_name != null)
-            {
-                assignedBox.Text = ticket.assigned_user_name;
-            }
-            else
-            {
-                assignedBox.Text = "Не назначено";
-            }
 
             if (ticket.solution != null)
             {
@@ -55,12 +50,16 @@ namespace CSWT.src.modules.Ticket
                 solutionBox.Text = "Нет решения";
             }
 
-            if (initMode == EnumInitTicket.UpdateSolution)
+            if (initMode == EnumInitTicket.Update)
             {
-                solutionBox.Enabled = true;
+                titleBox.Enabled = true;
+                descriptionBox.Enabled = true;
+                updateButton.Visible = true;
             } else
             {
-                solutionBox.Enabled = false;
+                titleBox.Enabled = false;
+                descriptionBox.Enabled = false;
+                updateButton.Visible = false;
             }
         }
 
@@ -112,11 +111,24 @@ namespace CSWT.src.modules.Ticket
                 item.SubItems.Add(comment.last_name);
                 item.SubItems.Add(Convert.ToString(comment.ticket_id));
 
-
                 item.Tag = comment;
 
                 CommentsList.Items.Add(item);
             }
+        }
+
+        public void DeleteCommentByIdAndUserId(int ID, int ticket_id, ListView CommentsList)
+        {
+            _model.DeleteComment(ID, _userContext.CurrentUser.ID);
+
+            var comments = _model.GetCommentsByTicketId(ticket_id);
+
+            this.AddListView(comments, CommentsList);
+        }
+
+        public void UpdateTicket(string title, string description, int ID)
+        {
+            _model.UpdateTicket(title, description, ID);
         }
 
     }

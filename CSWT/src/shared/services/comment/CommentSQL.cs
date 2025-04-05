@@ -21,6 +21,9 @@ namespace CSWT.src.shared.services.comment
             WHERE c.ticket_id = @ticket_id; 
         ";
 
+        public string DeleteCommentByIdAndUserId = @"
+            DELETE FROM Comments WHERE ID = @ID AND user_id = @user_id;
+        ";
 
     }
 }

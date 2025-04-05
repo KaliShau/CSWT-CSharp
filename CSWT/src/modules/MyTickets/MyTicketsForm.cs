@@ -15,6 +15,8 @@ namespace CSWT.src.modules.MyTickets
     public partial class MyTicketsForm : Form
     {
         MyTicketsController _controller;
+        int _selectedTicketId;
+
         public MyTicketsForm(MyTicketsController controller)
         {
             InitializeComponent();
@@ -41,6 +43,29 @@ namespace CSWT.src.modules.MyTickets
         {
             var selectedTicket = (TicketWithJoinDTO)TicketsList.SelectedItems[0].Tag;
             _controller.OpenTicket(selectedTicket.ID);
+        }
+
+        private void TicketsList_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ListViewHitTestInfo hitTest = TicketsList.HitTest(e.Location);
+
+                if (hitTest.Item != null)
+                {
+                    hitTest.Item.Selected = true;
+
+                    _selectedTicketId = Convert.ToInt16(hitTest.Item.SubItems[0].Text);
+
+                    contextMenuStrip1.Show(TicketsList, e.Location);
+                }
+            }
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.DeleteTicket(_selectedTicketId);
+            _controller.AddTicketsToListView(TicketsList);
         }
     }
 }

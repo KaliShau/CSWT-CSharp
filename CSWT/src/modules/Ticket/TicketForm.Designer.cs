@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.titleLine = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,9 +38,6 @@
             this.descriptionLine = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.createdAtLabel = new System.Windows.Forms.Label();
-            this.assignedBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.assignedLine = new System.Windows.Forms.Panel();
             this.solutionBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.solutionLine = new System.Windows.Forms.Panel();
@@ -50,7 +48,16 @@
             this.createCommentButton = new System.Windows.Forms.Button();
             this.CommentsList = new System.Windows.Forms.ListView();
             this.label6 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.priorityBox = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.statusBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -104,6 +111,7 @@
             this.updateButton.TabIndex = 26;
             this.updateButton.Text = "Обновить";
             this.updateButton.UseVisualStyleBackColor = false;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // descriptionBox
             // 
@@ -142,33 +150,6 @@
             this.createdAtLabel.Size = new System.Drawing.Size(117, 16);
             this.createdAtLabel.TabIndex = 28;
             this.createdAtLabel.Text = "Дата создания";
-            // 
-            // assignedBox
-            // 
-            this.assignedBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.assignedBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignedBox.Location = new System.Drawing.Point(18, 251);
-            this.assignedBox.Name = "assignedBox";
-            this.assignedBox.Size = new System.Drawing.Size(470, 31);
-            this.assignedBox.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 232);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 16);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Назначено";
-            // 
-            // assignedLine
-            // 
-            this.assignedLine.BackColor = System.Drawing.Color.PowderBlue;
-            this.assignedLine.Location = new System.Drawing.Point(18, 282);
-            this.assignedLine.Name = "assignedLine";
-            this.assignedLine.Size = new System.Drawing.Size(470, 5);
-            this.assignedLine.TabIndex = 29;
             // 
             // solutionBox
             // 
@@ -262,6 +243,7 @@
             this.CommentsList.Size = new System.Drawing.Size(1155, 170);
             this.CommentsList.TabIndex = 31;
             this.CommentsList.UseCompatibleStateImageBehavior = false;
+            this.CommentsList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CommentsList_MouseClick);
             // 
             // label6
             // 
@@ -273,26 +255,97 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Комментарии";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(119, 26);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.deleteToolStripMenuItem.Text = "Удалить";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 242);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 16);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Приоритет";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.Location = new System.Drawing.Point(109, 263);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(379, 5);
+            this.panel2.TabIndex = 29;
+            // 
+            // priorityBox
+            // 
+            this.priorityBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.priorityBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priorityBox.Location = new System.Drawing.Point(109, 232);
+            this.priorityBox.Name = "priorityBox";
+            this.priorityBox.Size = new System.Drawing.Size(379, 31);
+            this.priorityBox.TabIndex = 27;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel3.Location = new System.Drawing.Point(109, 305);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(379, 5);
+            this.panel3.TabIndex = 29;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(15, 284);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 16);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Статус";
+            // 
+            // statusBox
+            // 
+            this.statusBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.statusBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusBox.Location = new System.Drawing.Point(109, 274);
+            this.statusBox.Name = "statusBox";
+            this.statusBox.Size = new System.Drawing.Size(379, 31);
+            this.statusBox.TabIndex = 27;
+            // 
             // TicketForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1155, 672);
+            this.Controls.Add(this.statusBox);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.priorityBox);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.CommentsList);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.descriptionLine);
             this.Controls.Add(this.solutionLine);
-            this.Controls.Add(this.assignedLine);
             this.Controls.Add(this.titleLine);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.createdAtLabel);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.descriptionBox);
             this.Controls.Add(this.solutionBox);
-            this.Controls.Add(this.assignedBox);
             this.Controls.Add(this.titleBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.label6);
@@ -302,6 +355,7 @@
             this.Text = "TicketFrom";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,9 +372,6 @@
         private System.Windows.Forms.Panel descriptionLine;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label createdAtLabel;
-        private System.Windows.Forms.TextBox assignedBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel assignedLine;
         private System.Windows.Forms.TextBox solutionBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel solutionLine;
@@ -331,5 +382,13 @@
         private System.Windows.Forms.Panel commentLine;
         private System.Windows.Forms.Button createCommentButton;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox priorityBox;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox statusBox;
     }
 }

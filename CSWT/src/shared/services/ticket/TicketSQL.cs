@@ -15,6 +15,17 @@ namespace CSWT.src.shared.services.ticket
             (@title, @description, @client_id, @priority_id, @status_id);
         ";
 
+        public string UpdateTicketClient = @"
+            UPDATE Tickets
+            SET title = @title, description = @description
+            WHERE ID = @ID;
+        ";
+
+        public string DeleteTicket= @"
+            DELETE FROM Tickets
+            WHERE ID = @ID;
+        ";
+
         public string GetTicketsByClientId = @"
             SELECT 
                 t.ID,
@@ -40,7 +51,8 @@ namespace CSWT.src.shared.services.ticket
                 Statuses s ON t.status_id = s.ID
             LEFT JOIN 
                 Users u ON t.assigned_to = u.ID
-            WHERE t.client_id = @client_id;
+            WHERE t.client_id = @client_id
+            ORDER BY t.created_at DESC;
         ";
 
         public string GetTicketsByClientIdSearch = @"
@@ -103,7 +115,8 @@ namespace CSWT.src.shared.services.ticket
             LEFT JOIN 
                 Users u ON t.assigned_to = u.ID
             WHERE 
-                t.ID = @ID;
+                t.ID = @ID
+            ORDER BY t.created_at DESC;
         ";
     }
 }

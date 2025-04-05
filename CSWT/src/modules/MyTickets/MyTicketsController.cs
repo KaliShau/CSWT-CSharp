@@ -32,6 +32,7 @@ namespace CSWT.src.modules.MyTickets
         public void OpenTicket( int id)
         {
             _sessionContext.ticket_id = id;
+            _sessionContext.is_ticket_update = true;
             _formManager.OpenChidrenForm<TicketForm>(_formContext.childrenPanel);
         }
 
@@ -86,6 +87,11 @@ namespace CSWT.src.modules.MyTickets
 
                 TicketsList.Items.Add(item);
             }
+        }
+
+        public void DeleteTicket(int ID)
+        {
+            _model.DeleteTicket(ID);
         }
     }
 }

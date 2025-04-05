@@ -9,5 +9,6 @@ namespace CSWT.src.core
     public class SessionContext
     {
         public int ticket_id {  get; set; }
+        public bool is_ticket_update { get; set; } 
     }
 }

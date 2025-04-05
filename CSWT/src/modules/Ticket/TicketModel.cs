@@ -33,5 +33,16 @@ namespace CSWT.src.modules.Ticket
         {
             return _commentService.GetCommentsByTicketId(ticket_id);
         }
+
+        public void DeleteComment(int ID, int user_id)
+        {
+            _commentService.DeleteCommentByIdAndUserId(ID, user_id);
+        }
+
+        public void UpdateTicket(string title, string description, int ID)
+        {
+            _ticketService.UpdateTicketClient(title, description, ID);
+        }
+
     }
 }

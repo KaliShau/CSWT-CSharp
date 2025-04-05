@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using CSWT.src.core.db;
 using CSWT.src.shared.services.priority;
 using Npgsql;
@@ -26,6 +28,23 @@ namespace CSWT.src.shared.services.comment
                 new NpgsqlParameter("@ticket_id", ticket_id),
                 new NpgsqlParameter("@user_id", user_id)
                 );
+        }
+        public void DeleteCommentByIdAndUserId(int ID, int user_id)
+        {
+            int rowsAffected = _repository.Execute(
+            _sql.DeleteCommentByIdAndUserId,
+            new NpgsqlParameter("@ID", ID),
+            new NpgsqlParameter("@user_id", user_id)
+        );
+
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Комментарий успешно удален!");
+            }
+            else
+            {
+                MessageBox.Show("Комментарий не принадлежит вам или уже удален!");
+            }
         }
 
         public CommentDTO[] GetCommentsByTicketId(int ticket_id)
