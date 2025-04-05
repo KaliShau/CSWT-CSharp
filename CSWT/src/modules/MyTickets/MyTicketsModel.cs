@@ -24,5 +24,10 @@ namespace CSWT.src.modules.MyTickets
         {
             return _ticketService.GetTicketsByClientIdSearch(client_id, searchTerm);
         }
+
+        public void DeleteTicket(int ID)
+        {
+            _ticketService.DeleteTicket(ID);
+        }
     }
 }

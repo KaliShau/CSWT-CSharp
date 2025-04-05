@@ -5,7 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CSWT.src.core;
 using CSWT.src.core.db;
+using CSWT.src.core.form;
+using CSWT.src.modules.Ticket;
 using CSWT.src.shared.services.ticket;
 
 namespace CSWT.src.modules.MyTickets
@@ -14,10 +17,23 @@ namespace CSWT.src.modules.MyTickets
     {
         MyTicketsModel _model;
         UserContext _userContext;
-        public MyTicketsController(MyTicketsModel model, UserContext userContext)
+        FormManager _formManager;
+        FormContext _formContext;
+        SessionContext _sessionContext;
+        public MyTicketsController(MyTicketsModel model, UserContext userContext, FormManager formManager, FormContext formContext, SessionContext sessionContext)
         {
             _model = model;
             _userContext = userContext;
+            _formManager = formManager;
+            _formContext = formContext;
+            _sessionContext = sessionContext;
+        }
+
+        public void OpenTicket( int id)
+        {
+            _sessionContext.ticket_id = id;
+            _sessionContext.is_ticket_update = true;
+            _formManager.OpenChidrenForm<TicketForm>(_formContext.childrenPanel);
         }
 
         public void InitTicketsList(ListView TicketsList)
@@ -71,6 +87,11 @@ namespace CSWT.src.modules.MyTickets
 
                 TicketsList.Items.Add(item);
             }
+        }
+
+        public void DeleteTicket(int ID)
+        {
+            _model.DeleteTicket(ID);
         }
     }
 }

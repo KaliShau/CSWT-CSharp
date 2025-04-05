@@ -18,8 +18,8 @@ namespace CSWT.src.modules.Main
             InitializeComponent();
             _controller = controller;
 
-
-            controller.DrugForm(drugPanel, this);
+            _controller.InitChildrenPanel(childrenPanel);
+            _controller.DrugForm(drugPanel, this);
         }
 
         private void exitButton_Click(object sender, EventArgs e)

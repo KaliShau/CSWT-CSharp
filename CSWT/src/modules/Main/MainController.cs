@@ -16,9 +16,15 @@ namespace CSWT.src.modules.Main
     public class MainController
     {
         FormManager _formManager;
-        public MainController(FormManager formManager)
+        FormContext _formContext;
+        public MainController(FormManager formManager, FormContext formContext)
         {
             _formManager = formManager;
+            _formContext = formContext;
+        }
+        public void InitChildrenPanel(Panel childrenPanel)
+        {
+            _formContext.childrenPanel = childrenPanel;
         }
 
         public void DrugForm(Panel panel, Form form)

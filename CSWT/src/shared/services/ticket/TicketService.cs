@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Windows.Forms;
 using CSWT.src.core.db;
 using Npgsql;
 
@@ -28,50 +30,76 @@ namespace CSWT.src.shared.services.ticket
             _repository.Execute(_sql.CreateTicket, parameters);
         }
 
+        public void UpdateTicketClient(string title, string description, int ID)
+        {
+            var rowsAffected = _repository.Execute(_sql.UpdateTicketClient, new NpgsqlParameter("@title", title), new NpgsqlParameter("@description", description), new NpgsqlParameter("@ID", ID));
+
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Заявка обновлена!");
+            } else
+            {
+                MessageBox.Show("Ошибка обновления заявки!");
+            }
+        }
+
+        public void DeleteTicket(int ID)
+        {
+            var rowsAffected = _repository.Execute(_sql.DeleteTicket, new NpgsqlParameter("@ID", ID));
+
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Заявка удалена!");
+            }
+            else
+            {
+                MessageBox.Show("Ошибка удаления заявки!");
+            }
+        }
+
         public TicketWithJoinDTO[] GetTicketsByClientId(int client_id)
         {
             return _repository.Query<TicketWithJoinDTO>(
              _sql.GetTicketsByClientId,
-             reader => new TicketWithJoinDTO
-             {
-                 ID = reader.GetInt32(reader.GetOrdinal("ID")),
-                 created_at = reader.GetDateTime(reader.GetOrdinal("created_at")),
-                 updated_at = reader.GetDateTime(reader.GetOrdinal("updated_at")),
-                 title = reader.GetString(reader.GetOrdinal("title")),
-                 description = reader.GetString(reader.GetOrdinal("description")),
-                 solution = reader.IsDBNull(reader.GetOrdinal("solution")) ? null : reader.GetString(reader.GetOrdinal("solution")),
-                 closed_at = reader.IsDBNull(reader.GetOrdinal("closed_at")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("closed_at")),
-                 client_id = reader.GetInt32(reader.GetOrdinal("client_id")),
-                 client_name = reader.GetString(reader.GetOrdinal("client_name")),
-                 priority_name = reader.GetString(reader.GetOrdinal("priority_name")),
-                 status_name = reader.GetString(reader.GetOrdinal("status_name")),
-                 assigned_to = reader.IsDBNull(reader.GetOrdinal("assigned_to")) ? 0 : reader.GetInt32(reader.GetOrdinal("assigned_to")),
-                 assigned_user_name = reader.IsDBNull(reader.GetOrdinal("assigned_user_name")) ? null : reader.GetString(reader.GetOrdinal("assigned_user_name"))
-             }, new NpgsqlParameter("@client_id", client_id)).ToArray();
+             MapTicketWithJoinDTO, new NpgsqlParameter("@client_id", client_id)).ToArray();
         }
 
         public TicketWithJoinDTO[] GetTicketsByClientIdSearch(int client_id, string searchTerm)
         {
             return _repository.Query<TicketWithJoinDTO>(
              _sql.GetTicketsByClientIdSearch,
-             reader => new TicketWithJoinDTO
-             {
-                 ID = reader.GetInt32(reader.GetOrdinal("ID")),
-                 created_at = reader.GetDateTime(reader.GetOrdinal("created_at")),
-                 updated_at = reader.GetDateTime(reader.GetOrdinal("updated_at")),
-                 title = reader.GetString(reader.GetOrdinal("title")),
-                 description = reader.GetString(reader.GetOrdinal("description")),
-                 solution = reader.IsDBNull(reader.GetOrdinal("solution")) ? null : reader.GetString(reader.GetOrdinal("solution")),
-                 closed_at = reader.IsDBNull(reader.GetOrdinal("closed_at")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("closed_at")),
-                 client_id = reader.GetInt32(reader.GetOrdinal("client_id")),
-                 client_name = reader.GetString(reader.GetOrdinal("client_name")),
-                 priority_name = reader.GetString(reader.GetOrdinal("priority_name")),
-                 status_name = reader.GetString(reader.GetOrdinal("status_name")),
-                 assigned_to = reader.IsDBNull(reader.GetOrdinal("assigned_to")) ? 0 : reader.GetInt32(reader.GetOrdinal("assigned_to")),
-                 assigned_user_name = reader.IsDBNull(reader.GetOrdinal("assigned_user_name")) ? null : reader.GetString(reader.GetOrdinal("assigned_user_name"))
-             }, new NpgsqlParameter("@client_id", client_id),
+             MapTicketWithJoinDTO, new NpgsqlParameter("@client_id", client_id),
                 new NpgsqlParameter("@searchTerm", searchTerm)
              ).ToArray();
+        }
+
+        public TicketWithJoinDTO GetTicketByID(int ID)
+        {
+            return _repository.Query<TicketWithJoinDTO>(
+             _sql.GetTicketByID,
+             MapTicketWithJoinDTO,
+              new NpgsqlParameter("@ID", ID)
+             ).SingleOrDefault();
+        }
+
+        private TicketWithJoinDTO MapTicketWithJoinDTO(NpgsqlDataReader reader)
+        {
+            return new TicketWithJoinDTO
+            {
+                ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                created_at = reader.GetDateTime(reader.GetOrdinal("created_at")),
+                updated_at = reader.GetDateTime(reader.GetOrdinal("updated_at")),
+                title = reader.GetString(reader.GetOrdinal("title")),
+                description = reader.GetString(reader.GetOrdinal("description")),
+                solution = reader.IsDBNull(reader.GetOrdinal("solution")) ? null : reader.GetString(reader.GetOrdinal("solution")),
+                closed_at = reader.IsDBNull(reader.GetOrdinal("closed_at")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("closed_at")),
+                client_id = reader.GetInt32(reader.GetOrdinal("client_id")),
+                client_name = reader.GetString(reader.GetOrdinal("client_name")),
+                priority_name = reader.GetString(reader.GetOrdinal("priority_name")),
+                status_name = reader.GetString(reader.GetOrdinal("status_name")),
+                assigned_to = reader.IsDBNull(reader.GetOrdinal("assigned_to")) ? 0 : reader.GetInt32(reader.GetOrdinal("assigned_to")),
+                assigned_user_name = reader.IsDBNull(reader.GetOrdinal("assigned_user_name")) ? null : reader.GetString(reader.GetOrdinal("assigned_user_name"))
+            };
         }
     }
 }

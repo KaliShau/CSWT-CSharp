@@ -101,7 +101,9 @@
   <ItemGroup>
     <Compile Include="src\core\db\DatabaseRepository.cs" />
     <Compile Include="src\core\db\UserContext.cs" />
+    <Compile Include="src\core\form\FormContext.cs" />
     <Compile Include="src\core\form\FormManager.cs" />
+    <Compile Include="src\core\SessionContext.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketController.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketForm.cs">
@@ -150,6 +152,17 @@
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\SignUp\SignUpModel.cs" />
+    <Compile Include="src\modules\Ticket\TicketController.cs" />
+    <Compile Include="src\modules\Ticket\TicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Ticket\TicketForm.Designer.cs">
+      <DependentUpon>TicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Ticket\TicketModel.cs" />
+    <Compile Include="src\shared\services\comment\CommentDTO.cs" />
+    <Compile Include="src\shared\services\comment\CommentService.cs" />
+    <Compile Include="src\shared\services\comment\CommentSQL.cs" />
     <Compile Include="src\shared\services\priority\PriorityDTO.cs" />
     <Compile Include="src\shared\services\priority\PriorityService.cs" />
     <Compile Include="src\shared\services\priority\PrioritySQL.cs" />
@@ -193,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignUp\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Ticket\TicketForm.resx">
+      <DependentUpon>TicketForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
