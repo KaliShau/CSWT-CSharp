@@ -104,6 +104,14 @@
     <Compile Include="src\core\form\FormContext.cs" />
     <Compile Include="src\core\form\FormManager.cs" />
     <Compile Include="src\core\SessionContext.cs" />
+    <Compile Include="src\modules\AllTickets\AllTicketsController.cs" />
+    <Compile Include="src\modules\AllTickets\AllTicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\AllTickets\AllTicketsForm.Designer.cs">
+      <DependentUpon>AllTicketsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\AllTickets\AllTicketsModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketController.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketForm.cs">
@@ -180,6 +188,9 @@
     <Compile Include="src\shared\services\user\UserSQL.cs" />
     <Compile Include="src\shared\utils\AddDragControl.cs" />
     <Compile Include="src\shared\utils\ValidField.cs" />
+    <EmbeddedResource Include="src\modules\AllTickets\AllTicketsForm.resx">
+      <DependentUpon>AllTicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\CreateTicket\CreateTicketForm.resx">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -36,5 +36,10 @@ namespace CSWT.src.modules.Main
         {
             _controller.OpenMyTickets(childrenPanel);
         }
+
+        private void openAllTickets_Click(object sender, EventArgs e)
+        {
+            _controller.OpenAllTickets(childrenPanel);
+        }
     }
 }
