@@ -38,12 +38,14 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.openMyTickets = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.openCreateTicket = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.openMyTickets = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.openAllTickets = new System.Windows.Forms.Button();
             this.drugPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.panel1.SuspendLayout();
@@ -133,6 +135,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.panel9);
+            this.groupBox1.Controls.Add(this.openAllTickets);
             this.groupBox1.Controls.Add(this.panel8);
             this.groupBox1.Controls.Add(this.openMyTickets);
             this.groupBox1.Controls.Add(this.panel7);
@@ -146,6 +150,40 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Заявки";
+            // 
+            // panel8
+            // 
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(3, 93);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(194, 10);
+            this.panel8.TabIndex = 7;
+            // 
+            // openMyTickets
+            // 
+            this.openMyTickets.BackColor = System.Drawing.Color.PowderBlue;
+            this.openMyTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openMyTickets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openMyTickets.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openMyTickets.FlatAppearance.BorderSize = 0;
+            this.openMyTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openMyTickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openMyTickets.Location = new System.Drawing.Point(3, 63);
+            this.openMyTickets.Name = "openMyTickets";
+            this.openMyTickets.Size = new System.Drawing.Size(194, 30);
+            this.openMyTickets.TabIndex = 6;
+            this.openMyTickets.Text = "Мои заявки";
+            this.openMyTickets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openMyTickets.UseVisualStyleBackColor = false;
+            this.openMyTickets.Click += new System.EventHandler(this.openMyTickets_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(3, 53);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(194, 10);
+            this.panel7.TabIndex = 5;
             // 
             // openCreateTicket
             // 
@@ -182,39 +220,31 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 672);
             this.childrenPanel.TabIndex = 8;
             // 
-            // panel7
+            // panel9
             // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(3, 53);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(194, 10);
-            this.panel7.TabIndex = 5;
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(3, 133);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(194, 10);
+            this.panel9.TabIndex = 9;
             // 
-            // panel8
+            // openAllTickets
             // 
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(3, 93);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(194, 10);
-            this.panel8.TabIndex = 7;
-            // 
-            // openMyTickets
-            // 
-            this.openMyTickets.BackColor = System.Drawing.Color.PowderBlue;
-            this.openMyTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openMyTickets.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openMyTickets.Dock = System.Windows.Forms.DockStyle.Top;
-            this.openMyTickets.FlatAppearance.BorderSize = 0;
-            this.openMyTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openMyTickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openMyTickets.Location = new System.Drawing.Point(3, 63);
-            this.openMyTickets.Name = "openMyTickets";
-            this.openMyTickets.Size = new System.Drawing.Size(194, 30);
-            this.openMyTickets.TabIndex = 6;
-            this.openMyTickets.Text = "Мои заявки";
-            this.openMyTickets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openMyTickets.UseVisualStyleBackColor = false;
-            this.openMyTickets.Click += new System.EventHandler(this.openMyTickets_Click);
+            this.openAllTickets.BackColor = System.Drawing.Color.PowderBlue;
+            this.openAllTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openAllTickets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openAllTickets.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openAllTickets.FlatAppearance.BorderSize = 0;
+            this.openAllTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openAllTickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAllTickets.Location = new System.Drawing.Point(3, 103);
+            this.openAllTickets.Name = "openAllTickets";
+            this.openAllTickets.Size = new System.Drawing.Size(194, 30);
+            this.openAllTickets.TabIndex = 8;
+            this.openAllTickets.Text = "Новые заявки";
+            this.openAllTickets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openAllTickets.UseVisualStyleBackColor = false;
+            this.openAllTickets.Click += new System.EventHandler(this.openAllTickets_Click);
             // 
             // MainForm
             // 
@@ -260,5 +290,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button openMyTickets;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button openAllTickets;
     }
 }

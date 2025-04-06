@@ -37,7 +37,22 @@ namespace CSWT.src.shared.services.ticket
             if (rowsAffected > 0)
             {
                 MessageBox.Show("Заявка обновлена!");
-            } else
+            }
+            else
+            {
+                MessageBox.Show("Ошибка обновления заявки!");
+            }
+        }
+
+        public void AssignedTicket(int assigned, int status_id, int ID)
+        {
+            var rowsAffected = _repository.Execute(_sql.AssignedTicket, new NpgsqlParameter("assigned_to", assigned), new NpgsqlParameter("@status_id", status_id), new NpgsqlParameter("@ID", ID));
+
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Заявка принята!");
+            }
+            else
             {
                 MessageBox.Show("Ошибка обновления заявки!");
             }
@@ -80,6 +95,21 @@ namespace CSWT.src.shared.services.ticket
              MapTicketWithJoinDTO,
               new NpgsqlParameter("@ID", ID)
              ).SingleOrDefault();
+        }
+        public TicketWithJoinDTO[] GetNewTickets(int status_id)
+        {
+            return _repository.Query<TicketWithJoinDTO>(
+             _sql.GetNewTickets,
+             MapTicketWithJoinDTO, new NpgsqlParameter("@status_id", status_id)).ToArray();
+        }
+
+        public TicketWithJoinDTO[] GetNewTicketsSearch(int status_id, string searchTerm)
+        {
+            return _repository.Query<TicketWithJoinDTO>(
+             _sql.GetNewTicketsSearch,
+             MapTicketWithJoinDTO, new NpgsqlParameter("@status_id", status_id),
+                new NpgsqlParameter("@searchTerm", searchTerm)
+             ).ToArray();
         }
 
         private TicketWithJoinDTO MapTicketWithJoinDTO(NpgsqlDataReader reader)
