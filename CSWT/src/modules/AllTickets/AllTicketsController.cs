@@ -88,7 +88,7 @@ namespace CSWT.src.modules.AllTickets
                 item.SubItems.Add(ticket.priority_name);
                 item.SubItems.Add(ticket.assigned_user_name ?? "Не назначено");
                 item.SubItems.Add(ticket.solution ?? "Еще нет решения");
-                item.SubItems.Add(ticket.closed_at.ToString("dd.MM.yyyy HH:mm") ?? "Не закрыта");
+                item.SubItems.Add(ticket.closed_at.HasValue ? ticket.closed_at.Value.ToString("dd.MM.yyyy HH:mm") : "Не закрыта");
 
                 item.Tag = ticket;
 

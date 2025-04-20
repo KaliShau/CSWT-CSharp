@@ -39,6 +39,22 @@ namespace CSWT.src.shared.services.ticket
             COMMIT;
         ";
 
+        public string UpdateClosedAt = @"
+            UPDATE Tickets
+            SET closed_at = NOW()
+            WHERE ID = @ID;
+        ";
+
+        public string UpdateTicket = @"
+            UPDATE Tickets
+            SET title = @title,
+                description = @description,
+                solution = @solution,
+                priority_id = @priority_id,
+                status_id = @status_id
+            WHERE ID = @ID;
+        ";
+
         public string GetTicketsByClientId = @"
             SELECT 
                 t.ID,

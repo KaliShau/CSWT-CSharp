@@ -32,6 +32,19 @@ namespace CSWT.src.shared.services.status
                  description = reader["description"].ToString()
              }, new NpgsqlParameter("@status_name", status_name)).SingleOrDefault();
         }
+        public StatusDTO GetStatusByID(int ID)
+        {
+            return _repository.Query<StatusDTO>(
+             _sql.GetStatusByID,
+             reader => new StatusDTO
+             {
+                 ID = Convert.ToInt32(reader["ID"]),
+                 created_at = Convert.ToDateTime(reader["created_at"]),
+                 updated_at = Convert.ToDateTime(reader["updated_at"]),
+                 status_name = reader["status_name"].ToString(),
+                 description = reader["description"].ToString()
+             }, new NpgsqlParameter("@ID", ID)).SingleOrDefault();
+        }
 
         public StatusDTO[] GetStatuses()
         {

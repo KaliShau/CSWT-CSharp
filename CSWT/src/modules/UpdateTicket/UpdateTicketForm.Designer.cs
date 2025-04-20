@@ -47,8 +47,9 @@
             this.statusLine = new System.Windows.Forms.Panel();
             this.statusBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.closedAt = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.closedAtTextBox = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label4
@@ -150,6 +151,7 @@
             this.updateButton.TabIndex = 35;
             this.updateButton.Text = "Обновить";
             this.updateButton.UseVisualStyleBackColor = false;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // label1
             // 
@@ -235,16 +237,6 @@
             this.label6.TabIndex = 42;
             this.label6.Text = "Дата закрытия";
             // 
-            // closedAt
-            // 
-            this.closedAt.AutoSize = true;
-            this.closedAt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closedAt.Location = new System.Drawing.Point(18, 474);
-            this.closedAt.Name = "closedAt";
-            this.closedAt.Size = new System.Drawing.Size(117, 16);
-            this.closedAt.TabIndex = 42;
-            this.closedAt.Text = "Дата закрытия";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -254,6 +246,24 @@
             this.label9.Size = new System.Drawing.Size(117, 16);
             this.label9.TabIndex = 42;
             this.label9.Text = "Дата создания";
+            // 
+            // closedAtTextBox
+            // 
+            this.closedAtTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.closedAtTextBox.Enabled = false;
+            this.closedAtTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closedAtTextBox.Location = new System.Drawing.Point(21, 469);
+            this.closedAtTextBox.Name = "closedAtTextBox";
+            this.closedAtTextBox.Size = new System.Drawing.Size(292, 31);
+            this.closedAtTextBox.TabIndex = 36;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.Location = new System.Drawing.Point(21, 500);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(292, 5);
+            this.panel1.TabIndex = 48;
             // 
             // UpdateTicketForm
             // 
@@ -271,14 +281,15 @@
             this.Controls.Add(this.solutionBox);
             this.Controls.Add(this.descriptionLine);
             this.Controls.Add(this.solutionLine);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.titleLine);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.closedAt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.createdAtLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.descriptionBox);
+            this.Controls.Add(this.closedAtTextBox);
             this.Controls.Add(this.titleBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.label1);
@@ -310,7 +321,8 @@
         private System.Windows.Forms.Panel statusLine;
         private System.Windows.Forms.ComboBox statusBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label closedAt;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox closedAtTextBox;
+        private System.Windows.Forms.Panel panel1;
     }
 }

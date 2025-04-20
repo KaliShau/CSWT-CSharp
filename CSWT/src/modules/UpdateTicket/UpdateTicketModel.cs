@@ -35,5 +35,30 @@ namespace CSWT.src.modules.UpdateTicket
         {
             return _statusService.GetStatuses();
         }
+
+        public PriorityDTO GetPriotitiesByID(int ID)
+        {
+            return _priorityService.GetPriorityByID(ID);
+        }
+
+        public StatusDTO GetStatusByID(int ID)
+        {
+            return _statusService.GetStatusByID(ID);
+        }
+
+        public StatusDTO GetClosedStatus(string name)
+        {
+            return _statusService.GetStatusByStatusName(name);
+        }
+
+        public void UpdateClosedAt(int ID)
+        {
+            _ticketService.UpdateClosedAt(ID);
+        }
+
+        public void UpdateTicket(string title, string description, string solution, int priority_id, int status_id, int ID)
+        {
+            _ticketService.UpdateTicket(title, description, solution, priority_id, status_id, ID);
+        }
     }
 }
