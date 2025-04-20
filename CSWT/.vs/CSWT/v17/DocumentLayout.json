@@ -1,121 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\shared\\services\\ticket\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\shared\\services\\ticket\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\shared\\services\\ticket\\ticketsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\shared\\services\\ticket\\ticketsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\alltickets\\allticketsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\alltickets\\allticketsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\alltickets\\allticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\alltickets\\allticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\alltickets\\allticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\alltickets\\allticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\alltickets\\allticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\alltickets\\allticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AllTicketsModel.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsModel.cs",
-              "RelativeDocumentMoniker": "src\\modules\\AllTickets\\AllTicketsModel.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsModel.cs",
-              "RelativeToolTip": "src\\modules\\AllTickets\\AllTicketsModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:38:20.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TicketSQL.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\ticket\\TicketSQL.cs",
-              "RelativeDocumentMoniker": "src\\shared\\services\\ticket\\TicketSQL.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\ticket\\TicketSQL.cs",
-              "RelativeToolTip": "src\\shared\\services\\ticket\\TicketSQL.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAQwMMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:37:25.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TicketService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\ticket\\TicketService.cs",
-              "RelativeDocumentMoniker": "src\\shared\\services\\ticket\\TicketService.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\ticket\\TicketService.cs",
-              "RelativeToolTip": "src\\shared\\services\\ticket\\TicketService.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAywGwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:37:13.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AllTicketsForm.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsForm.cs",
-              "RelativeDocumentMoniker": "src\\modules\\AllTickets\\AllTicketsForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsForm.cs",
-              "RelativeToolTip": "src\\modules\\AllTickets\\AllTicketsForm.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAWwEIAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:25:54.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AllTicketsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsForm.cs",
-              "RelativeDocumentMoniker": "src\\modules\\AllTickets\\AllTicketsForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsForm.cs [Design]",
-              "RelativeToolTip": "src\\modules\\AllTickets\\AllTicketsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:25:53.19Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AllTicketsController.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsController.cs",
-              "RelativeDocumentMoniker": "src\\modules\\AllTickets\\AllTicketsController.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\AllTickets\\AllTicketsController.cs",
-              "RelativeToolTip": "src\\modules\\AllTickets\\AllTicketsController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAADwvzwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:22:52.827Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

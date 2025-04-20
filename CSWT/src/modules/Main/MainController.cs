@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using CSWT.src.modules.CreateTicket;
 using CSWT.src.modules.MyTickets;
 using CSWT.src.modules.AllTickets;
+using CSWT.src.modules.AssignedTickets;
 
 namespace CSWT.src.modules.Main
 {
@@ -45,6 +46,11 @@ namespace CSWT.src.modules.Main
         public void OpenAllTickets(Panel childrenPanel)
         {
             _formManager.OpenChidrenForm<AllTicketsForm>(childrenPanel);
+        }
+
+        public void OpenAssignedTickets(Panel childrenPanel)
+        {
+            _formManager.OpenChidrenForm<AssignedTicketsForm>(childrenPanel);
         }
 
     }

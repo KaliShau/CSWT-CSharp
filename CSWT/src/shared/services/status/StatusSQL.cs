@@ -15,5 +15,7 @@ namespace CSWT.src.shared.services.status
         public string GetStatusByStatusName = @"
             SELECT * FROM Statuses WHERE status_name = @status_name;
         ";
+
+        public string GetStatuses = "SELECT * FROM Statuses;";
     }
 }

@@ -112,6 +112,22 @@ namespace CSWT.src.shared.services.ticket
              ).ToArray();
         }
 
+        public TicketWithJoinDTO[] GetAssignedTickets(int assigned_to)
+        {
+            return _repository.Query<TicketWithJoinDTO>(
+             _sql.GetAssignedTickets,
+             MapTicketWithJoinDTO, new NpgsqlParameter("@assigned_to", assigned_to)).ToArray();
+        }
+
+        public TicketWithJoinDTO[] GetAssignedTicketsSearch(int assigned_to, string searchTerm)
+        {
+            return _repository.Query<TicketWithJoinDTO>(
+             _sql.GetAssignedTicketsSearch,
+             MapTicketWithJoinDTO, new NpgsqlParameter("@assigned_to", assigned_to),
+                new NpgsqlParameter("@searchTerm", searchTerm)
+             ).ToArray();
+        }
+
         private TicketWithJoinDTO MapTicketWithJoinDTO(NpgsqlDataReader reader)
         {
             return new TicketWithJoinDTO
@@ -126,7 +142,9 @@ namespace CSWT.src.shared.services.ticket
                 client_id = reader.GetInt32(reader.GetOrdinal("client_id")),
                 client_name = reader.GetString(reader.GetOrdinal("client_name")),
                 priority_name = reader.GetString(reader.GetOrdinal("priority_name")),
+                priority_id = reader.GetInt32(reader.GetOrdinal("priority_id")),
                 status_name = reader.GetString(reader.GetOrdinal("status_name")),
+                status_id = reader.GetInt32(reader.GetOrdinal("status_id")),
                 assigned_to = reader.IsDBNull(reader.GetOrdinal("assigned_to")) ? 0 : reader.GetInt32(reader.GetOrdinal("assigned_to")),
                 assigned_user_name = reader.IsDBNull(reader.GetOrdinal("assigned_user_name")) ? null : reader.GetString(reader.GetOrdinal("assigned_user_name"))
             };
