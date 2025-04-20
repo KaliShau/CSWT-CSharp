@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,30 +8,37 @@ using CSWT.src.core;
 using CSWT.src.core.db;
 using CSWT.src.core.form;
 using CSWT.src.modules.Ticket;
+using CSWT.src.modules.UpdateTicket;
 using CSWT.src.shared.services.ticket;
 
-namespace CSWT.src.modules.MyTickets
+namespace CSWT.src.modules.AssignedTickets
 {
-    public class MyTicketsController
+    public class AssignedTicketsController
     {
-        MyTicketsModel _model;
+        AssignedTicketsModel _model;
         UserContext _userContext;
+        SessionContext _sessionContext;
         FormManager _formManager;
         FormContext _formContext;
-        SessionContext _sessionContext;
-        public MyTicketsController(MyTicketsModel model, UserContext userContext, FormManager formManager, FormContext formContext, SessionContext sessionContext)
+        public AssignedTicketsController(AssignedTicketsModel model, UserContext userContext, SessionContext sessionContext, FormManager formManager , FormContext formContext)
         {
             _model = model;
             _userContext = userContext;
+            _sessionContext = sessionContext;
             _formManager = formManager;
             _formContext = formContext;
-            _sessionContext = sessionContext;
         }
-
-        public void OpenTicket( int id)
+        public void OpenTicket(int id)
         {
             _sessionContext.ticket_id = id;
-            _sessionContext.is_ticket_update = true;
+            _sessionContext.is_ticket_update = false;
+            _formManager.OpenChidrenForm<UpdateTicketForm>(_formContext.childrenPanel);
+        }
+
+        public void OpenComments(int id)
+        {
+            _sessionContext.ticket_id = id;
+            _sessionContext.is_ticket_update = false;
             _formManager.OpenChidrenForm<TicketForm>(_formContext.childrenPanel);
         }
 
@@ -45,6 +51,7 @@ namespace CSWT.src.modules.MyTickets
             TicketsList.Columns.Add("Дата создания", 120);
             TicketsList.Columns.Add("Заголовок", 200);
             TicketsList.Columns.Add("Описание", 200);
+            TicketsList.Columns.Add("Создатель заявки", 200);
             TicketsList.Columns.Add("Статус", 100);
             TicketsList.Columns.Add("Приоритет", 100);
             TicketsList.Columns.Add("Назначено", 150);
@@ -54,15 +61,14 @@ namespace CSWT.src.modules.MyTickets
 
         public void AddTicketsToListView(ListView TicketsList)
         {
-            var tickets = _model.GetMyTickets(_userContext.CurrentUser.ID);
+            var tickets = _model.GetAssignedTickets(_userContext.CurrentUser.ID);
 
             this.AddListView(tickets, TicketsList);
-
         }
 
         public void Search(ListView TicketsList, string searchTerm)
         {
-            var tickets = _model.GetMyTicketsSearch(_userContext.CurrentUser.ID, searchTerm);
+            var tickets = _model.GetAssignedTicketsSearch(_userContext.CurrentUser.ID, searchTerm);
             this.AddListView(tickets, TicketsList);
         }
 
@@ -77,6 +83,7 @@ namespace CSWT.src.modules.MyTickets
                 item.SubItems.Add(ticket.created_at.ToString("dd.MM.yyyy HH:mm"));
                 item.SubItems.Add(ticket.title);
                 item.SubItems.Add(ticket.description);
+                item.SubItems.Add(ticket.client_name);
                 item.SubItems.Add(ticket.status_name);
                 item.SubItems.Add(ticket.priority_name);
                 item.SubItems.Add(ticket.assigned_user_name ?? "Не назначено");
@@ -89,9 +96,5 @@ namespace CSWT.src.modules.MyTickets
             }
         }
 
-        public void DeleteTicket(int ID)
-        {
-            _model.DeleteTicket(ID);
-        }
     }
 }

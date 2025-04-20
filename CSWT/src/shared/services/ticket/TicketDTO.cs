@@ -29,7 +29,7 @@ namespace CSWT.src.shared.services.ticket
         public string title { get; set; }
         public string description { get; set; }
         public string solution { get; set; }
-        public DateTime closed_at { get; set; }
+        public DateTime? closed_at { get; set; }
 
         public int client_id { get; set; }
         public string client_name { get; set; }

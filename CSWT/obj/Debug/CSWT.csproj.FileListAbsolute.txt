@@ -60,3 +60,5 @@ C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.CreateTicket.
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.MyTickets.MyTicketsForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Ticket.TicketForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.AllTickets.AllTicketsForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.AssignedTickets.AssignedTicketsForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.UpdateTicket.UpdateTicketForm.resources

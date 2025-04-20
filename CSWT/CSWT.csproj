@@ -112,6 +112,14 @@
       <DependentUpon>AllTicketsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\AllTickets\AllTicketsModel.cs" />
+    <Compile Include="src\modules\AssignedTickets\AssignedTicketsController.cs" />
+    <Compile Include="src\modules\AssignedTickets\AssignedTicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\AssignedTickets\AssignedTicketsForm.Designer.cs">
+      <DependentUpon>AssignedTicketsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\AssignedTickets\AssignedTicketsModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketController.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketForm.cs">
@@ -168,6 +176,14 @@
       <DependentUpon>TicketForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\Ticket\TicketModel.cs" />
+    <Compile Include="src\modules\UpdateTicket\UpdateTicketController.cs" />
+    <Compile Include="src\modules\UpdateTicket\UpdateTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\UpdateTicket\UpdateTicketForm.Designer.cs">
+      <DependentUpon>UpdateTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\UpdateTicket\UpdateTicketModel.cs" />
     <Compile Include="src\shared\services\comment\CommentDTO.cs" />
     <Compile Include="src\shared\services\comment\CommentService.cs" />
     <Compile Include="src\shared\services\comment\CommentSQL.cs" />
@@ -190,6 +206,9 @@
     <Compile Include="src\shared\utils\ValidField.cs" />
     <EmbeddedResource Include="src\modules\AllTickets\AllTicketsForm.resx">
       <DependentUpon>AllTicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\AssignedTickets\AssignedTicketsForm.resx">
+      <DependentUpon>AssignedTicketsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\CreateTicket\CreateTicketForm.resx">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
@@ -220,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Ticket\TicketForm.resx">
       <DependentUpon>TicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\UpdateTicket\UpdateTicketForm.resx">
+      <DependentUpon>UpdateTicketForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

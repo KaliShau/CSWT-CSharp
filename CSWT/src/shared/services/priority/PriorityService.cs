@@ -32,7 +32,6 @@ namespace CSWT.src.shared.services.priority
             });
 
             return priorities.ToArray();
-
         }
         public PriorityDTO GetPriorityByID(int ID)
         {
