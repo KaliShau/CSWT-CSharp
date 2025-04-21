@@ -11,5 +11,15 @@ namespace CSWT.src.shared.services.priority
         public string GetPriorities = "SELECT * FROM Priorities;";
 
         public string GetPriorityByID = "SELECT * FROM Priorities WHERE ID = @ID;";
+
+        public string CreatePriority = @"
+            INSERT INTO Priorities (priority_name, description) VALUES 
+            (@priority_name, @description);
+        ";
+
+        public string DeletePrioity = @"
+            DELETE FROM Priorities WHERE ID = @ID;
+        ";
     }
 }
+

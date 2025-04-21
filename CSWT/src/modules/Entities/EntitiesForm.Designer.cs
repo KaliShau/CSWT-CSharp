@@ -29,20 +29,41 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.openStatusesButton = new System.Windows.Forms.Button();
             this.openRolesButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
+            this.openPrioritiesButton = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.openPrioritiesButton);
+            this.panel2.Controls.Add(this.openStatusesButton);
             this.panel2.Controls.Add(this.openRolesButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1155, 40);
             this.panel2.TabIndex = 0;
+            // 
+            // openStatusesButton
+            // 
+            this.openStatusesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openStatusesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openStatusesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openStatusesButton.FlatAppearance.BorderSize = 0;
+            this.openStatusesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openStatusesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openStatusesButton.Location = new System.Drawing.Point(139, 5);
+            this.openStatusesButton.Name = "openStatusesButton";
+            this.openStatusesButton.Size = new System.Drawing.Size(127, 30);
+            this.openStatusesButton.TabIndex = 7;
+            this.openStatusesButton.Text = "Статусы";
+            this.openStatusesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openStatusesButton.UseVisualStyleBackColor = false;
+            this.openStatusesButton.Click += new System.EventHandler(this.openStatusesButton_Click);
             // 
             // openRolesButton
             // 
@@ -78,6 +99,23 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 616);
             this.childrenPanel.TabIndex = 2;
             // 
+            // openPrioritiesButton
+            // 
+            this.openPrioritiesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openPrioritiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openPrioritiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openPrioritiesButton.FlatAppearance.BorderSize = 0;
+            this.openPrioritiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openPrioritiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openPrioritiesButton.Location = new System.Drawing.Point(272, 3);
+            this.openPrioritiesButton.Name = "openPrioritiesButton";
+            this.openPrioritiesButton.Size = new System.Drawing.Size(127, 30);
+            this.openPrioritiesButton.TabIndex = 7;
+            this.openPrioritiesButton.Text = "Приоритеты";
+            this.openPrioritiesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openPrioritiesButton.UseVisualStyleBackColor = false;
+            this.openPrioritiesButton.Click += new System.EventHandler(this.openPrioritiesButton_Click);
+            // 
             // EntitiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,5 +138,7 @@
         private System.Windows.Forms.Button openRolesButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel childrenPanel;
+        private System.Windows.Forms.Button openStatusesButton;
+        private System.Windows.Forms.Button openPrioritiesButton;
     }
 }

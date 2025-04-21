@@ -7,6 +7,8 @@ using CSWT.src.core.form;
 using CSWT.src.modules.CreateTicket;
 using System.Windows.Forms;
 using CSWT.src.modules.Roles;
+using CSWT.src.modules.Statuses;
+using CSWT.src.modules.Priorities;
 
 namespace CSWT.src.modules.Entities
 {
@@ -22,6 +24,15 @@ namespace CSWT.src.modules.Entities
         public void OpenRoles(Panel childrenPanel)
         {
             _formManager.OpenEntitiesForm<RolesForm>(childrenPanel);
+        }
+        public void OpenStatuses(Panel childrenPanel)
+        {
+            _formManager.OpenEntitiesForm<StatusesForm>(childrenPanel);
+        }
+
+        public void OpenPriorities(Panel childrenPanel)
+        {
+            _formManager.OpenEntitiesForm<PrioritiesForm>(childrenPanel);
         }
     }
 }

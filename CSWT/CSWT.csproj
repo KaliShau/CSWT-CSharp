@@ -135,7 +135,6 @@
     <Compile Include="src\modules\Entities\EntitiesForm.Designer.cs">
       <DependentUpon>EntitiesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\modules\Entities\EntitiesModel.cs" />
     <Compile Include="src\modules\Home\HomeController.cs" />
     <Compile Include="src\modules\Home\HomeForm.cs">
       <SubType>Form</SubType>
@@ -160,6 +159,14 @@
       <DependentUpon>MyTicketsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\MyTickets\MyTicketsModel.cs" />
+    <Compile Include="src\modules\Priorities\PrioritiesController.cs" />
+    <Compile Include="src\modules\Priorities\PrioritiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Priorities\PrioritiesForm.Designer.cs">
+      <DependentUpon>PrioritiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Priorities\PrioritiesModel.cs" />
     <Compile Include="src\modules\Roles\RolesController.cs" />
     <Compile Include="src\modules\Roles\RolesForm.cs">
       <SubType>Form</SubType>
@@ -184,6 +191,14 @@
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\SignUp\SignUpModel.cs" />
+    <Compile Include="src\modules\Statuses\StatusesController.cs" />
+    <Compile Include="src\modules\Statuses\StatusesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Statuses\StatusesForm.Designer.cs">
+      <DependentUpon>StatusesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Statuses\StatusesModel.cs" />
     <Compile Include="src\modules\Ticket\TicketController.cs" />
     <Compile Include="src\modules\Ticket\TicketForm.cs">
       <SubType>Form</SubType>
@@ -250,6 +265,9 @@
     <EmbeddedResource Include="src\modules\MyTickets\MyTicketsForm.resx">
       <DependentUpon>MyTicketsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Priorities\PrioritiesForm.resx">
+      <DependentUpon>PrioritiesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Roles\RolesForm.resx">
       <DependentUpon>RolesForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignUp\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Statuses\StatusesForm.resx">
+      <DependentUpon>StatusesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Ticket\TicketForm.resx">
       <DependentUpon>TicketForm.cs</DependentUpon>

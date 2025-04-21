@@ -64,3 +64,5 @@ C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.AssignedTicke
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.UpdateTicket.UpdateTicketForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Entities.EntitiesForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Roles.RolesForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Statuses.StatusesForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Priorities.PrioritiesForm.resources

@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\roles\\rolesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\roles\\rolesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\priorities\\prioritiesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\priorities\\prioritiesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\roles\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\roles\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\priorities\\prioritiesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\priorities\\prioritiesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\roles\\rolesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\roles\\rolesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\roles\\rolesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\roles\\rolesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\shared\\services\\role\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\shared\\services\\role\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\shared\\services\\role\\rolesql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\shared\\services\\role\\rolesql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\priorities\\prioritiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\priorities\\prioritiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoleSQL.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\role\\RoleSQL.cs",
-              "RelativeDocumentMoniker": "src\\shared\\services\\role\\RoleSQL.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\role\\RoleSQL.cs",
-              "RelativeToolTip": "src\\shared\\services\\role\\RoleSQL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T09:49:43.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\role\\RoleService.cs",
-              "RelativeDocumentMoniker": "src\\shared\\services\\role\\RoleService.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\role\\RoleService.cs",
-              "RelativeToolTip": "src\\shared\\services\\role\\RoleService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAD4vzsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T09:30:11.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RolesModel.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesModel.cs",
-              "RelativeDocumentMoniker": "src\\modules\\Roles\\RolesModel.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesModel.cs",
-              "RelativeToolTip": "src\\modules\\Roles\\RolesModel.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwB4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T09:26:59.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesController.cs",
-              "RelativeDocumentMoniker": "src\\modules\\Roles\\RolesController.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesController.cs",
-              "RelativeToolTip": "src\\modules\\Roles\\RolesController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAmwEQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T09:38:59.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RolesForm.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesForm.cs",
-              "RelativeDocumentMoniker": "src\\modules\\Roles\\RolesForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesForm.cs",
-              "RelativeToolTip": "src\\modules\\Roles\\RolesForm.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
+              "Title": "PrioritiesForm.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Priorities\\PrioritiesForm.cs",
+              "RelativeDocumentMoniker": "src\\modules\\Priorities\\PrioritiesForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Priorities\\PrioritiesForm.cs",
+              "RelativeToolTip": "src\\modules\\Priorities\\PrioritiesForm.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAEwDwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T09:14:55.866Z",
+              "WhenOpened": "2025-04-21T12:06:01.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RolesForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesForm.cs",
-              "RelativeDocumentMoniker": "src\\modules\\Roles\\RolesForm.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Roles\\RolesForm.cs [Design]",
-              "RelativeToolTip": "src\\modules\\Roles\\RolesForm.cs [Design]",
+              "Title": "PrioritiesController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Priorities\\PrioritiesController.cs",
+              "RelativeDocumentMoniker": "src\\modules\\Priorities\\PrioritiesController.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Priorities\\PrioritiesController.cs",
+              "RelativeToolTip": "src\\modules\\Priorities\\PrioritiesController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T08:52:56.327Z",
+              "WhenOpened": "2025-04-21T12:02:19.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrioritiesForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Priorities\\PrioritiesForm.cs",
+              "RelativeDocumentMoniker": "src\\modules\\Priorities\\PrioritiesForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Priorities\\PrioritiesForm.cs [Design]",
+              "RelativeToolTip": "src\\modules\\Priorities\\PrioritiesForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T11:55:22.641Z",
               "EditorCaption": " [Design]"
             }
           ]

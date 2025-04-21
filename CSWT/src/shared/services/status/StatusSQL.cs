@@ -17,5 +17,14 @@ namespace CSWT.src.shared.services.status
         ";
 
         public string GetStatuses = "SELECT * FROM Statuses;";
+
+        public string CreateStatus = @"
+            INSERT INTO Statuses (status_name, description) VALUES 
+            (@status_name, @description);
+        ";
+
+        public string DeleteStatus = @"
+            DELETE FROM Statuses WHERE ID = @ID;
+        ";
     }
 }

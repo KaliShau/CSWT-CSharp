@@ -23,5 +23,15 @@ namespace CSWT.src.modules.Entities
         {
             _controller.OpenRoles(childrenPanel);
         }
+
+        private void openStatusesButton_Click(object sender, EventArgs e)
+        {
+            _controller.OpenStatuses(childrenPanel);
+        }
+
+        private void openPrioritiesButton_Click(object sender, EventArgs e)
+        {
+            _controller.OpenPriorities(childrenPanel);
+        }
     }
 }
