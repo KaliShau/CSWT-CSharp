@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using System.Windows.Forms;
+using CSWT.src.modules.Entities;
 
 namespace CSWT.src.core.form
 {
@@ -13,6 +14,7 @@ namespace CSWT.src.core.form
         private readonly IServiceProvider _serviceProvider;
         private Form _currentForm;
         private Form _childrenForm;
+        private Form _entitiesForm;
 
         public FormManager(IServiceProvider serviceProvider)
         {
@@ -45,6 +47,7 @@ namespace CSWT.src.core.form
             }
 
             _childrenForm?.Close();
+            _entitiesForm?.Close();
 
             _currentForm = _serviceProvider.GetRequiredService<TForm>();
 
@@ -54,6 +57,7 @@ namespace CSWT.src.core.form
         public void OpenChidrenForm<TForm>(Panel childrenPanel) where TForm : Form
         {
             _childrenForm?.Close();
+            _entitiesForm?.Close();
             _childrenForm = _serviceProvider.GetRequiredService<TForm>();
 
             _childrenForm.Dock = DockStyle.Fill;
@@ -62,6 +66,19 @@ namespace CSWT.src.core.form
             childrenPanel.Controls.Clear();
             childrenPanel.Controls.Add(_childrenForm);
             _childrenForm.Show();
+        }
+
+        public void OpenEntitiesForm<TForm>(Panel childrenPanel) where TForm : Form
+        {
+            _entitiesForm?.Close();
+            _entitiesForm = _serviceProvider.GetRequiredService<TForm>();
+
+            _entitiesForm.Dock = DockStyle.Fill;
+            _entitiesForm.TopLevel = false;
+            _entitiesForm.FormBorderStyle = FormBorderStyle.None;
+            childrenPanel.Controls.Clear();
+            childrenPanel.Controls.Add(_entitiesForm);
+            _entitiesForm.Show();
         }
     }
 }

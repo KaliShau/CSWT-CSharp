@@ -37,7 +37,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ticketGroupBox = new System.Windows.Forms.GroupBox();
+            this.openAssignedTickets = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.openAllTickets = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -46,12 +47,13 @@
             this.openCreateTicket = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.openAssignedTickets = new System.Windows.Forms.Button();
+            this.adminGroupBox = new System.Windows.Forms.GroupBox();
+            this.openEntitiesButton = new System.Windows.Forms.Button();
             this.drugPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.ticketGroupBox.SuspendLayout();
+            this.adminGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // drugPanel
@@ -128,32 +130,50 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.adminGroupBox);
+            this.panel1.Controls.Add(this.ticketGroupBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(23, 76);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 672);
             this.panel1.TabIndex = 6;
             // 
-            // groupBox1
+            // ticketGroupBox
             // 
-            this.groupBox1.Controls.Add(this.panel10);
-            this.groupBox1.Controls.Add(this.openAssignedTickets);
-            this.groupBox1.Controls.Add(this.panel9);
-            this.groupBox1.Controls.Add(this.openAllTickets);
-            this.groupBox1.Controls.Add(this.panel8);
-            this.groupBox1.Controls.Add(this.openMyTickets);
-            this.groupBox1.Controls.Add(this.panel7);
-            this.groupBox1.Controls.Add(this.openCreateTicket);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 191);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Заявки";
+            this.ticketGroupBox.Controls.Add(this.openAssignedTickets);
+            this.ticketGroupBox.Controls.Add(this.panel9);
+            this.ticketGroupBox.Controls.Add(this.openAllTickets);
+            this.ticketGroupBox.Controls.Add(this.panel8);
+            this.ticketGroupBox.Controls.Add(this.openMyTickets);
+            this.ticketGroupBox.Controls.Add(this.panel7);
+            this.ticketGroupBox.Controls.Add(this.openCreateTicket);
+            this.ticketGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ticketGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketGroupBox.Location = new System.Drawing.Point(0, 0);
+            this.ticketGroupBox.Margin = new System.Windows.Forms.Padding(10);
+            this.ticketGroupBox.Name = "ticketGroupBox";
+            this.ticketGroupBox.Size = new System.Drawing.Size(200, 180);
+            this.ticketGroupBox.TabIndex = 0;
+            this.ticketGroupBox.TabStop = false;
+            this.ticketGroupBox.Text = "Заявки";
+            // 
+            // openAssignedTickets
+            // 
+            this.openAssignedTickets.BackColor = System.Drawing.Color.PowderBlue;
+            this.openAssignedTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openAssignedTickets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openAssignedTickets.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openAssignedTickets.FlatAppearance.BorderSize = 0;
+            this.openAssignedTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openAssignedTickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAssignedTickets.Location = new System.Drawing.Point(3, 143);
+            this.openAssignedTickets.Name = "openAssignedTickets";
+            this.openAssignedTickets.Size = new System.Drawing.Size(194, 30);
+            this.openAssignedTickets.TabIndex = 10;
+            this.openAssignedTickets.Text = "Принятые заявки";
+            this.openAssignedTickets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openAssignedTickets.UseVisualStyleBackColor = false;
+            this.openAssignedTickets.Click += new System.EventHandler(this.openAssignedTickets_Click);
             // 
             // panel9
             // 
@@ -250,31 +270,36 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 672);
             this.childrenPanel.TabIndex = 8;
             // 
-            // panel10
+            // adminGroupBox
             // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(3, 173);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(194, 10);
-            this.panel10.TabIndex = 11;
+            this.adminGroupBox.Controls.Add(this.openEntitiesButton);
+            this.adminGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.adminGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminGroupBox.Location = new System.Drawing.Point(0, 180);
+            this.adminGroupBox.Margin = new System.Windows.Forms.Padding(10);
+            this.adminGroupBox.Name = "adminGroupBox";
+            this.adminGroupBox.Size = new System.Drawing.Size(200, 63);
+            this.adminGroupBox.TabIndex = 1;
+            this.adminGroupBox.TabStop = false;
+            this.adminGroupBox.Text = "Администратор";
             // 
-            // openAssignedTickets
+            // openEntitiesButton
             // 
-            this.openAssignedTickets.BackColor = System.Drawing.Color.PowderBlue;
-            this.openAssignedTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openAssignedTickets.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openAssignedTickets.Dock = System.Windows.Forms.DockStyle.Top;
-            this.openAssignedTickets.FlatAppearance.BorderSize = 0;
-            this.openAssignedTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openAssignedTickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openAssignedTickets.Location = new System.Drawing.Point(3, 143);
-            this.openAssignedTickets.Name = "openAssignedTickets";
-            this.openAssignedTickets.Size = new System.Drawing.Size(194, 30);
-            this.openAssignedTickets.TabIndex = 10;
-            this.openAssignedTickets.Text = "Принятые заявки";
-            this.openAssignedTickets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openAssignedTickets.UseVisualStyleBackColor = false;
-            this.openAssignedTickets.Click += new System.EventHandler(this.openAssignedTickets_Click);
+            this.openEntitiesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openEntitiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openEntitiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openEntitiesButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openEntitiesButton.FlatAppearance.BorderSize = 0;
+            this.openEntitiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openEntitiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openEntitiesButton.Location = new System.Drawing.Point(3, 23);
+            this.openEntitiesButton.Name = "openEntitiesButton";
+            this.openEntitiesButton.Size = new System.Drawing.Size(194, 30);
+            this.openEntitiesButton.TabIndex = 5;
+            this.openEntitiesButton.Text = "Сущности";
+            this.openEntitiesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openEntitiesButton.UseVisualStyleBackColor = false;
+            this.openEntitiesButton.Click += new System.EventHandler(this.openEntitiesButton_Click);
             // 
             // MainForm
             // 
@@ -298,7 +323,8 @@
             this.drugPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.ticketGroupBox.ResumeLayout(false);
+            this.adminGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -314,7 +340,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox ticketGroupBox;
         private System.Windows.Forms.Button openCreateTicket;
         private System.Windows.Forms.Panel childrenPanel;
         private System.Windows.Forms.Panel panel8;
@@ -322,7 +348,8 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button openAllTickets;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button openAssignedTickets;
+        private System.Windows.Forms.GroupBox adminGroupBox;
+        private System.Windows.Forms.Button openEntitiesButton;
     }
 }

@@ -128,6 +128,14 @@
     <Compile Include="src\modules\CreateTicket\CreateTicketForm.Designer.cs">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\modules\Entities\EntitiesController.cs" />
+    <Compile Include="src\modules\Entities\EntitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Entities\EntitiesForm.Designer.cs">
+      <DependentUpon>EntitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Entities\EntitiesModel.cs" />
     <Compile Include="src\modules\Home\HomeController.cs" />
     <Compile Include="src\modules\Home\HomeForm.cs">
       <SubType>Form</SubType>
@@ -152,6 +160,14 @@
       <DependentUpon>MyTicketsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\MyTickets\MyTicketsModel.cs" />
+    <Compile Include="src\modules\Roles\RolesController.cs" />
+    <Compile Include="src\modules\Roles\RolesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Roles\RolesForm.Designer.cs">
+      <DependentUpon>RolesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Roles\RolesModel.cs" />
     <Compile Include="src\modules\SignIn\SignInController.cs" />
     <Compile Include="src\modules\SignIn\SignInForm.cs">
       <SubType>Form</SubType>
@@ -213,6 +229,9 @@
     <EmbeddedResource Include="src\modules\CreateTicket\CreateTicketForm.resx">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Entities\EntitiesForm.resx">
+      <DependentUpon>EntitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Home\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\MyTickets\MyTicketsForm.resx">
       <DependentUpon>MyTicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Roles\RolesForm.resx">
+      <DependentUpon>RolesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignIn\SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>

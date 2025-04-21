@@ -12,6 +12,7 @@ using CSWT.src.modules.CreateTicket;
 using CSWT.src.modules.MyTickets;
 using CSWT.src.modules.AllTickets;
 using CSWT.src.modules.AssignedTickets;
+using CSWT.src.modules.Entities;
 
 namespace CSWT.src.modules.Main
 {
@@ -53,5 +54,9 @@ namespace CSWT.src.modules.Main
             _formManager.OpenChidrenForm<AssignedTicketsForm>(childrenPanel);
         }
 
+        public void OpenEntities(Panel childrenPanel)
+        {
+            _formManager.OpenChidrenForm<EntitiesForm>(childrenPanel);
+        }
     }
 }
