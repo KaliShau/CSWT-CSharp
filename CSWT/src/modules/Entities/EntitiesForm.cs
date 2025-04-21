@@ -33,5 +33,15 @@ namespace CSWT.src.modules.Entities
         {
             _controller.OpenPriorities(childrenPanel);
         }
+
+        private void openDepartmentButton_Click(object sender, EventArgs e)
+        {
+            _controller.OpenDepartments(childrenPanel);
+        }
+
+        private void openUsersButton_Click(object sender, EventArgs e)
+        {
+            _controller.OpenUsers(childrenPanel);
+        }
     }
 }

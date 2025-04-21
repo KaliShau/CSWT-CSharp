@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using CSWT.src.modules.Roles;
 using CSWT.src.modules.Statuses;
 using CSWT.src.modules.Priorities;
+using CSWT.src.modules.Departments;
+using CSWT.src.modules.Users;
 
 namespace CSWT.src.modules.Entities
 {
@@ -33,6 +35,16 @@ namespace CSWT.src.modules.Entities
         public void OpenPriorities(Panel childrenPanel)
         {
             _formManager.OpenEntitiesForm<PrioritiesForm>(childrenPanel);
+        }
+
+        public void OpenDepartments(Panel childrenPanel)
+        {
+            _formManager.OpenEntitiesForm<DepartmentsForm>(childrenPanel);
+        }
+
+        public void OpenUsers(Panel childrenPanel)
+        {
+            _formManager.OpenEntitiesForm<UsersForm>(childrenPanel);
         }
     }
 }

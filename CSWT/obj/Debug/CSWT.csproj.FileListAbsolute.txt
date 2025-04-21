@@ -66,3 +66,5 @@ C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Entities.Enti
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Roles.RolesForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Statuses.StatusesForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Priorities.PrioritiesForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Departments.DepartmentsForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Users.UsersForm.resources

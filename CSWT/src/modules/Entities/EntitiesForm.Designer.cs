@@ -29,16 +29,20 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.openDepartmentButton = new System.Windows.Forms.Button();
+            this.openPrioritiesButton = new System.Windows.Forms.Button();
             this.openStatusesButton = new System.Windows.Forms.Button();
             this.openRolesButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.openPrioritiesButton = new System.Windows.Forms.Button();
+            this.openUsersButton = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.openUsersButton);
+            this.panel2.Controls.Add(this.openDepartmentButton);
             this.panel2.Controls.Add(this.openPrioritiesButton);
             this.panel2.Controls.Add(this.openStatusesButton);
             this.panel2.Controls.Add(this.openRolesButton);
@@ -47,6 +51,40 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1155, 40);
             this.panel2.TabIndex = 0;
+            // 
+            // openDepartmentButton
+            // 
+            this.openDepartmentButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openDepartmentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openDepartmentButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openDepartmentButton.FlatAppearance.BorderSize = 0;
+            this.openDepartmentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openDepartmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openDepartmentButton.Location = new System.Drawing.Point(405, 5);
+            this.openDepartmentButton.Name = "openDepartmentButton";
+            this.openDepartmentButton.Size = new System.Drawing.Size(127, 30);
+            this.openDepartmentButton.TabIndex = 7;
+            this.openDepartmentButton.Text = "Отделы";
+            this.openDepartmentButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openDepartmentButton.UseVisualStyleBackColor = false;
+            this.openDepartmentButton.Click += new System.EventHandler(this.openDepartmentButton_Click);
+            // 
+            // openPrioritiesButton
+            // 
+            this.openPrioritiesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openPrioritiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openPrioritiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openPrioritiesButton.FlatAppearance.BorderSize = 0;
+            this.openPrioritiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openPrioritiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openPrioritiesButton.Location = new System.Drawing.Point(272, 3);
+            this.openPrioritiesButton.Name = "openPrioritiesButton";
+            this.openPrioritiesButton.Size = new System.Drawing.Size(127, 30);
+            this.openPrioritiesButton.TabIndex = 7;
+            this.openPrioritiesButton.Text = "Приоритеты";
+            this.openPrioritiesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openPrioritiesButton.UseVisualStyleBackColor = false;
+            this.openPrioritiesButton.Click += new System.EventHandler(this.openPrioritiesButton_Click);
             // 
             // openStatusesButton
             // 
@@ -99,22 +137,22 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 616);
             this.childrenPanel.TabIndex = 2;
             // 
-            // openPrioritiesButton
+            // openUsersButton
             // 
-            this.openPrioritiesButton.BackColor = System.Drawing.Color.PowderBlue;
-            this.openPrioritiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openPrioritiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openPrioritiesButton.FlatAppearance.BorderSize = 0;
-            this.openPrioritiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openPrioritiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openPrioritiesButton.Location = new System.Drawing.Point(272, 3);
-            this.openPrioritiesButton.Name = "openPrioritiesButton";
-            this.openPrioritiesButton.Size = new System.Drawing.Size(127, 30);
-            this.openPrioritiesButton.TabIndex = 7;
-            this.openPrioritiesButton.Text = "Приоритеты";
-            this.openPrioritiesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openPrioritiesButton.UseVisualStyleBackColor = false;
-            this.openPrioritiesButton.Click += new System.EventHandler(this.openPrioritiesButton_Click);
+            this.openUsersButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openUsersButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openUsersButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openUsersButton.FlatAppearance.BorderSize = 0;
+            this.openUsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openUsersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openUsersButton.Location = new System.Drawing.Point(538, 5);
+            this.openUsersButton.Name = "openUsersButton";
+            this.openUsersButton.Size = new System.Drawing.Size(127, 30);
+            this.openUsersButton.TabIndex = 7;
+            this.openUsersButton.Text = "Пользователи";
+            this.openUsersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openUsersButton.UseVisualStyleBackColor = false;
+            this.openUsersButton.Click += new System.EventHandler(this.openUsersButton_Click);
             // 
             // EntitiesForm
             // 
@@ -140,5 +178,7 @@
         private System.Windows.Forms.Panel childrenPanel;
         private System.Windows.Forms.Button openStatusesButton;
         private System.Windows.Forms.Button openPrioritiesButton;
+        private System.Windows.Forms.Button openDepartmentButton;
+        private System.Windows.Forms.Button openUsersButton;
     }
 }
