@@ -58,5 +58,7 @@ namespace CSWT.src.modules.Main
         {
             _formManager.OpenChidrenForm<EntitiesForm>(childrenPanel);
         }
+
+        
     }
 }

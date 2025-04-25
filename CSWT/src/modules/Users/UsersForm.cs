@@ -20,6 +20,7 @@ namespace CSWT.src.modules.Users
             _controller = controller;
 
             _controller.InitList(UsersList);
+            _controller.InitRoleBox(roleBox);
             _controller.GetUsers(UsersList);
         }
 
@@ -38,6 +39,25 @@ namespace CSWT.src.modules.Users
                     contextMenuStrip1.Show(UsersList, e.Location);
                 }
             }
+        }
+
+        private void createUserButton_Click(object sender, EventArgs e)
+        {
+            _controller.CreateUser(usernameBox, passwordBox, firstNameBox, lastNameBox, emailBox, phoneNumberBox, roleBox);
+        }
+
+        private void Users_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Users.SelectedTab == tabPage1)
+            {
+                _controller.GetUsers(UsersList);
+            }
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.DeleteUser(_selectedId);
+            _controller.GetUsers(UsersList);
         }
     }
 }

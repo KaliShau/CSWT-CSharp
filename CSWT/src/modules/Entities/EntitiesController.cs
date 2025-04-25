@@ -11,6 +11,8 @@ using CSWT.src.modules.Statuses;
 using CSWT.src.modules.Priorities;
 using CSWT.src.modules.Departments;
 using CSWT.src.modules.Users;
+using CSWT.src.modules.Ticket;
+using CSWT.src.modules.Tickets;
 
 namespace CSWT.src.modules.Entities
 {
@@ -45,6 +47,11 @@ namespace CSWT.src.modules.Entities
         public void OpenUsers(Panel childrenPanel)
         {
             _formManager.OpenEntitiesForm<UsersForm>(childrenPanel);
+        }
+
+        public void OpenTickets(Panel childrenPanel)
+        {
+            _formManager.OpenEntitiesForm<TicketsForm>(childrenPanel);
         }
     }
 }

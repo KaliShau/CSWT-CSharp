@@ -43,5 +43,10 @@ namespace CSWT.src.modules.Entities
         {
             _controller.OpenUsers(childrenPanel);
         }
+
+        private void openTicketsButton_Click(object sender, EventArgs e)
+        {
+            _controller.OpenTickets(childrenPanel);
+        }
     }
 }

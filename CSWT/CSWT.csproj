@@ -207,6 +207,14 @@
       <DependentUpon>StatusesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\Statuses\StatusesModel.cs" />
+    <Compile Include="src\modules\Tickets\TicketsController.cs" />
+    <Compile Include="src\modules\Tickets\TicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Tickets\TicketsForm.Designer.cs">
+      <DependentUpon>TicketsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Tickets\TicketsModel.cs" />
     <Compile Include="src\modules\Ticket\TicketController.cs" />
     <Compile Include="src\modules\Ticket\TicketForm.cs">
       <SubType>Form</SubType>
@@ -301,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Statuses\StatusesForm.resx">
       <DependentUpon>StatusesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Tickets\TicketsForm.resx">
+      <DependentUpon>TicketsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Ticket\TicketForm.resx">
       <DependentUpon>TicketForm.cs</DependentUpon>

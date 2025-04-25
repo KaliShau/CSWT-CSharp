@@ -12,9 +12,11 @@ namespace CSWT.src.modules.Users
     public class UsersModel
     {
         UserService _userService;
-        public UsersModel(UserService userService)
+        RoleService _roleService;
+        public UsersModel(UserService userService, RoleService roleService)
         {
-            _userService = userService; 
+            _userService = userService;
+            _roleService = roleService;
         }
 
         public UserDTO[] GetUsers()
@@ -30,6 +32,16 @@ namespace CSWT.src.modules.Users
         public void DeleteUser(int ID)
         {
             _userService.DeleteUser(ID);    
+        }
+
+        public RoleDTO GetRoleById(int ID)
+        {
+            return _roleService.GetRoleByID(ID);
+        }
+
+        public RoleDTO[] GetRoles()
+        {
+            return _roleService.GetRoles();
         }
     }
 }

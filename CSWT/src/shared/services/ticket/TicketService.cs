@@ -130,6 +130,15 @@ namespace CSWT.src.shared.services.ticket
               new NpgsqlParameter("@ID", ID)
              ).SingleOrDefault();
         }
+
+        public TicketWithJoinDTO[] GetTickets()
+        {
+            return _repository.Query<TicketWithJoinDTO>(
+             _sql.GetTickets,
+             MapTicketWithJoinDTO
+             ).ToArray();
+        }
+
         public TicketWithJoinDTO[] GetNewTickets(int status_id)
         {
             return _repository.Query<TicketWithJoinDTO>(
@@ -173,8 +182,8 @@ namespace CSWT.src.shared.services.ticket
                 description = reader.GetString(reader.GetOrdinal("description")),
                 solution = reader.IsDBNull(reader.GetOrdinal("solution")) ? null : reader.GetString(reader.GetOrdinal("solution")),
                 closed_at = reader.IsDBNull(reader.GetOrdinal("closed_at")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("closed_at")),
-                client_id = reader.GetInt32(reader.GetOrdinal("client_id")),
-                client_name = reader.GetString(reader.GetOrdinal("client_name")),
+                client_id = reader.IsDBNull(reader.GetOrdinal("client_id")) ? 0 : reader.GetInt32(reader.GetOrdinal("client_id")),
+                client_name = reader.IsDBNull(reader.GetOrdinal("client_name")) ? "Удален" : reader.GetString(reader.GetOrdinal("client_name")),
                 priority_name = reader.GetString(reader.GetOrdinal("priority_name")),
                 priority_id = reader.GetInt32(reader.GetOrdinal("priority_id")),
                 status_name = reader.GetString(reader.GetOrdinal("status_name")),

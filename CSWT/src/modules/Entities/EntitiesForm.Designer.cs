@@ -29,18 +29,20 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.openUsersButton = new System.Windows.Forms.Button();
             this.openDepartmentButton = new System.Windows.Forms.Button();
             this.openPrioritiesButton = new System.Windows.Forms.Button();
             this.openStatusesButton = new System.Windows.Forms.Button();
             this.openRolesButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.openUsersButton = new System.Windows.Forms.Button();
+            this.openTicketsButton = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.openTicketsButton);
             this.panel2.Controls.Add(this.openUsersButton);
             this.panel2.Controls.Add(this.openDepartmentButton);
             this.panel2.Controls.Add(this.openPrioritiesButton);
@@ -51,6 +53,23 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1155, 40);
             this.panel2.TabIndex = 0;
+            // 
+            // openUsersButton
+            // 
+            this.openUsersButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openUsersButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openUsersButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openUsersButton.FlatAppearance.BorderSize = 0;
+            this.openUsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openUsersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openUsersButton.Location = new System.Drawing.Point(538, 5);
+            this.openUsersButton.Name = "openUsersButton";
+            this.openUsersButton.Size = new System.Drawing.Size(127, 30);
+            this.openUsersButton.TabIndex = 7;
+            this.openUsersButton.Text = "Пользователи";
+            this.openUsersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openUsersButton.UseVisualStyleBackColor = false;
+            this.openUsersButton.Click += new System.EventHandler(this.openUsersButton_Click);
             // 
             // openDepartmentButton
             // 
@@ -137,22 +156,22 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 616);
             this.childrenPanel.TabIndex = 2;
             // 
-            // openUsersButton
+            // openTicketsButton
             // 
-            this.openUsersButton.BackColor = System.Drawing.Color.PowderBlue;
-            this.openUsersButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openUsersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openUsersButton.FlatAppearance.BorderSize = 0;
-            this.openUsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openUsersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openUsersButton.Location = new System.Drawing.Point(538, 5);
-            this.openUsersButton.Name = "openUsersButton";
-            this.openUsersButton.Size = new System.Drawing.Size(127, 30);
-            this.openUsersButton.TabIndex = 7;
-            this.openUsersButton.Text = "Пользователи";
-            this.openUsersButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openUsersButton.UseVisualStyleBackColor = false;
-            this.openUsersButton.Click += new System.EventHandler(this.openUsersButton_Click);
+            this.openTicketsButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openTicketsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openTicketsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openTicketsButton.FlatAppearance.BorderSize = 0;
+            this.openTicketsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openTicketsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openTicketsButton.Location = new System.Drawing.Point(671, 7);
+            this.openTicketsButton.Name = "openTicketsButton";
+            this.openTicketsButton.Size = new System.Drawing.Size(127, 30);
+            this.openTicketsButton.TabIndex = 7;
+            this.openTicketsButton.Text = "Заявки";
+            this.openTicketsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openTicketsButton.UseVisualStyleBackColor = false;
+            this.openTicketsButton.Click += new System.EventHandler(this.openTicketsButton_Click);
             // 
             // EntitiesForm
             // 
@@ -180,5 +199,6 @@
         private System.Windows.Forms.Button openPrioritiesButton;
         private System.Windows.Forms.Button openDepartmentButton;
         private System.Windows.Forms.Button openUsersButton;
+        private System.Windows.Forms.Button openTicketsButton;
     }
 }

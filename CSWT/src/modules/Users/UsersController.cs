@@ -62,20 +62,43 @@ namespace CSWT.src.modules.Users
 
         }
 
-        //public void CreateUser(TextBox nameBox, TextBox descriptionBox)
-        //{
-        //    string name = nameBox.Text;
-        //    string description = descriptionBox.Text;
+        public void CreateUser(TextBox usernameBox, TextBox passwordBox, TextBox firstNameBox, TextBox lastNameBox, TextBox emailBox, TextBox phoneNumbetBox, ComboBox RoleBox)
+        {
+            string username = usernameBox.Text;
+            string password = passwordBox.Text;
+            string firstName = firstNameBox.Text;
+            string lastName = lastNameBox.Text;
+            string email = emailBox.Text;
+            string phone = phoneNumbetBox.Text;
 
-        //    if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(description))
-        //    {
-        //        return;
-        //    }
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(firstName))
+            {
+                return;
+            }
 
-        //    _model.CreateRole(name, description);
-        //}
+            int roleId = Convert.ToInt32(RoleBox.SelectedValue);
 
-        public void DeleteRole(int ID)
+            var role = _model.GetRoleById(roleId);
+
+            if (role == null)
+            {
+                MessageBox.Show("Роль не найдена");
+                return;
+            }
+
+            _model.CreateUser(username, password, firstName, lastName, email, phone, role.ID);
+        }
+
+        public void InitRoleBox(ComboBox roleBox)
+        {
+            var roles = _model.GetRoles();
+
+            roleBox.DataSource = roles;
+            roleBox.DisplayMember = "role_name";
+            roleBox.ValueMember = "ID";
+        }
+
+        public void DeleteUser(int ID)
         {
             _model.DeleteUser(ID);
         }
