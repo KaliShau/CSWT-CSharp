@@ -19,6 +19,7 @@ namespace CSWT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            ConnectionUtils.InitializeConnectionFile();
             var services = new ServiceCollection();
             var assembly = Assembly.GetExecutingAssembly();
 

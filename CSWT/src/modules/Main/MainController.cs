@@ -13,6 +13,9 @@ using CSWT.src.modules.MyTickets;
 using CSWT.src.modules.AllTickets;
 using CSWT.src.modules.AssignedTickets;
 using CSWT.src.modules.Entities;
+using CSWT.src.modules.UpdateUser;
+using CSWT.src.core;
+using CSWT.src.core.db;
 
 namespace CSWT.src.modules.Main
 {
@@ -20,10 +23,14 @@ namespace CSWT.src.modules.Main
     {
         FormManager _formManager;
         FormContext _formContext;
-        public MainController(FormManager formManager, FormContext formContext)
+        SessionContext _sessionContext;
+        UserContext _userContext;
+        public MainController(FormManager formManager, FormContext formContext, SessionContext sessionContext, UserContext userContext)
         {
             _formManager = formManager;
             _formContext = formContext;
+            _sessionContext = sessionContext;
+            _userContext = userContext;
         }
         public void InitChildrenPanel(Panel childrenPanel)
         {
@@ -59,6 +66,13 @@ namespace CSWT.src.modules.Main
             _formManager.OpenChidrenForm<EntitiesForm>(childrenPanel);
         }
 
-        
+        public void OpenProfile(Panel childrenPanel)
+        {
+            _sessionContext.user_id = _userContext.CurrentUser.ID;
+            _sessionContext.is_admin = false;
+            _formManager.OpenChidrenForm<UpdateUserForm>(childrenPanel);
+        }
+
+
     }
 }

@@ -6,15 +6,32 @@ using System.Threading.Tasks;
 using CSWT.src.modules.Roles;
 using CSWT.src.shared.dto;
 using System.Windows.Forms;
+using CSWT.src.core.db;
+using CSWT.src.core.form;
+using CSWT.src.core;
+using CSWT.src.modules.UpdateUser;
 
 namespace CSWT.src.modules.Users
 {
     public class UsersController
     {
         UsersModel _model;
-        public UsersController(UsersModel model)
+        SessionContext _sessionContext;
+        FormManager _formManager;
+        FormContext _formContext;
+        public UsersController(UsersModel model, SessionContext sessionContext, FormManager formManager, FormContext formContext)
         {
             _model = model;
+            _sessionContext = sessionContext;
+            _formManager = formManager;
+            _formContext = formContext;
+        }
+
+        public void OpenUpdateUser(int ID)
+        {
+            _sessionContext.user_id = ID;
+            _sessionContext.is_admin = true;
+            _formManager.OpenChidrenForm<UpdateUserForm>(_formContext.childrenPanel);
         }
 
         public void InitList(ListView UsersList)

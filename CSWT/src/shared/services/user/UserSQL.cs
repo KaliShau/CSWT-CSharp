@@ -19,9 +19,17 @@ namespace CSWT.src.shared.services.user
             SELECT u.*, r.role_name from users u JOIN roles r ON r.ID = u.role_id WHERE username = @username AND password = @password;
         ";
 
+        public string GetUserByID = @"
+            SELECT u.*, r.role_name from users u JOIN roles r ON r.ID = u.role_id WHERE u.ID = @ID;
+        ";
+
         public string CreateUser = @"
             INSERT INTO users (username, password, first_name, last_name, email, phone_number, role_id) VALUES
             (@username, @password, @first_name, @last_name, @email, @phone_number, @role_id);
+        ";
+
+        public string UpdateUser = @"
+            UPDATE users SET username = @username, password = @password, first_name = @first_name, last_name = @last_name, email = @email, phone_number = @phone_number, role_id = @role_id WHERE ID = @ID;
         ";
 
         public string GetUsers = @"

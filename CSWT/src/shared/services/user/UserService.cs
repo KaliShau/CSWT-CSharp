@@ -72,6 +72,32 @@ namespace CSWT.src.shared.services.user
             }
         }
 
+        public void UpdateUser(string username, string password, string first_name, string last_name, string email, string phone_number, int role_id, int ID)
+        {
+            NpgsqlParameter[] parameters = new NpgsqlParameter[]
+            {
+                new NpgsqlParameter("@username", username),
+                new NpgsqlParameter("@password", password),
+                new NpgsqlParameter("@first_name", first_name),
+                new NpgsqlParameter("@last_name", last_name),
+                new NpgsqlParameter("@email", email),
+                new NpgsqlParameter("@phone_number", phone_number),
+                new NpgsqlParameter("@role_id",  role_id),
+                new NpgsqlParameter("@ID",  ID)
+            };
+
+            var rowsAffected = _repository.Execute(_sql.UpdateUser, parameters);
+
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Пользователь обновлен!");
+            }
+            else
+            {
+                MessageBox.Show("Ошибка!");
+            }
+        }
+
         public void DeleteUser(int ID)
         {
             NpgsqlParameter[] parameters = new NpgsqlParameter[]
@@ -89,6 +115,25 @@ namespace CSWT.src.shared.services.user
             {
                 MessageBox.Show("Ошибка!");
             }
+        }
+
+        public UserDTO GetUserByID(int ID)
+        {
+
+            return _repository.Query<UserDTO>(_sql.GetUserByID, reader => new UserDTO
+            {
+                ID = Convert.ToInt32(reader["ID"]),
+                created_at = Convert.ToDateTime(reader["created_at"]),
+                updated_at = Convert.ToDateTime(reader["updated_at"]),
+                username = reader["username"].ToString(),
+                password = reader["password"].ToString(),
+                email = reader["email"].ToString(),
+                first_name = reader["first_name"].ToString(),
+                last_name = reader["last_name"].ToString(),
+                phone_number = reader["phone_number"].ToString(),
+                role_id = Convert.ToInt32(reader["role_id"]),
+                role_name = reader["role_name"].ToString()
+            }, new NpgsqlParameter("ID", ID)).SingleOrDefault();
         }
 
         public UserDTO[] GetUsers()

@@ -37,6 +37,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.adminGroupBox = new System.Windows.Forms.GroupBox();
+            this.openEntitiesButton = new System.Windows.Forms.Button();
             this.ticketGroupBox = new System.Windows.Forms.GroupBox();
             this.openAssignedTickets = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -47,18 +49,21 @@
             this.openCreateTicket = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.adminGroupBox = new System.Windows.Forms.GroupBox();
-            this.openEntitiesButton = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.drugPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.panel1.SuspendLayout();
-            this.ticketGroupBox.SuspendLayout();
             this.adminGroupBox.SuspendLayout();
+            this.ticketGroupBox.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // drugPanel
             // 
             this.drugPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.drugPanel.Controls.Add(this.menuStrip1);
             this.drugPanel.Controls.Add(this.label1);
             this.drugPanel.Controls.Add(this.exitButton);
             this.drugPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -137,6 +142,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 672);
             this.panel1.TabIndex = 6;
+            // 
+            // adminGroupBox
+            // 
+            this.adminGroupBox.Controls.Add(this.openEntitiesButton);
+            this.adminGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.adminGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminGroupBox.Location = new System.Drawing.Point(0, 180);
+            this.adminGroupBox.Margin = new System.Windows.Forms.Padding(10);
+            this.adminGroupBox.Name = "adminGroupBox";
+            this.adminGroupBox.Size = new System.Drawing.Size(200, 63);
+            this.adminGroupBox.TabIndex = 1;
+            this.adminGroupBox.TabStop = false;
+            this.adminGroupBox.Text = "Администратор";
+            // 
+            // openEntitiesButton
+            // 
+            this.openEntitiesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openEntitiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openEntitiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openEntitiesButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openEntitiesButton.FlatAppearance.BorderSize = 0;
+            this.openEntitiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openEntitiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openEntitiesButton.Location = new System.Drawing.Point(3, 23);
+            this.openEntitiesButton.Name = "openEntitiesButton";
+            this.openEntitiesButton.Size = new System.Drawing.Size(194, 30);
+            this.openEntitiesButton.TabIndex = 5;
+            this.openEntitiesButton.Text = "Сущности";
+            this.openEntitiesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openEntitiesButton.UseVisualStyleBackColor = false;
+            this.openEntitiesButton.Click += new System.EventHandler(this.openEntitiesButton_Click);
             // 
             // ticketGroupBox
             // 
@@ -270,36 +306,33 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 672);
             this.childrenPanel.TabIndex = 8;
             // 
-            // adminGroupBox
+            // menuStrip1
             // 
-            this.adminGroupBox.Controls.Add(this.openEntitiesButton);
-            this.adminGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.adminGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminGroupBox.Location = new System.Drawing.Point(0, 180);
-            this.adminGroupBox.Margin = new System.Windows.Forms.Padding(10);
-            this.adminGroupBox.Name = "adminGroupBox";
-            this.adminGroupBox.Size = new System.Drawing.Size(200, 63);
-            this.adminGroupBox.TabIndex = 1;
-            this.adminGroupBox.TabStop = false;
-            this.adminGroupBox.Text = "Администратор";
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.бДToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(111, 16);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(218, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // openEntitiesButton
+            // бДToolStripMenuItem
             // 
-            this.openEntitiesButton.BackColor = System.Drawing.Color.PowderBlue;
-            this.openEntitiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openEntitiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openEntitiesButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.openEntitiesButton.FlatAppearance.BorderSize = 0;
-            this.openEntitiesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openEntitiesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openEntitiesButton.Location = new System.Drawing.Point(3, 23);
-            this.openEntitiesButton.Name = "openEntitiesButton";
-            this.openEntitiesButton.Size = new System.Drawing.Size(194, 30);
-            this.openEntitiesButton.TabIndex = 5;
-            this.openEntitiesButton.Text = "Сущности";
-            this.openEntitiesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openEntitiesButton.UseVisualStyleBackColor = false;
-            this.openEntitiesButton.Click += new System.EventHandler(this.openEntitiesButton_Click);
+            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem});
+            this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
+            this.бДToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.бДToolStripMenuItem.Text = "Настройки";
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.profileToolStripMenuItem.Text = "Настройки профиля";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -323,8 +356,10 @@
             this.drugPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.ticketGroupBox.ResumeLayout(false);
             this.adminGroupBox.ResumeLayout(false);
+            this.ticketGroupBox.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -351,5 +386,8 @@
         private System.Windows.Forms.Button openAssignedTickets;
         private System.Windows.Forms.GroupBox adminGroupBox;
         private System.Windows.Forms.Button openEntitiesButton;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem бДToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
     }
 }

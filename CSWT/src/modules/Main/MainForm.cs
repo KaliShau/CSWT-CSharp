@@ -51,5 +51,12 @@ namespace CSWT.src.modules.Main
         {
             _controller.OpenEntities(childrenPanel);
         }
+
+        
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.OpenProfile(childrenPanel);
+        }
     }
 }

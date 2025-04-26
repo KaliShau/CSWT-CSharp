@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CSWT.src.core.form;
+using CSWT.src.modules.SettingsDB;
 using CSWT.src.modules.SignIn;
 using CSWT.src.modules.SignUp;
 using CSWT.src.shared.utils;
@@ -31,6 +32,11 @@ namespace CSWT.src.modules.Home
         public void OpenSignIn(Panel childrenPanel)
         {
             _formManager.OpenChidrenForm<SignInForm>(childrenPanel);
+        }
+
+        public void OpenSettingsDB(Panel childrenPanel)
+        {
+            _formManager.OpenChidrenForm<SettingsDBForm>(childrenPanel);
         }
     }
 }
