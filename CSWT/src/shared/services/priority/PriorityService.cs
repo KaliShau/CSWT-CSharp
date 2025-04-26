@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using CSWT.src.core.db;
 using Npgsql;
 
@@ -47,6 +48,45 @@ namespace CSWT.src.shared.services.priority
                 }, new NpgsqlParameter("@ID", ID)).SingleOrDefault();
 
             return priority;
+        }
+
+        public void CreatePriority(string priority_name, string description)
+        {
+            NpgsqlParameter[] parameters = new NpgsqlParameter[]
+            {
+                new NpgsqlParameter("@priority_name", priority_name),
+                new NpgsqlParameter("@description", description),
+            };
+
+            var rowsAffected = _repository.Execute(_sql.CreatePriority, parameters);
+
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Приоритет добавлен!");
+            }
+            else
+            {
+                MessageBox.Show("Ошибка!");
+            }
+        }
+
+        public void DeleteStatus(int ID)
+        {
+            NpgsqlParameter[] parameters = new NpgsqlParameter[]
+            {
+                new NpgsqlParameter("@ID", ID),
+            };
+
+            var rowsAffected = _repository.Execute(_sql.DeletePrioity, parameters);
+
+            if (rowsAffected > 0)
+            {
+                MessageBox.Show("Приоритет удален!");
+            }
+            else
+            {
+                MessageBox.Show("Ошибка!");
+            }
         }
     }
 }

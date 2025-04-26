@@ -18,5 +18,28 @@ namespace CSWT.src.shared.services.user
         public string SignIn = @"
             SELECT u.*, r.role_name from users u JOIN roles r ON r.ID = u.role_id WHERE username = @username AND password = @password;
         ";
+
+        public string CreateUser = @"
+            INSERT INTO users (username, password, first_name, last_name, email, phone_number, role_id) VALUES
+            (@username, @password, @first_name, @last_name, @email, @phone_number, @role_id);
+        ";
+
+        public string GetUsers = @"
+            SELECT u.*, r.role_name from users u JOIN roles r ON r.ID = u.role_id;
+        ";
+
+        public string DeleteUser = @"
+            BEGIN;
+
+            UPDATE Reports SET user_id = NULL WHERE user_id = @ID;
+            UPDATE Comments SET user_id = NULL WHERE user_id = @ID;
+            UPDATE Tickets SET client_id = NULL WHERE client_id = @ID;
+            UPDATE Tickets SET assigned_to = NULL WHERE assigned_to = @ID;
+            UPDATE User_Departments SET user_id = NULL WHERE user_id = @ID;
+
+            DELETE FROM Users WHERE ID = @ID;
+
+            COMMIT;
+        ";
     }
 }

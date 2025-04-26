@@ -128,6 +128,21 @@
     <Compile Include="src\modules\CreateTicket\CreateTicketForm.Designer.cs">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\modules\Departments\DepartmentsController.cs" />
+    <Compile Include="src\modules\Departments\DepartmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Departments\DepartmentsForm.Designer.cs">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Departments\DepartmentsModel.cs" />
+    <Compile Include="src\modules\Entities\EntitiesController.cs" />
+    <Compile Include="src\modules\Entities\EntitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Entities\EntitiesForm.Designer.cs">
+      <DependentUpon>EntitiesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\modules\Home\HomeController.cs" />
     <Compile Include="src\modules\Home\HomeForm.cs">
       <SubType>Form</SubType>
@@ -152,6 +167,22 @@
       <DependentUpon>MyTicketsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\MyTickets\MyTicketsModel.cs" />
+    <Compile Include="src\modules\Priorities\PrioritiesController.cs" />
+    <Compile Include="src\modules\Priorities\PrioritiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Priorities\PrioritiesForm.Designer.cs">
+      <DependentUpon>PrioritiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Priorities\PrioritiesModel.cs" />
+    <Compile Include="src\modules\Roles\RolesController.cs" />
+    <Compile Include="src\modules\Roles\RolesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Roles\RolesForm.Designer.cs">
+      <DependentUpon>RolesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Roles\RolesModel.cs" />
     <Compile Include="src\modules\SignIn\SignInController.cs" />
     <Compile Include="src\modules\SignIn\SignInForm.cs">
       <SubType>Form</SubType>
@@ -168,6 +199,22 @@
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\SignUp\SignUpModel.cs" />
+    <Compile Include="src\modules\Statuses\StatusesController.cs" />
+    <Compile Include="src\modules\Statuses\StatusesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Statuses\StatusesForm.Designer.cs">
+      <DependentUpon>StatusesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Statuses\StatusesModel.cs" />
+    <Compile Include="src\modules\Tickets\TicketsController.cs" />
+    <Compile Include="src\modules\Tickets\TicketsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Tickets\TicketsForm.Designer.cs">
+      <DependentUpon>TicketsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Tickets\TicketsModel.cs" />
     <Compile Include="src\modules\Ticket\TicketController.cs" />
     <Compile Include="src\modules\Ticket\TicketForm.cs">
       <SubType>Form</SubType>
@@ -184,9 +231,20 @@
       <DependentUpon>UpdateTicketForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\UpdateTicket\UpdateTicketModel.cs" />
+    <Compile Include="src\modules\Users\UsersController.cs" />
+    <Compile Include="src\modules\Users\UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Users\UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Users\UsersModel.cs" />
     <Compile Include="src\shared\services\comment\CommentDTO.cs" />
     <Compile Include="src\shared\services\comment\CommentService.cs" />
     <Compile Include="src\shared\services\comment\CommentSQL.cs" />
+    <Compile Include="src\shared\services\department\DepartmentsDTO.cs" />
+    <Compile Include="src\shared\services\department\DepartmentsService.cs" />
+    <Compile Include="src\shared\services\department\DepartmentsSQL.cs" />
     <Compile Include="src\shared\services\priority\PriorityDTO.cs" />
     <Compile Include="src\shared\services\priority\PriorityService.cs" />
     <Compile Include="src\shared\services\priority\PrioritySQL.cs" />
@@ -213,6 +271,12 @@
     <EmbeddedResource Include="src\modules\CreateTicket\CreateTicketForm.resx">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Departments\DepartmentsForm.resx">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Entities\EntitiesForm.resx">
+      <DependentUpon>EntitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Home\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,17 +295,32 @@
     <EmbeddedResource Include="src\modules\MyTickets\MyTicketsForm.resx">
       <DependentUpon>MyTicketsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Priorities\PrioritiesForm.resx">
+      <DependentUpon>PrioritiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Roles\RolesForm.resx">
+      <DependentUpon>RolesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignIn\SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignUp\SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Statuses\StatusesForm.resx">
+      <DependentUpon>StatusesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Tickets\TicketsForm.resx">
+      <DependentUpon>TicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Ticket\TicketForm.resx">
       <DependentUpon>TicketForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\UpdateTicket\UpdateTicketForm.resx">
       <DependentUpon>UpdateTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Users\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
