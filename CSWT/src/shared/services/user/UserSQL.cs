@@ -20,7 +20,7 @@ namespace CSWT.src.shared.services.user
         ";
 
         public string GetUserByID = @"
-            SELECT u.*, r.role_name from users u JOIN roles r ON r.ID = u.role_id WHERE ID = @ID;
+            SELECT u.*, r.role_name from users u JOIN roles r ON r.ID = u.role_id WHERE u.ID = @ID;
         ";
 
         public string CreateUser = @"
@@ -29,7 +29,7 @@ namespace CSWT.src.shared.services.user
         ";
 
         public string UpdateUser = @"
-            UPDATE users SET username = @username, password = @password, first_name = @first_name, last_name = @last_name, email = @email, phone_number = @phone_number, role_id = @role_id);
+            UPDATE users SET username = @username, password = @password, first_name = @first_name, last_name = @last_name, email = @email, phone_number = @phone_number, role_id = @role_id WHERE ID = @ID;
         ";
 
         public string GetUsers = @"

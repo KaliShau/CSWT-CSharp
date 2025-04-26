@@ -59,5 +59,10 @@ namespace CSWT.src.modules.Users
             _controller.DeleteUser(_selectedId);
             _controller.GetUsers(UsersList);
         }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.OpenUpdateUser(_selectedId);
+        }
     }
 }

@@ -34,31 +34,32 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.roleBox = new System.Windows.Forms.ComboBox();
+            this.priorityLine = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.emailLine = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.firstNameLine = new System.Windows.Forms.Panel();
+            this.passwordLine = new System.Windows.Forms.Panel();
+            this.usernameLine = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.phoneNumberBox = new System.Windows.Forms.TextBox();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.lastNameBox = new System.Windows.Forms.TextBox();
+            this.firstNameBox = new System.Windows.Forms.TextBox();
+            this.passwordBox = new System.Windows.Forms.TextBox();
+            this.usernameBox = new System.Windows.Forms.TextBox();
             this.createUserButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.emailLine = new System.Windows.Forms.Panel();
-            this.firstNameLine = new System.Windows.Forms.Panel();
-            this.passwordLine = new System.Windows.Forms.Panel();
-            this.usernameLine = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.emailBox = new System.Windows.Forms.TextBox();
-            this.firstNameBox = new System.Windows.Forms.TextBox();
-            this.passwordBox = new System.Windows.Forms.TextBox();
-            this.usernameBox = new System.Windows.Forms.TextBox();
-            this.phoneNumberBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lastNameBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.roleBox = new System.Windows.Forms.ComboBox();
-            this.priorityLine = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Users.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -145,45 +146,41 @@
             this.tabPage2.Text = "Создать";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // createUserButton
+            // roleBox
             // 
-            this.createUserButton.BackColor = System.Drawing.Color.PowderBlue;
-            this.createUserButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.createUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.createUserButton.FlatAppearance.BorderSize = 0;
-            this.createUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.createUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createUserButton.Location = new System.Drawing.Point(412, 502);
-            this.createUserButton.Name = "createUserButton";
-            this.createUserButton.Size = new System.Drawing.Size(297, 42);
-            this.createUserButton.TabIndex = 33;
-            this.createUserButton.Text = "Создать";
-            this.createUserButton.UseVisualStyleBackColor = false;
-            this.createUserButton.Click += new System.EventHandler(this.createUserButton_Click);
+            this.roleBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.roleBox.FormattingEnabled = true;
+            this.roleBox.Location = new System.Drawing.Point(12, 276);
+            this.roleBox.Name = "roleBox";
+            this.roleBox.Size = new System.Drawing.Size(541, 39);
+            this.roleBox.TabIndex = 48;
             // 
-            // label5
+            // priorityLine
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 7);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(414, 33);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Форма создания пользователя";
+            this.priorityLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.priorityLine.Location = new System.Drawing.Point(12, 316);
+            this.priorityLine.Name = "priorityLine";
+            this.priorityLine.Size = new System.Drawing.Size(541, 5);
+            this.priorityLine.TabIndex = 47;
             // 
-            // contextMenuStrip1
+            // label9
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(9, 257);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Роли";
             // 
-            // deleteToolStripMenuItem
+            // panel1
             // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deleteToolStripMenuItem.Text = "Удалить";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.Location = new System.Drawing.Point(569, 172);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(541, 5);
+            this.panel1.TabIndex = 42;
             // 
             // emailLine
             // 
@@ -192,6 +189,14 @@
             this.emailLine.Name = "emailLine";
             this.emailLine.Size = new System.Drawing.Size(541, 5);
             this.emailLine.TabIndex = 42;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.Location = new System.Drawing.Point(569, 235);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(541, 5);
+            this.panel2.TabIndex = 43;
             // 
             // firstNameLine
             // 
@@ -217,6 +222,16 @@
             this.usernameLine.Size = new System.Drawing.Size(541, 5);
             this.usernameLine.TabIndex = 45;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(566, 122);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 16);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Номер телефона";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -226,6 +241,16 @@
             this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 38;
             this.label2.Text = "Email";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(566, 185);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 16);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Фамилия";
             // 
             // label4
             // 
@@ -257,6 +282,15 @@
             this.label6.TabIndex = 41;
             this.label6.Text = "Логин";
             // 
+            // phoneNumberBox
+            // 
+            this.phoneNumberBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.phoneNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumberBox.Location = new System.Drawing.Point(569, 141);
+            this.phoneNumberBox.Name = "phoneNumberBox";
+            this.phoneNumberBox.Size = new System.Drawing.Size(541, 31);
+            this.phoneNumberBox.TabIndex = 34;
+            // 
             // emailBox
             // 
             this.emailBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -265,6 +299,15 @@
             this.emailBox.Name = "emailBox";
             this.emailBox.Size = new System.Drawing.Size(541, 31);
             this.emailBox.TabIndex = 34;
+            // 
+            // lastNameBox
+            // 
+            this.lastNameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lastNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameBox.Location = new System.Drawing.Point(569, 204);
+            this.lastNameBox.Name = "lastNameBox";
+            this.lastNameBox.Size = new System.Drawing.Size(541, 31);
+            this.lastNameBox.TabIndex = 35;
             // 
             // firstNameBox
             // 
@@ -293,87 +336,53 @@
             this.usernameBox.Size = new System.Drawing.Size(541, 31);
             this.usernameBox.TabIndex = 37;
             // 
-            // phoneNumberBox
+            // createUserButton
             // 
-            this.phoneNumberBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.phoneNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneNumberBox.Location = new System.Drawing.Point(569, 141);
-            this.phoneNumberBox.Name = "phoneNumberBox";
-            this.phoneNumberBox.Size = new System.Drawing.Size(541, 31);
-            this.phoneNumberBox.TabIndex = 34;
+            this.createUserButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.createUserButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.createUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.createUserButton.FlatAppearance.BorderSize = 0;
+            this.createUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createUserButton.Location = new System.Drawing.Point(412, 502);
+            this.createUserButton.Name = "createUserButton";
+            this.createUserButton.Size = new System.Drawing.Size(297, 42);
+            this.createUserButton.TabIndex = 33;
+            this.createUserButton.Text = "Создать";
+            this.createUserButton.UseVisualStyleBackColor = false;
+            this.createUserButton.Click += new System.EventHandler(this.createUserButton_Click);
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(566, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 16);
-            this.label7.TabIndex = 38;
-            this.label7.Text = "Номер телефона";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(414, 33);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Форма создания пользователя";
             // 
-            // panel1
+            // contextMenuStrip1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel1.Location = new System.Drawing.Point(569, 172);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 5);
-            this.panel1.TabIndex = 42;
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem,
+            this.updateToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
-            // lastNameBox
+            // deleteToolStripMenuItem
             // 
-            this.lastNameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lastNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastNameBox.Location = new System.Drawing.Point(569, 204);
-            this.lastNameBox.Name = "lastNameBox";
-            this.lastNameBox.Size = new System.Drawing.Size(541, 31);
-            this.lastNameBox.TabIndex = 35;
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteToolStripMenuItem.Text = "Удалить";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
-            // label8
+            // updateToolStripMenuItem
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(566, 185);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 16);
-            this.label8.TabIndex = 39;
-            this.label8.Text = "Фамилия";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel2.Location = new System.Drawing.Point(569, 235);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(541, 5);
-            this.panel2.TabIndex = 43;
-            // 
-            // roleBox
-            // 
-            this.roleBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.roleBox.FormattingEnabled = true;
-            this.roleBox.Location = new System.Drawing.Point(12, 276);
-            this.roleBox.Name = "roleBox";
-            this.roleBox.Size = new System.Drawing.Size(541, 39);
-            this.roleBox.TabIndex = 48;
-            // 
-            // priorityLine
-            // 
-            this.priorityLine.BackColor = System.Drawing.Color.PowderBlue;
-            this.priorityLine.Location = new System.Drawing.Point(12, 316);
-            this.priorityLine.Name = "priorityLine";
-            this.priorityLine.Size = new System.Drawing.Size(541, 5);
-            this.priorityLine.TabIndex = 47;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(9, 257);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Роли";
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateToolStripMenuItem.Text = "Редактировать";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // UsersForm
             // 
@@ -426,5 +435,6 @@
         private System.Windows.Forms.ComboBox roleBox;
         private System.Windows.Forms.Panel priorityLine;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
     }
 }

@@ -72,7 +72,7 @@ namespace CSWT.src.shared.services.user
             }
         }
 
-        public void UpdateUser(string username, string password, string first_name, string last_name, string email, string phone_number, int role_id)
+        public void UpdateUser(string username, string password, string first_name, string last_name, string email, string phone_number, int role_id, int ID)
         {
             NpgsqlParameter[] parameters = new NpgsqlParameter[]
             {
@@ -82,7 +82,8 @@ namespace CSWT.src.shared.services.user
                 new NpgsqlParameter("@last_name", last_name),
                 new NpgsqlParameter("@email", email),
                 new NpgsqlParameter("@phone_number", phone_number),
-                new NpgsqlParameter("@role_id",  role_id)
+                new NpgsqlParameter("@role_id",  role_id),
+                new NpgsqlParameter("@ID",  ID)
             };
 
             var rowsAffected = _repository.Execute(_sql.UpdateUser, parameters);
