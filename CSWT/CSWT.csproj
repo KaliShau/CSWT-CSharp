@@ -99,6 +99,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\core\db\ConnectionUtils.cs" />
     <Compile Include="src\core\db\DatabaseRepository.cs" />
     <Compile Include="src\core\db\UserContext.cs" />
     <Compile Include="src\core\form\FormContext.cs" />
@@ -183,6 +184,13 @@
       <DependentUpon>RolesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\Roles\RolesModel.cs" />
+    <Compile Include="src\modules\SettingsDB\SettingsDBController.cs" />
+    <Compile Include="src\modules\SettingsDB\SettingsDBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\SettingsDB\SettingsDBForm.Designer.cs">
+      <DependentUpon>SettingsDBForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\modules\SignIn\SignInController.cs" />
     <Compile Include="src\modules\SignIn\SignInForm.cs">
       <SubType>Form</SubType>
@@ -231,6 +239,14 @@
       <DependentUpon>UpdateTicketForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\UpdateTicket\UpdateTicketModel.cs" />
+    <Compile Include="src\modules\UpdateUser\UpdateUserController.cs" />
+    <Compile Include="src\modules\UpdateUser\UpdateUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\UpdateUser\UpdateUserForm.Designer.cs">
+      <DependentUpon>UpdateUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\UpdateUser\UpdateUserModel.cs" />
     <Compile Include="src\modules\Users\UsersController.cs" />
     <Compile Include="src\modules\Users\UsersForm.cs">
       <SubType>Form</SubType>
@@ -301,6 +317,9 @@
     <EmbeddedResource Include="src\modules\Roles\RolesForm.resx">
       <DependentUpon>RolesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\SettingsDB\SettingsDBForm.resx">
+      <DependentUpon>SettingsDBForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\SignIn\SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -318,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\UpdateTicket\UpdateTicketForm.resx">
       <DependentUpon>UpdateTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\UpdateUser\UpdateUserForm.resx">
+      <DependentUpon>UpdateUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Users\UsersForm.resx">
       <DependentUpon>UsersForm.cs</DependentUpon>

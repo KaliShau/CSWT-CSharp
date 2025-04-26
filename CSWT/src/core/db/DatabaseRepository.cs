@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 using Npgsql;
 
 namespace CSWT.src.core.db
 {
+    public class DatabaseException : Exception
+    {
+        public DatabaseException(string message) : base(message) { }
+        public DatabaseException(string message, Exception inner) : base(message, inner) { }
+    }
+
     public class DatabaseRepository
     {
-        private readonly string _connectionString = "Server=localhost; User Id=postgres ;Password=root;database=cswt;";
+        private ConnectionSettings _settings;
 
         public DatabaseRepository()
         {
+            _settings = ConnectionUtils.LoadSettings();
+        }
+
+        public void UpdateConnection()
+        {
+            _settings = ConnectionUtils.LoadSettings();
         }
 
         public List<T> Query<T>(
@@ -21,32 +30,56 @@ namespace CSWT.src.core.db
             Func<NpgsqlDataReader, T> mapper,
             params NpgsqlParameter[] parameters)
         {
-            using (var connection = new NpgsqlConnection(_connectionString))
-            using (var command = new NpgsqlCommand(sql, connection))
+            try
             {
-                command.Parameters.AddRange(parameters);
-                connection.Open();
-
-                var results = new List<T>();
-                using (var reader = command.ExecuteReader())
+                using (var connection = new NpgsqlConnection(_settings.ToConnectionString()))
+                using (var command = new NpgsqlCommand(sql, connection))
                 {
-                    while (reader.Read())
-                        results.Add(mapper(reader));
-                }
+                    command.Parameters.AddRange(parameters);
+                    connection.Open();
 
-                return results;
+                    var results = new List<T>();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                            results.Add(mapper(reader));
+                    }
+
+                    return results;
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowError("Ошибка при выполнении запроса к базе данных", ex);
+                return new List<T>();
             }
         }
 
         public int Execute(string sql, params NpgsqlParameter[] parameters)
         {
-            using (var connection = new NpgsqlConnection(_connectionString))
-            using (var command = new NpgsqlCommand(sql, connection))
+            try
             {
-                command.Parameters.AddRange(parameters);
-                connection.Open();
-                return command.ExecuteNonQuery();
+                using (var connection = new NpgsqlConnection(_settings.ToConnectionString()))
+                using (var command = new NpgsqlCommand(sql, connection))
+                {
+                    command.Parameters.AddRange(parameters);
+                    connection.Open();
+                    return command.ExecuteNonQuery();
+                }
             }
+            catch (Exception ex)
+            {
+                ShowError("Ошибка при выполнении команды в базе данных", ex);
+                return 0; 
+            }
+        }
+
+        private void ShowError(string message, Exception ex)
+        {
+            string fullMessage = $"{message}:\n\n{ex.Message}";
+            MessageBox.Show(fullMessage, "Ошибка базы данных",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
     }
 }

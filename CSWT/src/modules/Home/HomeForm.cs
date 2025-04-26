@@ -37,5 +37,10 @@ namespace CSWT
         {
             _controller.OpenSignIn(childrenPanel);
         }
+
+        private void settingDBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.OpenSettingsDB(childrenPanel);
+        }
     }
 }

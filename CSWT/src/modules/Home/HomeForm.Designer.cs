@@ -34,6 +34,9 @@
             this.openSignInButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -44,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.drugPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.childrenPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +59,7 @@
             this.drugPanel.Controls.Add(this.openSignInButton);
             this.drugPanel.Controls.Add(this.label1);
             this.drugPanel.Controls.Add(this.exitButton);
+            this.drugPanel.Controls.Add(this.menuStrip1);
             this.drugPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.drugPanel.Location = new System.Drawing.Point(0, 0);
             this.drugPanel.Name = "drugPanel";
@@ -117,6 +122,34 @@
             this.exitButton.TabIndex = 1;
             this.exitButton.TabStop = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.бДToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(448, 15);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(98, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // бДToolStripMenuItem
+            // 
+            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingDBToolStripMenuItem});
+            this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
+            this.бДToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.бДToolStripMenuItem.Text = "Настройки";
+            // 
+            // settingDBToolStripMenuItem
+            // 
+            this.settingDBToolStripMenuItem.Name = "settingDBToolStripMenuItem";
+            this.settingDBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingDBToolStripMenuItem.Text = "Настройки БД";
+            this.settingDBToolStripMenuItem.Click += new System.EventHandler(this.settingDBToolStripMenuItem_Click);
             // 
             // panel2
             // 
@@ -209,12 +242,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.drugPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.drugPanel.ResumeLayout(false);
             this.drugPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.childrenPanel.ResumeLayout(false);
             this.childrenPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -237,6 +273,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem бДToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem settingDBToolStripMenuItem;
     }
 }
 
