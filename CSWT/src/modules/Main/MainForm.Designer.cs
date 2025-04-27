@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.drugPanel = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -49,15 +52,19 @@
             this.openCreateTicket = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportGroupBox = new System.Windows.Forms.GroupBox();
+            this.openAllReports = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.openMyReports = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.openCreateReports = new System.Windows.Forms.Button();
             this.drugPanel.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.panel1.SuspendLayout();
             this.adminGroupBox.SuspendLayout();
             this.ticketGroupBox.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.reportGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // drugPanel
@@ -71,6 +78,34 @@
             this.drugPanel.Name = "drugPanel";
             this.drugPanel.Size = new System.Drawing.Size(1424, 53);
             this.drugPanel.TabIndex = 1;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.бДToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(111, 16);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(98, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // бДToolStripMenuItem
+            // 
+            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem});
+            this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
+            this.бДToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.бДToolStripMenuItem.Text = "Настройки";
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.profileToolStripMenuItem.Text = "Настройки профиля";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -136,6 +171,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.adminGroupBox);
+            this.panel1.Controls.Add(this.reportGroupBox);
             this.panel1.Controls.Add(this.ticketGroupBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(23, 76);
@@ -148,7 +184,7 @@
             this.adminGroupBox.Controls.Add(this.openEntitiesButton);
             this.adminGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.adminGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminGroupBox.Location = new System.Drawing.Point(0, 180);
+            this.adminGroupBox.Location = new System.Drawing.Point(0, 319);
             this.adminGroupBox.Margin = new System.Windows.Forms.Padding(10);
             this.adminGroupBox.Name = "adminGroupBox";
             this.adminGroupBox.Size = new System.Drawing.Size(200, 63);
@@ -306,33 +342,90 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 672);
             this.childrenPanel.TabIndex = 8;
             // 
-            // menuStrip1
+            // reportGroupBox
             // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.бДToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(111, 16);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(218, 24);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
+            this.reportGroupBox.Controls.Add(this.openAllReports);
+            this.reportGroupBox.Controls.Add(this.panel11);
+            this.reportGroupBox.Controls.Add(this.openMyReports);
+            this.reportGroupBox.Controls.Add(this.panel12);
+            this.reportGroupBox.Controls.Add(this.openCreateReports);
+            this.reportGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.reportGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportGroupBox.Location = new System.Drawing.Point(0, 180);
+            this.reportGroupBox.Margin = new System.Windows.Forms.Padding(10);
+            this.reportGroupBox.Name = "reportGroupBox";
+            this.reportGroupBox.Size = new System.Drawing.Size(200, 139);
+            this.reportGroupBox.TabIndex = 2;
+            this.reportGroupBox.TabStop = false;
+            this.reportGroupBox.Text = "Отчеты";
             // 
-            // бДToolStripMenuItem
+            // openAllReports
             // 
-            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
-            this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.profileToolStripMenuItem});
-            this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
-            this.бДToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-            this.бДToolStripMenuItem.Text = "Настройки";
+            this.openAllReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openAllReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openAllReports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openAllReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openAllReports.FlatAppearance.BorderSize = 0;
+            this.openAllReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openAllReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAllReports.Location = new System.Drawing.Point(3, 103);
+            this.openAllReports.Name = "openAllReports";
+            this.openAllReports.Size = new System.Drawing.Size(194, 30);
+            this.openAllReports.TabIndex = 8;
+            this.openAllReports.Text = "Все отчеты";
+            this.openAllReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openAllReports.UseVisualStyleBackColor = false;
             // 
-            // profileToolStripMenuItem
+            // panel11
             // 
-            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.profileToolStripMenuItem.Text = "Настройки профиля";
-            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(3, 93);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(194, 10);
+            this.panel11.TabIndex = 7;
+            // 
+            // openMyReports
+            // 
+            this.openMyReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openMyReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openMyReports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openMyReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openMyReports.FlatAppearance.BorderSize = 0;
+            this.openMyReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openMyReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openMyReports.Location = new System.Drawing.Point(3, 63);
+            this.openMyReports.Name = "openMyReports";
+            this.openMyReports.Size = new System.Drawing.Size(194, 30);
+            this.openMyReports.TabIndex = 6;
+            this.openMyReports.Text = "Мои отчеты";
+            this.openMyReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openMyReports.UseVisualStyleBackColor = false;
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(3, 53);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(194, 10);
+            this.panel12.TabIndex = 5;
+            // 
+            // openCreateReports
+            // 
+            this.openCreateReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openCreateReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openCreateReports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openCreateReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openCreateReports.FlatAppearance.BorderSize = 0;
+            this.openCreateReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openCreateReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openCreateReports.Location = new System.Drawing.Point(3, 23);
+            this.openCreateReports.Name = "openCreateReports";
+            this.openCreateReports.Size = new System.Drawing.Size(194, 30);
+            this.openCreateReports.TabIndex = 4;
+            this.openCreateReports.Text = "Создать отчет";
+            this.openCreateReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openCreateReports.UseVisualStyleBackColor = false;
+            this.openCreateReports.Click += new System.EventHandler(this.openCreateReports_Click);
             // 
             // MainForm
             // 
@@ -354,12 +447,13 @@
             this.Text = "MainForm";
             this.drugPanel.ResumeLayout(false);
             this.drugPanel.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             this.panel1.ResumeLayout(false);
             this.adminGroupBox.ResumeLayout(false);
             this.ticketGroupBox.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.reportGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -389,5 +483,11 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem бДToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
+        private System.Windows.Forms.GroupBox reportGroupBox;
+        private System.Windows.Forms.Button openAllReports;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button openMyReports;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Button openCreateReports;
     }
 }

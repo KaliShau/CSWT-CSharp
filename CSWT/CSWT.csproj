@@ -51,6 +51,9 @@
     <Reference Include="Npgsql, Version=8.0.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>packages\Npgsql.8.0.7\lib\netstandard2.0\Npgsql.dll</HintPath>
     </Reference>
+    <Reference Include="Speckle.Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Speckle.Newtonsoft.Json.13.0.2\lib\net45\Speckle.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -121,6 +124,14 @@
       <DependentUpon>AssignedTicketsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\AssignedTickets\AssignedTicketsModel.cs" />
+    <Compile Include="src\modules\CreateReport\CreateReportController.cs" />
+    <Compile Include="src\modules\CreateReport\CreateReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\CreateReport\CreateReportForm.Designer.cs">
+      <DependentUpon>CreateReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\CreateReport\CreateReportModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketController.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketForm.cs">
@@ -264,6 +275,9 @@
     <Compile Include="src\shared\services\priority\PriorityDTO.cs" />
     <Compile Include="src\shared\services\priority\PriorityService.cs" />
     <Compile Include="src\shared\services\priority\PrioritySQL.cs" />
+    <Compile Include="src\shared\services\report\ReportDTO.cs" />
+    <Compile Include="src\shared\services\report\ReportService.cs" />
+    <Compile Include="src\shared\services\report\ReportSQL.cs" />
     <Compile Include="src\shared\services\role\RoleDTO.cs" />
     <Compile Include="src\shared\services\status\StatusDTO.cs" />
     <Compile Include="src\shared\services\status\StatusService.cs" />
@@ -283,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\AssignedTickets\AssignedTicketsForm.resx">
       <DependentUpon>AssignedTicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\CreateReport\CreateReportForm.resx">
+      <DependentUpon>CreateReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\CreateTicket\CreateTicketForm.resx">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
