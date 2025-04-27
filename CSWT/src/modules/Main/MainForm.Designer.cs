@@ -42,6 +42,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.adminGroupBox = new System.Windows.Forms.GroupBox();
             this.openEntitiesButton = new System.Windows.Forms.Button();
+            this.reportGroupBox = new System.Windows.Forms.GroupBox();
+            this.openAllReports = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.openMyReports = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.openCreateReports = new System.Windows.Forms.Button();
             this.ticketGroupBox = new System.Windows.Forms.GroupBox();
             this.openAssignedTickets = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -52,19 +58,13 @@
             this.openCreateTicket = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.reportGroupBox = new System.Windows.Forms.GroupBox();
-            this.openAllReports = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.openMyReports = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.openCreateReports = new System.Windows.Forms.Button();
             this.drugPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.panel1.SuspendLayout();
             this.adminGroupBox.SuspendLayout();
-            this.ticketGroupBox.SuspendLayout();
             this.reportGroupBox.SuspendLayout();
+            this.ticketGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // drugPanel
@@ -210,6 +210,93 @@
             this.openEntitiesButton.UseVisualStyleBackColor = false;
             this.openEntitiesButton.Click += new System.EventHandler(this.openEntitiesButton_Click);
             // 
+            // reportGroupBox
+            // 
+            this.reportGroupBox.Controls.Add(this.openAllReports);
+            this.reportGroupBox.Controls.Add(this.panel11);
+            this.reportGroupBox.Controls.Add(this.openMyReports);
+            this.reportGroupBox.Controls.Add(this.panel12);
+            this.reportGroupBox.Controls.Add(this.openCreateReports);
+            this.reportGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.reportGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportGroupBox.Location = new System.Drawing.Point(0, 180);
+            this.reportGroupBox.Margin = new System.Windows.Forms.Padding(10);
+            this.reportGroupBox.Name = "reportGroupBox";
+            this.reportGroupBox.Size = new System.Drawing.Size(200, 139);
+            this.reportGroupBox.TabIndex = 2;
+            this.reportGroupBox.TabStop = false;
+            this.reportGroupBox.Text = "Отчеты";
+            // 
+            // openAllReports
+            // 
+            this.openAllReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openAllReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openAllReports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openAllReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openAllReports.FlatAppearance.BorderSize = 0;
+            this.openAllReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openAllReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAllReports.Location = new System.Drawing.Point(3, 103);
+            this.openAllReports.Name = "openAllReports";
+            this.openAllReports.Size = new System.Drawing.Size(194, 30);
+            this.openAllReports.TabIndex = 8;
+            this.openAllReports.Text = "Все отчеты";
+            this.openAllReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openAllReports.UseVisualStyleBackColor = false;
+            this.openAllReports.Click += new System.EventHandler(this.openAllReports_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(3, 93);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(194, 10);
+            this.panel11.TabIndex = 7;
+            // 
+            // openMyReports
+            // 
+            this.openMyReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openMyReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openMyReports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openMyReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openMyReports.FlatAppearance.BorderSize = 0;
+            this.openMyReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openMyReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openMyReports.Location = new System.Drawing.Point(3, 63);
+            this.openMyReports.Name = "openMyReports";
+            this.openMyReports.Size = new System.Drawing.Size(194, 30);
+            this.openMyReports.TabIndex = 6;
+            this.openMyReports.Text = "Мои отчеты";
+            this.openMyReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openMyReports.UseVisualStyleBackColor = false;
+            this.openMyReports.Click += new System.EventHandler(this.openMyReports_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(3, 53);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(194, 10);
+            this.panel12.TabIndex = 5;
+            // 
+            // openCreateReports
+            // 
+            this.openCreateReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openCreateReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.openCreateReports.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openCreateReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.openCreateReports.FlatAppearance.BorderSize = 0;
+            this.openCreateReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openCreateReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openCreateReports.Location = new System.Drawing.Point(3, 23);
+            this.openCreateReports.Name = "openCreateReports";
+            this.openCreateReports.Size = new System.Drawing.Size(194, 30);
+            this.openCreateReports.TabIndex = 4;
+            this.openCreateReports.Text = "Создать отчет";
+            this.openCreateReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openCreateReports.UseVisualStyleBackColor = false;
+            this.openCreateReports.Click += new System.EventHandler(this.openCreateReports_Click);
+            // 
             // ticketGroupBox
             // 
             this.ticketGroupBox.Controls.Add(this.openAssignedTickets);
@@ -342,91 +429,6 @@
             this.childrenPanel.Size = new System.Drawing.Size(1155, 672);
             this.childrenPanel.TabIndex = 8;
             // 
-            // reportGroupBox
-            // 
-            this.reportGroupBox.Controls.Add(this.openAllReports);
-            this.reportGroupBox.Controls.Add(this.panel11);
-            this.reportGroupBox.Controls.Add(this.openMyReports);
-            this.reportGroupBox.Controls.Add(this.panel12);
-            this.reportGroupBox.Controls.Add(this.openCreateReports);
-            this.reportGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.reportGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportGroupBox.Location = new System.Drawing.Point(0, 180);
-            this.reportGroupBox.Margin = new System.Windows.Forms.Padding(10);
-            this.reportGroupBox.Name = "reportGroupBox";
-            this.reportGroupBox.Size = new System.Drawing.Size(200, 139);
-            this.reportGroupBox.TabIndex = 2;
-            this.reportGroupBox.TabStop = false;
-            this.reportGroupBox.Text = "Отчеты";
-            // 
-            // openAllReports
-            // 
-            this.openAllReports.BackColor = System.Drawing.Color.PowderBlue;
-            this.openAllReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openAllReports.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openAllReports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.openAllReports.FlatAppearance.BorderSize = 0;
-            this.openAllReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openAllReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openAllReports.Location = new System.Drawing.Point(3, 103);
-            this.openAllReports.Name = "openAllReports";
-            this.openAllReports.Size = new System.Drawing.Size(194, 30);
-            this.openAllReports.TabIndex = 8;
-            this.openAllReports.Text = "Все отчеты";
-            this.openAllReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openAllReports.UseVisualStyleBackColor = false;
-            // 
-            // panel11
-            // 
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(3, 93);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(194, 10);
-            this.panel11.TabIndex = 7;
-            // 
-            // openMyReports
-            // 
-            this.openMyReports.BackColor = System.Drawing.Color.PowderBlue;
-            this.openMyReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openMyReports.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openMyReports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.openMyReports.FlatAppearance.BorderSize = 0;
-            this.openMyReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openMyReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openMyReports.Location = new System.Drawing.Point(3, 63);
-            this.openMyReports.Name = "openMyReports";
-            this.openMyReports.Size = new System.Drawing.Size(194, 30);
-            this.openMyReports.TabIndex = 6;
-            this.openMyReports.Text = "Мои отчеты";
-            this.openMyReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openMyReports.UseVisualStyleBackColor = false;
-            // 
-            // panel12
-            // 
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(3, 53);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(194, 10);
-            this.panel12.TabIndex = 5;
-            // 
-            // openCreateReports
-            // 
-            this.openCreateReports.BackColor = System.Drawing.Color.PowderBlue;
-            this.openCreateReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openCreateReports.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.openCreateReports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.openCreateReports.FlatAppearance.BorderSize = 0;
-            this.openCreateReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openCreateReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openCreateReports.Location = new System.Drawing.Point(3, 23);
-            this.openCreateReports.Name = "openCreateReports";
-            this.openCreateReports.Size = new System.Drawing.Size(194, 30);
-            this.openCreateReports.TabIndex = 4;
-            this.openCreateReports.Text = "Создать отчет";
-            this.openCreateReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openCreateReports.UseVisualStyleBackColor = false;
-            this.openCreateReports.Click += new System.EventHandler(this.openCreateReports_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,8 +454,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             this.panel1.ResumeLayout(false);
             this.adminGroupBox.ResumeLayout(false);
-            this.ticketGroupBox.ResumeLayout(false);
             this.reportGroupBox.ResumeLayout(false);
+            this.ticketGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

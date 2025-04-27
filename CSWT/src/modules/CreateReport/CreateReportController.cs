@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using CSWT.src.core.db;
 
 namespace CSWT.src.modules.CreateReport
@@ -24,11 +19,9 @@ namespace CSWT.src.modules.CreateReport
 
             reportBox.Items.AddRange(new object[]
             {
-        "Отчет по пользователям",
-        "Отчет по заявкам",
-        "Отчет по отделам",
-        "Отчет по статусам заявок",
-        "Отчет по приоритетам"
+                "Отчет по пользователям",
+                "Отчет по заявкам за последний месяц",
+                "Отчет по всем заявкам"
             });
 
             reportBox.SelectedIndex = 0;
@@ -45,19 +38,26 @@ namespace CSWT.src.modules.CreateReport
 
             string selectedReport = reportBox.SelectedItem.ToString();
 
-            // Обрабатываем выбор
             switch (selectedReport)
             {
                 case "Отчет по пользователям":
                     MessageBox.Show("Генерация отчета по пользователям...", "Информация",
                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                break;
-            } 
+                    _model.GenerateUsersReport(_userContext.CurrentUser.ID);
+                    break;
+
+                case "Отчет по заявкам за последний месяц":
+                    MessageBox.Show("Генерация отчета по заявкаи...", "Информация",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   _model.GenerateMonthlyRequestsReport(_userContext.CurrentUser.ID);
+                    break;
+                case "Отчет по всем заявкам":
+                    MessageBox.Show("Генерация отчета по заявкаи...", "Информация",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    _model.GenerateAllRequestsReport(_userContext.CurrentUser.ID);
+                    break;
+            }
         }
 
-        public void GenerateUsersReport()
-        {
-            _model.GenerateUsersReport(_userContext.CurrentUser.ID);
-        }
     }
 }
