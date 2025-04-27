@@ -15,5 +15,8 @@ namespace CSWT.src.core
         // Users
         public int user_id{ get; set; }
         public bool is_admin { get; set; } = false;
+
+        // Reports
+        public int report_id { get; set; }
     }
 }

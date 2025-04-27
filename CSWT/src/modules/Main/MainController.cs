@@ -16,6 +16,9 @@ using CSWT.src.modules.Entities;
 using CSWT.src.modules.UpdateUser;
 using CSWT.src.core;
 using CSWT.src.core.db;
+using CSWT.src.modules.CreateReport;
+using CSWT.src.modules.MyReports;
+using CSWT.src.modules.AllReports;
 
 namespace CSWT.src.modules.Main
 {
@@ -64,6 +67,20 @@ namespace CSWT.src.modules.Main
         public void OpenEntities(Panel childrenPanel)
         {
             _formManager.OpenChidrenForm<EntitiesForm>(childrenPanel);
+        }
+
+        public void OpenCreateReports(Panel childrenPanel)
+        {
+            _formManager.OpenChidrenForm<CreateReportForm>(childrenPanel);
+        }
+
+        public void OpenMyReports(Panel childrenPanel)
+        {
+            _formManager.OpenChidrenForm<MyReportsForm>(childrenPanel);
+        }
+        public void OpenAllReports(Panel childrenPanel)
+        {
+            _formManager.OpenChidrenForm<AllReportsForm>(childrenPanel);
         }
 
         public void OpenProfile(Panel childrenPanel)

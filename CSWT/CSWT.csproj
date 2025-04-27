@@ -51,6 +51,9 @@
     <Reference Include="Npgsql, Version=8.0.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>packages\Npgsql.8.0.7\lib\netstandard2.0\Npgsql.dll</HintPath>
     </Reference>
+    <Reference Include="Speckle.Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Speckle.Newtonsoft.Json.13.0.2\lib\net45\Speckle.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -105,6 +108,14 @@
     <Compile Include="src\core\form\FormContext.cs" />
     <Compile Include="src\core\form\FormManager.cs" />
     <Compile Include="src\core\SessionContext.cs" />
+    <Compile Include="src\modules\AllReports\AllReportsController.cs" />
+    <Compile Include="src\modules\AllReports\AllReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\AllReports\AllReportsForm.Designer.cs">
+      <DependentUpon>AllReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\AllReports\AllReportsModel.cs" />
     <Compile Include="src\modules\AllTickets\AllTicketsController.cs" />
     <Compile Include="src\modules\AllTickets\AllTicketsForm.cs">
       <SubType>Form</SubType>
@@ -121,6 +132,14 @@
       <DependentUpon>AssignedTicketsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\AssignedTickets\AssignedTicketsModel.cs" />
+    <Compile Include="src\modules\CreateReport\CreateReportController.cs" />
+    <Compile Include="src\modules\CreateReport\CreateReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\CreateReport\CreateReportForm.Designer.cs">
+      <DependentUpon>CreateReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\CreateReport\CreateReportModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketController.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketModel.cs" />
     <Compile Include="src\modules\CreateTicket\CreateTicketForm.cs">
@@ -160,6 +179,14 @@
     <Compile Include="src\modules\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\modules\MyReports\MyReportsController.cs" />
+    <Compile Include="src\modules\MyReports\MyReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\MyReports\MyReportsForm.Designer.cs">
+      <DependentUpon>MyReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\MyReports\MyReportsModel.cs" />
     <Compile Include="src\modules\MyTickets\MyTicketsController.cs" />
     <Compile Include="src\modules\MyTickets\MyTicketsForm.cs">
       <SubType>Form</SubType>
@@ -176,6 +203,14 @@
       <DependentUpon>PrioritiesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="src\modules\Priorities\PrioritiesModel.cs" />
+    <Compile Include="src\modules\Report\ReportController.cs" />
+    <Compile Include="src\modules\Report\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\modules\Report\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\modules\Report\ReportModel.cs" />
     <Compile Include="src\modules\Roles\RolesController.cs" />
     <Compile Include="src\modules\Roles\RolesForm.cs">
       <SubType>Form</SubType>
@@ -264,6 +299,9 @@
     <Compile Include="src\shared\services\priority\PriorityDTO.cs" />
     <Compile Include="src\shared\services\priority\PriorityService.cs" />
     <Compile Include="src\shared\services\priority\PrioritySQL.cs" />
+    <Compile Include="src\shared\services\report\ReportDTO.cs" />
+    <Compile Include="src\shared\services\report\ReportService.cs" />
+    <Compile Include="src\shared\services\report\ReportSQL.cs" />
     <Compile Include="src\shared\services\role\RoleDTO.cs" />
     <Compile Include="src\shared\services\status\StatusDTO.cs" />
     <Compile Include="src\shared\services\status\StatusService.cs" />
@@ -278,11 +316,17 @@
     <Compile Include="src\shared\services\user\UserSQL.cs" />
     <Compile Include="src\shared\utils\AddDragControl.cs" />
     <Compile Include="src\shared\utils\ValidField.cs" />
+    <EmbeddedResource Include="src\modules\AllReports\AllReportsForm.resx">
+      <DependentUpon>AllReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\AllTickets\AllTicketsForm.resx">
       <DependentUpon>AllTicketsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\AssignedTickets\AssignedTicketsForm.resx">
       <DependentUpon>AssignedTicketsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\CreateReport\CreateReportForm.resx">
+      <DependentUpon>CreateReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\CreateTicket\CreateTicketForm.resx">
       <DependentUpon>CreateTicketForm.cs</DependentUpon>
@@ -308,11 +352,17 @@
     <EmbeddedResource Include="src\modules\Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\MyReports\MyReportsForm.resx">
+      <DependentUpon>MyReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\modules\MyTickets\MyTicketsForm.resx">
       <DependentUpon>MyTicketsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Priorities\PrioritiesForm.resx">
       <DependentUpon>PrioritiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\modules\Report\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\modules\Roles\RolesForm.resx">
       <DependentUpon>RolesForm.cs</DependentUpon>

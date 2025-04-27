@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
 
@@ -71,6 +72,43 @@ namespace CSWT.src.core.db
             {
                 ShowError("Ошибка при выполнении команды в базе данных", ex);
                 return 0; 
+            }
+        }
+
+        public async Task<int> ExecuteAsync(string sql, params NpgsqlParameter[] parameters)
+        {
+            using (var connection = new NpgsqlConnection(_settings.ToConnectionString()))
+            {
+                await connection.OpenAsync();
+
+                using (var command = new NpgsqlCommand(sql, connection))
+                {
+                    command.Parameters.AddRange(parameters);
+                    return await command.ExecuteNonQueryAsync();
+                }
+            }
+        }
+
+        public async Task<IEnumerable<T>> QueryAsync<T>(string sql, Func<NpgsqlDataReader, T> mapper, params NpgsqlParameter[] parameters)
+        {
+            using (var connection = new NpgsqlConnection(_settings.ToConnectionString()))
+            {
+                await connection.OpenAsync();
+
+                using (var command = new NpgsqlCommand(sql, connection))
+                {
+                    command.Parameters.AddRange(parameters);
+
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        var results = new List<T>();
+                        while (await reader.ReadAsync())
+                        {
+                            results.Add(mapper(reader));
+                        }
+                        return results;
+                    }
+                }
             }
         }
 

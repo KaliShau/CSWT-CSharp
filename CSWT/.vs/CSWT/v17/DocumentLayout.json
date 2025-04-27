@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\report\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\report\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\shared\\services\\report\\reportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\shared\\services\\report\\reportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\shared\\services\\report\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\shared\\services\\report\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\report\\ReportService.cs",
+              "RelativeDocumentMoniker": "src\\shared\\services\\report\\ReportService.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\report\\ReportService.cs",
+              "RelativeToolTip": "src\\shared\\services\\report\\ReportService.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAYwMUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:19:09.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportDTO.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\report\\ReportDTO.cs",
+              "RelativeDocumentMoniker": "src\\shared\\services\\report\\ReportDTO.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\services\\report\\ReportDTO.cs",
+              "RelativeToolTip": "src\\shared\\services\\report\\ReportDTO.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwDQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:13:51.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Report\\ReportController.cs",
+              "RelativeDocumentMoniker": "src\\modules\\Report\\ReportController.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Report\\ReportController.cs",
+              "RelativeToolTip": "src\\modules\\Report\\ReportController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwCcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:02:41.222Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

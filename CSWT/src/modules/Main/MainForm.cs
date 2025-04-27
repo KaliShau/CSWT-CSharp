@@ -58,5 +58,20 @@ namespace CSWT.src.modules.Main
         {
             _controller.OpenProfile(childrenPanel);
         }
+
+        private void openCreateReports_Click(object sender, EventArgs e)
+        {
+            _controller.OpenCreateReports(childrenPanel);
+        }
+
+        private void openMyReports_Click(object sender, EventArgs e)
+        {
+            _controller.OpenMyReports(childrenPanel);
+        }
+
+        private void openAllReports_Click(object sender, EventArgs e)
+        {
+            _controller.OpenAllReports(childrenPanel);
+        }
     }
 }

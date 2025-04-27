@@ -71,3 +71,10 @@ C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Users.UsersFo
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Tickets.TicketsForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.SettingsDB.SettingsDBForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.UpdateUser.UpdateUserForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.CreateReport.CreateReportForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Speckle.Newtonsoft.Json.dll
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Speckle.Newtonsoft.Json.pdb
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Speckle.Newtonsoft.Json.xml
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.MyReports.MyReportsForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Report.ReportForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.AllReports.AllReportsForm.resources
