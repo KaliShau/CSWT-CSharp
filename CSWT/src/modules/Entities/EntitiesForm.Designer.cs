@@ -56,7 +56,7 @@
             // 
             // openUsersButton
             // 
-            this.openUsersButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openUsersButton.BackColor = System.Drawing.Color.Wheat;
             this.openUsersButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openUsersButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openUsersButton.FlatAppearance.BorderSize = 0;
@@ -73,7 +73,7 @@
             // 
             // openDepartmentButton
             // 
-            this.openDepartmentButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openDepartmentButton.BackColor = System.Drawing.Color.Wheat;
             this.openDepartmentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openDepartmentButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openDepartmentButton.FlatAppearance.BorderSize = 0;
@@ -90,7 +90,7 @@
             // 
             // openPrioritiesButton
             // 
-            this.openPrioritiesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openPrioritiesButton.BackColor = System.Drawing.Color.Wheat;
             this.openPrioritiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openPrioritiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openPrioritiesButton.FlatAppearance.BorderSize = 0;
@@ -107,7 +107,7 @@
             // 
             // openStatusesButton
             // 
-            this.openStatusesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openStatusesButton.BackColor = System.Drawing.Color.Wheat;
             this.openStatusesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openStatusesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openStatusesButton.FlatAppearance.BorderSize = 0;
@@ -124,7 +124,7 @@
             // 
             // openRolesButton
             // 
-            this.openRolesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openRolesButton.BackColor = System.Drawing.Color.Wheat;
             this.openRolesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openRolesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openRolesButton.FlatAppearance.BorderSize = 0;
@@ -141,7 +141,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.BackColor = System.Drawing.Color.Wheat;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Name = "panel1";
@@ -158,7 +158,7 @@
             // 
             // openTicketsButton
             // 
-            this.openTicketsButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openTicketsButton.BackColor = System.Drawing.Color.Wheat;
             this.openTicketsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openTicketsButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openTicketsButton.FlatAppearance.BorderSize = 0;

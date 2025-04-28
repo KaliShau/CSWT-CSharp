@@ -40,7 +40,7 @@
             // 
             // passwordLine
             // 
-            this.passwordLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.passwordLine.BackColor = System.Drawing.Color.Wheat;
             this.passwordLine.Location = new System.Drawing.Point(448, 218);
             this.passwordLine.Name = "passwordLine";
             this.passwordLine.Size = new System.Drawing.Size(541, 5);
@@ -48,7 +48,7 @@
             // 
             // usernameLine
             // 
-            this.usernameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.usernameLine.BackColor = System.Drawing.Color.Wheat;
             this.usernameLine.Location = new System.Drawing.Point(448, 155);
             this.usernameLine.Name = "usernameLine";
             this.usernameLine.Size = new System.Drawing.Size(541, 5);
@@ -94,7 +94,7 @@
             // 
             // signInButton
             // 
-            this.signInButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.signInButton.BackColor = System.Drawing.Color.Wheat;
             this.signInButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.signInButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signInButton.FlatAppearance.BorderSize = 0;

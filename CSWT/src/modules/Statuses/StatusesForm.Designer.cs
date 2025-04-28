@@ -117,7 +117,7 @@
             // 
             // descriptionLine
             // 
-            this.descriptionLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.descriptionLine.BackColor = System.Drawing.Color.Wheat;
             this.descriptionLine.Location = new System.Drawing.Point(301, 296);
             this.descriptionLine.Name = "descriptionLine";
             this.descriptionLine.Size = new System.Drawing.Size(541, 5);
@@ -125,7 +125,7 @@
             // 
             // nameLine
             // 
-            this.nameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.nameLine.BackColor = System.Drawing.Color.Wheat;
             this.nameLine.Location = new System.Drawing.Point(301, 132);
             this.nameLine.Name = "nameLine";
             this.nameLine.Size = new System.Drawing.Size(541, 5);
@@ -172,7 +172,7 @@
             // 
             // createRoleButton
             // 
-            this.createRoleButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.createRoleButton.BackColor = System.Drawing.Color.Wheat;
             this.createRoleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.createRoleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createRoleButton.FlatAppearance.BorderSize = 0;

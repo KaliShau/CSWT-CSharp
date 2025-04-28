@@ -47,7 +47,7 @@
             // 
             // priorityLine
             // 
-            this.priorityLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.priorityLine.BackColor = System.Drawing.Color.Wheat;
             this.priorityLine.Location = new System.Drawing.Point(18, 122);
             this.priorityLine.Name = "priorityLine";
             this.priorityLine.Size = new System.Drawing.Size(1113, 5);
@@ -65,7 +65,7 @@
             // 
             // createReportButton
             // 
-            this.createReportButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.createReportButton.BackColor = System.Drawing.Color.Wheat;
             this.createReportButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.createReportButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createReportButton.FlatAppearance.BorderSize = 0;

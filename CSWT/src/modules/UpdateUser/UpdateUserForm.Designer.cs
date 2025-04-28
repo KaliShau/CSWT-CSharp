@@ -114,7 +114,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel4.BackColor = System.Drawing.Color.Wheat;
             this.panel4.Location = new System.Drawing.Point(18, 69);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(541, 5);
@@ -122,7 +122,7 @@
             // 
             // addDepartmentButton
             // 
-            this.addDepartmentButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.addDepartmentButton.BackColor = System.Drawing.Color.Wheat;
             this.addDepartmentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.addDepartmentButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addDepartmentButton.FlatAppearance.BorderSize = 0;
@@ -178,7 +178,7 @@
             // 
             // roleLine
             // 
-            this.roleLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.roleLine.BackColor = System.Drawing.Color.Wheat;
             this.roleLine.Location = new System.Drawing.Point(18, 308);
             this.roleLine.Name = "roleLine";
             this.roleLine.Size = new System.Drawing.Size(541, 5);
@@ -196,7 +196,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.Wheat;
             this.panel2.Location = new System.Drawing.Point(575, 164);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(541, 5);
@@ -204,7 +204,7 @@
             // 
             // emailLine
             // 
-            this.emailLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.emailLine.BackColor = System.Drawing.Color.Wheat;
             this.emailLine.Location = new System.Drawing.Point(575, 101);
             this.emailLine.Name = "emailLine";
             this.emailLine.Size = new System.Drawing.Size(541, 5);
@@ -212,7 +212,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel3.BackColor = System.Drawing.Color.Wheat;
             this.panel3.Location = new System.Drawing.Point(575, 227);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(541, 5);
@@ -220,7 +220,7 @@
             // 
             // firstNameLine
             // 
-            this.firstNameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.firstNameLine.BackColor = System.Drawing.Color.Wheat;
             this.firstNameLine.Location = new System.Drawing.Point(18, 227);
             this.firstNameLine.Name = "firstNameLine";
             this.firstNameLine.Size = new System.Drawing.Size(541, 5);
@@ -228,7 +228,7 @@
             // 
             // passwordLine
             // 
-            this.passwordLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.passwordLine.BackColor = System.Drawing.Color.Wheat;
             this.passwordLine.Location = new System.Drawing.Point(18, 164);
             this.passwordLine.Name = "passwordLine";
             this.passwordLine.Size = new System.Drawing.Size(541, 5);
@@ -236,7 +236,7 @@
             // 
             // usernameLine
             // 
-            this.usernameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.usernameLine.BackColor = System.Drawing.Color.Wheat;
             this.usernameLine.Location = new System.Drawing.Point(18, 101);
             this.usernameLine.Name = "usernameLine";
             this.usernameLine.Size = new System.Drawing.Size(541, 5);
@@ -358,7 +358,7 @@
             // 
             // updateButton
             // 
-            this.updateButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.updateButton.BackColor = System.Drawing.Color.Wheat;
             this.updateButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.updateButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateButton.FlatAppearance.BorderSize = 0;

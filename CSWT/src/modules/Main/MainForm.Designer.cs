@@ -30,14 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.drugPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.adminGroupBox = new System.Windows.Forms.GroupBox();
@@ -58,6 +57,7 @@
             this.openCreateTicket = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.drugPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -70,14 +70,24 @@
             // drugPanel
             // 
             this.drugPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.drugPanel.Controls.Add(this.menuStrip1);
             this.drugPanel.Controls.Add(this.label1);
+            this.drugPanel.Controls.Add(this.menuStrip1);
             this.drugPanel.Controls.Add(this.exitButton);
             this.drugPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.drugPanel.Location = new System.Drawing.Point(0, 0);
             this.drugPanel.Name = "drugPanel";
             this.drugPanel.Size = new System.Drawing.Size(1424, 53);
             this.drugPanel.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 38);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "CSWT";
             // 
             // menuStrip1
             // 
@@ -93,7 +103,7 @@
             // 
             // бДToolStripMenuItem
             // 
-            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.Wheat;
             this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.profileToolStripMenuItem});
             this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
@@ -106,16 +116,6 @@
             this.profileToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.profileToolStripMenuItem.Text = "Настройки профиля";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 33);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "CSWT";
             // 
             // exitButton
             // 
@@ -134,7 +134,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.Wheat;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 53);
             this.panel2.Name = "panel2";
@@ -143,25 +143,16 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel3.BackColor = System.Drawing.Color.Wheat;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 748);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1424, 23);
             this.panel3.TabIndex = 3;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 76);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(23, 672);
-            this.panel4.TabIndex = 4;
-            // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel5.BackColor = System.Drawing.Color.Wheat;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(1401, 76);
             this.panel5.Name = "panel5";
@@ -184,7 +175,7 @@
             this.adminGroupBox.Controls.Add(this.openEntitiesButton);
             this.adminGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.adminGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminGroupBox.Location = new System.Drawing.Point(0, 319);
+            this.adminGroupBox.Location = new System.Drawing.Point(0, 315);
             this.adminGroupBox.Margin = new System.Windows.Forms.Padding(10);
             this.adminGroupBox.Name = "adminGroupBox";
             this.adminGroupBox.Size = new System.Drawing.Size(200, 63);
@@ -194,7 +185,7 @@
             // 
             // openEntitiesButton
             // 
-            this.openEntitiesButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openEntitiesButton.BackColor = System.Drawing.Color.Wheat;
             this.openEntitiesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openEntitiesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openEntitiesButton.Dock = System.Windows.Forms.DockStyle.Top;
@@ -219,7 +210,7 @@
             this.reportGroupBox.Controls.Add(this.openCreateReports);
             this.reportGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.reportGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportGroupBox.Location = new System.Drawing.Point(0, 180);
+            this.reportGroupBox.Location = new System.Drawing.Point(0, 176);
             this.reportGroupBox.Margin = new System.Windows.Forms.Padding(10);
             this.reportGroupBox.Name = "reportGroupBox";
             this.reportGroupBox.Size = new System.Drawing.Size(200, 139);
@@ -229,7 +220,7 @@
             // 
             // openAllReports
             // 
-            this.openAllReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openAllReports.BackColor = System.Drawing.Color.Wheat;
             this.openAllReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openAllReports.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openAllReports.Dock = System.Windows.Forms.DockStyle.Top;
@@ -255,7 +246,7 @@
             // 
             // openMyReports
             // 
-            this.openMyReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openMyReports.BackColor = System.Drawing.Color.Wheat;
             this.openMyReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openMyReports.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openMyReports.Dock = System.Windows.Forms.DockStyle.Top;
@@ -281,7 +272,7 @@
             // 
             // openCreateReports
             // 
-            this.openCreateReports.BackColor = System.Drawing.Color.PowderBlue;
+            this.openCreateReports.BackColor = System.Drawing.Color.Wheat;
             this.openCreateReports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openCreateReports.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openCreateReports.Dock = System.Windows.Forms.DockStyle.Top;
@@ -299,6 +290,7 @@
             // 
             // ticketGroupBox
             // 
+            this.ticketGroupBox.AutoSize = true;
             this.ticketGroupBox.Controls.Add(this.openAssignedTickets);
             this.ticketGroupBox.Controls.Add(this.panel9);
             this.ticketGroupBox.Controls.Add(this.openAllTickets);
@@ -307,18 +299,19 @@
             this.ticketGroupBox.Controls.Add(this.panel7);
             this.ticketGroupBox.Controls.Add(this.openCreateTicket);
             this.ticketGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ticketGroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ticketGroupBox.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ticketGroupBox.Location = new System.Drawing.Point(0, 0);
             this.ticketGroupBox.Margin = new System.Windows.Forms.Padding(10);
             this.ticketGroupBox.Name = "ticketGroupBox";
-            this.ticketGroupBox.Size = new System.Drawing.Size(200, 180);
+            this.ticketGroupBox.Size = new System.Drawing.Size(200, 176);
             this.ticketGroupBox.TabIndex = 0;
             this.ticketGroupBox.TabStop = false;
             this.ticketGroupBox.Text = "Заявки";
             // 
             // openAssignedTickets
             // 
-            this.openAssignedTickets.BackColor = System.Drawing.Color.PowderBlue;
+            this.openAssignedTickets.BackColor = System.Drawing.Color.Wheat;
             this.openAssignedTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openAssignedTickets.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openAssignedTickets.Dock = System.Windows.Forms.DockStyle.Top;
@@ -344,7 +337,7 @@
             // 
             // openAllTickets
             // 
-            this.openAllTickets.BackColor = System.Drawing.Color.PowderBlue;
+            this.openAllTickets.BackColor = System.Drawing.Color.Wheat;
             this.openAllTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openAllTickets.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openAllTickets.Dock = System.Windows.Forms.DockStyle.Top;
@@ -370,7 +363,7 @@
             // 
             // openMyTickets
             // 
-            this.openMyTickets.BackColor = System.Drawing.Color.PowderBlue;
+            this.openMyTickets.BackColor = System.Drawing.Color.Wheat;
             this.openMyTickets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openMyTickets.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openMyTickets.Dock = System.Windows.Forms.DockStyle.Top;
@@ -396,7 +389,7 @@
             // 
             // openCreateTicket
             // 
-            this.openCreateTicket.BackColor = System.Drawing.Color.PowderBlue;
+            this.openCreateTicket.BackColor = System.Drawing.Color.Wheat;
             this.openCreateTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openCreateTicket.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openCreateTicket.Dock = System.Windows.Forms.DockStyle.Top;
@@ -414,7 +407,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel6.BackColor = System.Drawing.Color.Wheat;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(223, 76);
             this.panel6.Name = "panel6";
@@ -428,6 +421,15 @@
             this.childrenPanel.Name = "childrenPanel";
             this.childrenPanel.Size = new System.Drawing.Size(1155, 672);
             this.childrenPanel.TabIndex = 8;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Wheat;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 76);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(23, 672);
+            this.panel4.TabIndex = 4;
             // 
             // MainForm
             // 
@@ -453,6 +455,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.adminGroupBox.ResumeLayout(false);
             this.reportGroupBox.ResumeLayout(false);
             this.ticketGroupBox.ResumeLayout(false);
@@ -463,11 +466,9 @@
         #endregion
 
         private System.Windows.Forms.Panel drugPanel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox exitButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
@@ -491,5 +492,7 @@
         private System.Windows.Forms.Button openMyReports;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button openCreateReports;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
     }
 }

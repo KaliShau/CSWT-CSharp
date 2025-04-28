@@ -158,7 +158,7 @@
             // 
             // priorityLine
             // 
-            this.priorityLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.priorityLine.BackColor = System.Drawing.Color.Wheat;
             this.priorityLine.Location = new System.Drawing.Point(12, 316);
             this.priorityLine.Name = "priorityLine";
             this.priorityLine.Size = new System.Drawing.Size(541, 5);
@@ -176,7 +176,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.BackColor = System.Drawing.Color.Wheat;
             this.panel1.Location = new System.Drawing.Point(569, 172);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(541, 5);
@@ -184,7 +184,7 @@
             // 
             // emailLine
             // 
-            this.emailLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.emailLine.BackColor = System.Drawing.Color.Wheat;
             this.emailLine.Location = new System.Drawing.Point(569, 109);
             this.emailLine.Name = "emailLine";
             this.emailLine.Size = new System.Drawing.Size(541, 5);
@@ -192,7 +192,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.Wheat;
             this.panel2.Location = new System.Drawing.Point(569, 235);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(541, 5);
@@ -200,7 +200,7 @@
             // 
             // firstNameLine
             // 
-            this.firstNameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.firstNameLine.BackColor = System.Drawing.Color.Wheat;
             this.firstNameLine.Location = new System.Drawing.Point(12, 235);
             this.firstNameLine.Name = "firstNameLine";
             this.firstNameLine.Size = new System.Drawing.Size(541, 5);
@@ -208,7 +208,7 @@
             // 
             // passwordLine
             // 
-            this.passwordLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.passwordLine.BackColor = System.Drawing.Color.Wheat;
             this.passwordLine.Location = new System.Drawing.Point(12, 172);
             this.passwordLine.Name = "passwordLine";
             this.passwordLine.Size = new System.Drawing.Size(541, 5);
@@ -216,7 +216,7 @@
             // 
             // usernameLine
             // 
-            this.usernameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.usernameLine.BackColor = System.Drawing.Color.Wheat;
             this.usernameLine.Location = new System.Drawing.Point(12, 109);
             this.usernameLine.Name = "usernameLine";
             this.usernameLine.Size = new System.Drawing.Size(541, 5);
@@ -338,7 +338,7 @@
             // 
             // createUserButton
             // 
-            this.createUserButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.createUserButton.BackColor = System.Drawing.Color.Wheat;
             this.createUserButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.createUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createUserButton.FlatAppearance.BorderSize = 0;

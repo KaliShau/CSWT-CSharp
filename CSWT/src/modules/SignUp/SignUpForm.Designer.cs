@@ -46,7 +46,7 @@
             // 
             // signUpButton
             // 
-            this.signUpButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.signUpButton.BackColor = System.Drawing.Color.Wheat;
             this.signUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.signUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUpButton.FlatAppearance.BorderSize = 0;
@@ -91,7 +91,7 @@
             // 
             // usernameLine
             // 
-            this.usernameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.usernameLine.BackColor = System.Drawing.Color.Wheat;
             this.usernameLine.Location = new System.Drawing.Point(448, 155);
             this.usernameLine.Name = "usernameLine";
             this.usernameLine.Size = new System.Drawing.Size(541, 5);
@@ -118,7 +118,7 @@
             // 
             // passwordLine
             // 
-            this.passwordLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.passwordLine.BackColor = System.Drawing.Color.Wheat;
             this.passwordLine.Location = new System.Drawing.Point(448, 218);
             this.passwordLine.Name = "passwordLine";
             this.passwordLine.Size = new System.Drawing.Size(541, 5);
@@ -145,7 +145,7 @@
             // 
             // firstNameLine
             // 
-            this.firstNameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.firstNameLine.BackColor = System.Drawing.Color.Wheat;
             this.firstNameLine.Location = new System.Drawing.Point(448, 281);
             this.firstNameLine.Name = "firstNameLine";
             this.firstNameLine.Size = new System.Drawing.Size(541, 5);
@@ -172,7 +172,7 @@
             // 
             // emailLine
             // 
-            this.emailLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.emailLine.BackColor = System.Drawing.Color.Wheat;
             this.emailLine.Location = new System.Drawing.Point(448, 344);
             this.emailLine.Name = "emailLine";
             this.emailLine.Size = new System.Drawing.Size(541, 5);

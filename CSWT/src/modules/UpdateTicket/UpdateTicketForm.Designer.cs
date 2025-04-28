@@ -74,7 +74,7 @@
             // 
             // descriptionLine
             // 
-            this.descriptionLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.descriptionLine.BackColor = System.Drawing.Color.Wheat;
             this.descriptionLine.Location = new System.Drawing.Point(18, 209);
             this.descriptionLine.Name = "descriptionLine";
             this.descriptionLine.Size = new System.Drawing.Size(1108, 5);
@@ -82,7 +82,7 @@
             // 
             // titleLine
             // 
-            this.titleLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.titleLine.BackColor = System.Drawing.Color.Wheat;
             this.titleLine.Location = new System.Drawing.Point(18, 91);
             this.titleLine.Name = "titleLine";
             this.titleLine.Size = new System.Drawing.Size(1108, 5);
@@ -139,7 +139,7 @@
             // 
             // updateButton
             // 
-            this.updateButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.updateButton.BackColor = System.Drawing.Color.Wheat;
             this.updateButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.updateButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateButton.FlatAppearance.BorderSize = 0;
@@ -165,7 +165,7 @@
             // 
             // solutionLine
             // 
-            this.solutionLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.solutionLine.BackColor = System.Drawing.Color.Wheat;
             this.solutionLine.Location = new System.Drawing.Point(21, 349);
             this.solutionLine.Name = "solutionLine";
             this.solutionLine.Size = new System.Drawing.Size(1105, 5);
@@ -203,7 +203,7 @@
             // 
             // priorityLine
             // 
-            this.priorityLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.priorityLine.BackColor = System.Drawing.Color.Wheat;
             this.priorityLine.Location = new System.Drawing.Point(21, 428);
             this.priorityLine.Name = "priorityLine";
             this.priorityLine.Size = new System.Drawing.Size(501, 5);
@@ -211,7 +211,7 @@
             // 
             // statusLine
             // 
-            this.statusLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.statusLine.BackColor = System.Drawing.Color.Wheat;
             this.statusLine.Location = new System.Drawing.Point(626, 428);
             this.statusLine.Name = "statusLine";
             this.statusLine.Size = new System.Drawing.Size(501, 5);
@@ -259,7 +259,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.BackColor = System.Drawing.Color.Wheat;
             this.panel1.Location = new System.Drawing.Point(21, 500);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(292, 5);

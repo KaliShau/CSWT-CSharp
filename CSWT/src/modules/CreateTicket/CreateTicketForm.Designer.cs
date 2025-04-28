@@ -43,7 +43,7 @@
             // 
             // descriptionLine
             // 
-            this.descriptionLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.descriptionLine.BackColor = System.Drawing.Color.Wheat;
             this.descriptionLine.Location = new System.Drawing.Point(305, 290);
             this.descriptionLine.Name = "descriptionLine";
             this.descriptionLine.Size = new System.Drawing.Size(541, 5);
@@ -51,7 +51,7 @@
             // 
             // titleLine
             // 
-            this.titleLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.titleLine.BackColor = System.Drawing.Color.Wheat;
             this.titleLine.Location = new System.Drawing.Point(305, 126);
             this.titleLine.Name = "titleLine";
             this.titleLine.Size = new System.Drawing.Size(541, 5);
@@ -98,7 +98,7 @@
             // 
             // createTicketButton
             // 
-            this.createTicketButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.createTicketButton.BackColor = System.Drawing.Color.Wheat;
             this.createTicketButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.createTicketButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createTicketButton.FlatAppearance.BorderSize = 0;
@@ -134,7 +134,7 @@
             // 
             // priorityLine
             // 
-            this.priorityLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.priorityLine.BackColor = System.Drawing.Color.Wheat;
             this.priorityLine.Location = new System.Drawing.Point(305, 361);
             this.priorityLine.Name = "priorityLine";
             this.priorityLine.Size = new System.Drawing.Size(541, 5);

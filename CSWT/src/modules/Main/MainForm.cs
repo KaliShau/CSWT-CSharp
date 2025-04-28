@@ -20,6 +20,7 @@ namespace CSWT.src.modules.Main
 
             _controller.InitChildrenPanel(childrenPanel);
             _controller.DrugForm(drugPanel, this);
+            _controller.InitRoles(ticketGroupBox, reportGroupBox, adminGroupBox, openAllTickets, openAssignedTickets);
         }
 
         private void exitButton_Click(object sender, EventArgs e)
