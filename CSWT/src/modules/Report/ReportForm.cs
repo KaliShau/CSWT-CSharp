@@ -20,5 +20,15 @@ namespace CSWT.src.modules.Report
 
             _controller.Init(ReportList, titleBox, typeBox, createdAtLabel);
         }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.SaveToDocx(ReportList, titleBox.Text);
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.PrintReport(ReportList, titleBox.Text);
+        }
     }
 }

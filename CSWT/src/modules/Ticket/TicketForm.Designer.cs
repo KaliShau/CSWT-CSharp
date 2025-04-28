@@ -72,7 +72,7 @@
             // 
             // titleLine
             // 
-            this.titleLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.titleLine.BackColor = System.Drawing.Color.Wheat;
             this.titleLine.Location = new System.Drawing.Point(18, 95);
             this.titleLine.Name = "titleLine";
             this.titleLine.Size = new System.Drawing.Size(1108, 5);
@@ -99,7 +99,7 @@
             // 
             // updateButton
             // 
-            this.updateButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.updateButton.BackColor = System.Drawing.Color.Wheat;
             this.updateButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.updateButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateButton.FlatAppearance.BorderSize = 0;
@@ -125,7 +125,7 @@
             // 
             // descriptionLine
             // 
-            this.descriptionLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.descriptionLine.BackColor = System.Drawing.Color.Wheat;
             this.descriptionLine.Location = new System.Drawing.Point(18, 213);
             this.descriptionLine.Name = "descriptionLine";
             this.descriptionLine.Size = new System.Drawing.Size(1108, 5);
@@ -173,7 +173,7 @@
             // 
             // solutionLine
             // 
-            this.solutionLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.solutionLine.BackColor = System.Drawing.Color.Wheat;
             this.solutionLine.Location = new System.Drawing.Point(656, 351);
             this.solutionLine.Name = "solutionLine";
             this.solutionLine.Size = new System.Drawing.Size(470, 5);
@@ -212,7 +212,7 @@
             // 
             // commentLine
             // 
-            this.commentLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.commentLine.BackColor = System.Drawing.Color.Wheat;
             this.commentLine.Location = new System.Drawing.Point(12, 57);
             this.commentLine.Name = "commentLine";
             this.commentLine.Size = new System.Drawing.Size(641, 5);
@@ -220,7 +220,7 @@
             // 
             // createCommentButton
             // 
-            this.createCommentButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.createCommentButton.BackColor = System.Drawing.Color.Wheat;
             this.createCommentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.createCommentButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createCommentButton.FlatAppearance.BorderSize = 0;
@@ -281,7 +281,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.Wheat;
             this.panel2.Location = new System.Drawing.Point(109, 263);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(379, 5);
@@ -298,7 +298,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel3.BackColor = System.Drawing.Color.Wheat;
             this.panel3.Location = new System.Drawing.Point(109, 305);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(379, 5);

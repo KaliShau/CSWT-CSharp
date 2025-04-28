@@ -42,7 +42,7 @@
             // 
             // searchLine
             // 
-            this.searchLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.searchLine.BackColor = System.Drawing.Color.Wheat;
             this.searchLine.Location = new System.Drawing.Point(18, 91);
             this.searchLine.Name = "searchLine";
             this.searchLine.Size = new System.Drawing.Size(772, 5);
@@ -69,7 +69,7 @@
             // 
             // searchButton
             // 
-            this.searchButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.searchButton.BackColor = System.Drawing.Color.Wheat;
             this.searchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.searchButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.searchButton.FlatAppearance.BorderSize = 0;

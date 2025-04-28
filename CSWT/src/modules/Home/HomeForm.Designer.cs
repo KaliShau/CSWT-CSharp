@@ -42,14 +42,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.drugPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.childrenPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // drugPanel
@@ -68,7 +66,7 @@
             // 
             // openSignUpButton
             // 
-            this.openSignUpButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openSignUpButton.BackColor = System.Drawing.Color.Wheat;
             this.openSignUpButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openSignUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openSignUpButton.FlatAppearance.BorderSize = 0;
@@ -84,7 +82,7 @@
             // 
             // openSignInButton
             // 
-            this.openSignInButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.openSignInButton.BackColor = System.Drawing.Color.Wheat;
             this.openSignInButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.openSignInButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openSignInButton.FlatAppearance.BorderSize = 0;
@@ -101,10 +99,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 33);
+            this.label1.Size = new System.Drawing.Size(100, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "CSWT";
             // 
@@ -137,7 +135,7 @@
             // 
             // бДToolStripMenuItem
             // 
-            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            this.бДToolStripMenuItem.BackColor = System.Drawing.Color.Wheat;
             this.бДToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingDBToolStripMenuItem});
             this.бДToolStripMenuItem.Name = "бДToolStripMenuItem";
@@ -153,7 +151,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.Wheat;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 53);
             this.panel2.Name = "panel2";
@@ -162,7 +160,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel3.BackColor = System.Drawing.Color.Wheat;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 748);
             this.panel3.Name = "panel3";
@@ -171,7 +169,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel4.BackColor = System.Drawing.Color.Wheat;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 76);
             this.panel4.Name = "panel4";
@@ -180,7 +178,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel5.BackColor = System.Drawing.Color.Wheat;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(1401, 76);
             this.panel5.Name = "panel5";
@@ -190,7 +188,6 @@
             // childrenPanel
             // 
             this.childrenPanel.BackColor = System.Drawing.SystemColors.Window;
-            this.childrenPanel.Controls.Add(this.pictureBox1);
             this.childrenPanel.Controls.Add(this.label3);
             this.childrenPanel.Controls.Add(this.label2);
             this.childrenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -198,16 +195,6 @@
             this.childrenPanel.Name = "childrenPanel";
             this.childrenPanel.Size = new System.Drawing.Size(1378, 672);
             this.childrenPanel.TabIndex = 5;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(810, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(568, 630);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -253,7 +240,6 @@
             this.menuStrip1.PerformLayout();
             this.childrenPanel.ResumeLayout(false);
             this.childrenPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -272,7 +258,6 @@
         private System.Windows.Forms.Panel childrenPanel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem бДToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingDBToolStripMenuItem;

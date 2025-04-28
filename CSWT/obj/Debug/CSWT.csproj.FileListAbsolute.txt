@@ -78,3 +78,7 @@ C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\Speckle.Newtonsoft.Json.xml
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.MyReports.MyReportsForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.Report.ReportForm.resources
 C:\Users\admin\Desktop\CSWT-CSharp\CSWT\obj\Debug\CSWT.src.modules.AllReports.AllReportsForm.resources
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\admin\Desktop\CSWT-CSharp\CSWT\bin\Debug\DocumentFormat.OpenXml.Framework.xml

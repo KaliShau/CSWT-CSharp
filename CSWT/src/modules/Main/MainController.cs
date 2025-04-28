@@ -35,6 +35,38 @@ namespace CSWT.src.modules.Main
             _sessionContext = sessionContext;
             _userContext = userContext;
         }
+
+        public void InitRoles(GroupBox ticketBox, GroupBox reportBox, GroupBox adminBox, Button newTicketButton, Button assignedTicketButton)
+        {
+            var role = _userContext.CurrentUser.role_name;
+
+            switch (role)
+            {
+                case "Client":
+                    ticketBox.Visible = true;
+                    reportBox.Visible = false;
+                    adminBox.Visible = false;
+                    newTicketButton.Visible = false;
+                    assignedTicketButton.Visible = false;
+                    break;
+
+                case "ASU_staff":
+                    ticketBox.Visible = true;
+                    reportBox.Visible = true;
+                    adminBox.Visible = false;
+                    newTicketButton.Visible = true;
+                    assignedTicketButton.Visible = true;
+                    break;
+
+                case "Admin":
+                    ticketBox.Visible = true;
+                    reportBox.Visible = true;
+                    adminBox.Visible = true;
+                    newTicketButton.Visible = true;
+                    assignedTicketButton.Visible = true;
+                    break;
+            }
+        }
         public void InitChildrenPanel(Panel childrenPanel)
         {
             _formContext.childrenPanel = childrenPanel;

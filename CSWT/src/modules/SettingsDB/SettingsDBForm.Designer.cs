@@ -50,7 +50,7 @@
             // 
             // emailLine
             // 
-            this.emailLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.emailLine.BackColor = System.Drawing.Color.Wheat;
             this.emailLine.Location = new System.Drawing.Point(739, 195);
             this.emailLine.Name = "emailLine";
             this.emailLine.Size = new System.Drawing.Size(541, 5);
@@ -58,7 +58,7 @@
             // 
             // firstNameLine
             // 
-            this.firstNameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.firstNameLine.BackColor = System.Drawing.Color.Wheat;
             this.firstNameLine.Location = new System.Drawing.Point(739, 132);
             this.firstNameLine.Name = "firstNameLine";
             this.firstNameLine.Size = new System.Drawing.Size(541, 5);
@@ -66,7 +66,7 @@
             // 
             // passwordLine
             // 
-            this.passwordLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.passwordLine.BackColor = System.Drawing.Color.Wheat;
             this.passwordLine.Location = new System.Drawing.Point(136, 195);
             this.passwordLine.Name = "passwordLine";
             this.passwordLine.Size = new System.Drawing.Size(541, 5);
@@ -74,7 +74,7 @@
             // 
             // usernameLine
             // 
-            this.usernameLine.BackColor = System.Drawing.Color.PowderBlue;
+            this.usernameLine.BackColor = System.Drawing.Color.Wheat;
             this.usernameLine.Location = new System.Drawing.Point(136, 132);
             this.usernameLine.Name = "usernameLine";
             this.usernameLine.Size = new System.Drawing.Size(541, 5);
@@ -158,7 +158,7 @@
             // 
             // updateButton
             // 
-            this.updateButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.updateButton.BackColor = System.Drawing.Color.Wheat;
             this.updateButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.updateButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateButton.FlatAppearance.BorderSize = 0;
@@ -203,7 +203,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel1.BackColor = System.Drawing.Color.Wheat;
             this.panel1.Location = new System.Drawing.Point(136, 274);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(541, 5);

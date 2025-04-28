@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 using CSWT.src.core;
-using CSWT.src.shared.services.comment;
 using CSWT.src.shared.services.report;
+using CSWT.src.shared.utils;
 using Speckle.Newtonsoft.Json;
 
 namespace CSWT.src.modules.Report
@@ -20,6 +15,42 @@ namespace CSWT.src.modules.Report
         {
             _model = model;
             _sessionContext = sessionContext;
+        }
+
+        public void SaveToDocx(ListView listView, string reportTitle)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Word Documents (*.docx)|*.docx",
+                FileName = $"{reportTitle}_{DateTime.Now:yyyyMMdd}.docx"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    new SaveToFile().SaveReportToDocx(saveFileDialog.FileName, listView, reportTitle);
+                    MessageBox.Show("Отчет успешно сохранен!", "Успех",
+                                  MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при сохранении отчета: {ex.Message}", "Ошибка",
+                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        public void PrintReport(ListView listView, string reportTitle)
+        {
+            try
+            {
+                new PrintReport().Print(listView, reportTitle);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при печати отчета: {ex.Message}", "Ошибка",
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void Init(ListView List, TextBox titleBox, TextBox typeBox, Label createAtLabel)
