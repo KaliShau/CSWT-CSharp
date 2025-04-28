@@ -164,7 +164,7 @@ namespace CSWT.src.shared.services.report
                 new NpgsqlParameter("@endDate", endDate)
             };
 
-            var requests = await _repository.QueryAsync<RequestReportItem>(_sql.GetAllRequests, reader => new RequestReportItem
+            var requests = await _repository.QueryAsync<RequestReportItem>(_sql.GetRequestsByDateRange, reader => new RequestReportItem
             {
                 Id = reader.GetInt32(0),
                 Title = reader.GetString(1),
