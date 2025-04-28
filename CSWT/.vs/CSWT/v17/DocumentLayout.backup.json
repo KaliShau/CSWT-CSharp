@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\shared\\utils\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\shared\\utils\\print.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\report\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\report\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Print.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\utils\\Print.cs",
+              "RelativeDocumentMoniker": "src\\shared\\utils\\Print.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\shared\\utils\\Print.cs",
+              "RelativeToolTip": "src\\shared\\utils\\Print.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwDIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:39:35.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Report\\ReportController.cs",
               "RelativeDocumentMoniker": "src\\modules\\Report\\ReportController.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Report\\ReportController.cs",
               "RelativeToolTip": "src\\modules\\Report\\ReportController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwDsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T09:13:43.46Z",
               "EditorCaption": ""

@@ -34,7 +34,6 @@ namespace CSWT.src.shared.utils
             _currentRowIndex = 0;
             _pageNumber = 1;
 
-            // Инициализация стилей
             InitializeStyles();
 
             using (PrintDocument printDoc = new PrintDocument())
@@ -76,30 +75,26 @@ namespace CSWT.src.shared.utils
             float topMargin = e.MarginBounds.Top;
             float yPos = topMargin;
 
-            // Печать заголовка
             SizeF titleSize = g.MeasureString(_reportTitle, _titleFont);
             g.DrawString(_reportTitle, _titleFont, Brushes.Blue,
                 leftMargin + (e.MarginBounds.Width - titleSize.Width) / 2, yPos);
             yPos += titleSize.Height + 20;
 
-            // Печать даты
             string dateString = $"Сгенерировано: {DateTime.Now:dd.MM.yyyy HH:mm}";
             SizeF dateSize = g.MeasureString(dateString, _dateFont);
             g.DrawString(dateString, _dateFont, _footerBrush,
                 leftMargin + (e.MarginBounds.Width - dateSize.Width) / 2, yPos);
             yPos += dateSize.Height + 30;
 
-            // Расчет ширины столбцов
             float[] columnWidths = new float[_listView.Columns.Count];
             float totalWidth = 0;
 
             for (int i = 0; i < _listView.Columns.Count; i++)
             {
-                columnWidths[i] = _listView.Columns[i].Width * 0.8f; // Масштабируем ширину
+                columnWidths[i] = _listView.Columns[i].Width * 0.8f;
                 totalWidth += columnWidths[i];
             }
 
-            // Если таблица шире страницы, масштабируем
             if (totalWidth > e.MarginBounds.Width)
             {
                 float scale = e.MarginBounds.Width / totalWidth;
@@ -110,7 +105,6 @@ namespace CSWT.src.shared.utils
                 totalWidth = e.MarginBounds.Width;
             }
 
-            // Печать заголовков столбцов
             float xPos = leftMargin;
             float rowHeight = _headerFont.GetHeight() + 10;
 
@@ -129,14 +123,12 @@ namespace CSWT.src.shared.utils
             }
             yPos += rowHeight;
 
-            // Печать строк таблицы
             bool alternate = false;
             while (_currentRowIndex < _listView.Items.Count)
             {
                 xPos = leftMargin;
                 float maxCellHeight = 0;
 
-                // Проверяем, поместится ли строка на страницу
                 if (yPos + rowHeight > e.MarginBounds.Bottom)
                 {
                     PrintFooter(g, e, ref yPos);
@@ -145,7 +137,6 @@ namespace CSWT.src.shared.utils
                     return;
                 }
 
-                // Печать ячеек строки
                 for (int i = 0; i < _listView.Columns.Count; i++)
                 {
                     string cellText = _listView.Items[_currentRowIndex].SubItems[i].Text ?? "-";
