@@ -44,15 +44,18 @@
             this.childrenPanel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.drugPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.childrenPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // drugPanel
             // 
             this.drugPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.drugPanel.Controls.Add(this.pictureBox1);
             this.drugPanel.Controls.Add(this.openSignUpButton);
             this.drugPanel.Controls.Add(this.openSignInButton);
             this.drugPanel.Controls.Add(this.label1);
@@ -72,7 +75,7 @@
             this.openSignUpButton.FlatAppearance.BorderSize = 0;
             this.openSignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openSignUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSignUpButton.Location = new System.Drawing.Point(344, 13);
+            this.openSignUpButton.Location = new System.Drawing.Point(389, 13);
             this.openSignUpButton.Name = "openSignUpButton";
             this.openSignUpButton.Size = new System.Drawing.Size(143, 30);
             this.openSignUpButton.TabIndex = 3;
@@ -88,7 +91,7 @@
             this.openSignInButton.FlatAppearance.BorderSize = 0;
             this.openSignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openSignInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSignInButton.Location = new System.Drawing.Point(183, 13);
+            this.openSignInButton.Location = new System.Drawing.Point(228, 13);
             this.openSignInButton.Name = "openSignInButton";
             this.openSignInButton.Size = new System.Drawing.Size(143, 30);
             this.openSignInButton.TabIndex = 3;
@@ -127,7 +130,7 @@
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.бДToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(503, 16);
+            this.menuStrip1.Location = new System.Drawing.Point(548, 16);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(98, 24);
             this.menuStrip1.TabIndex = 4;
@@ -145,7 +148,7 @@
             // settingDBToolStripMenuItem
             // 
             this.settingDBToolStripMenuItem.Name = "settingDBToolStripMenuItem";
-            this.settingDBToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.settingDBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingDBToolStripMenuItem.Text = "Настройки БД";
             this.settingDBToolStripMenuItem.Click += new System.EventHandler(this.settingDBToolStripMenuItem_Click);
             // 
@@ -216,6 +219,16 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Добро пожаловать!";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(170, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,6 +253,7 @@
             this.menuStrip1.PerformLayout();
             this.childrenPanel.ResumeLayout(false);
             this.childrenPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -261,6 +275,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem бДToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingDBToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

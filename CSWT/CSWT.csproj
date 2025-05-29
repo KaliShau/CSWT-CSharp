@@ -420,6 +420,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="src\shared\assets\logo.png" />
     <Content Include="src\shared\assets\square_14034319.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

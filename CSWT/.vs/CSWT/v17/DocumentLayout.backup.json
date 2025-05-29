@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\home\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\home\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|c:\\users\\admin\\desktop\\cswt-csharp\\cswt\\src\\modules\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0AA3EB-A6EE-4A99-9D0E-F3AEC8583667}|CSWT.csproj|solutionrelative:src\\modules\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Main\\MainForm.cs",
+              "RelativeDocumentMoniker": "src\\modules\\Main\\MainForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Main\\MainForm.cs [Design]",
+              "RelativeToolTip": "src\\modules\\Main\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:01:17.451Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Home\\HomeForm.cs",
+              "RelativeDocumentMoniker": "src\\modules\\Home\\HomeForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CSWT-CSharp\\CSWT\\src\\modules\\Home\\HomeForm.cs [Design]",
+              "RelativeToolTip": "src\\modules\\Home\\HomeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T11:59:17.843Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

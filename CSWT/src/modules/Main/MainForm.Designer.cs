@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.drugPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.бДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,6 +57,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.childrenPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.drugPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -65,11 +66,13 @@
             this.adminGroupBox.SuspendLayout();
             this.reportGroupBox.SuspendLayout();
             this.ticketGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // drugPanel
             // 
             this.drugPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.drugPanel.Controls.Add(this.pictureBox1);
             this.drugPanel.Controls.Add(this.label1);
             this.drugPanel.Controls.Add(this.menuStrip1);
             this.drugPanel.Controls.Add(this.exitButton);
@@ -79,25 +82,15 @@
             this.drugPanel.Size = new System.Drawing.Size(1424, 53);
             this.drugPanel.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 38);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Отдел АСУ";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.бДToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(184, 16);
+            this.menuStrip1.Location = new System.Drawing.Point(216, 16);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(218, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(98, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -431,6 +424,26 @@
             this.panel4.Size = new System.Drawing.Size(23, 672);
             this.panel4.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(170, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 38);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Отдел АСУ";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,6 +472,7 @@
             this.adminGroupBox.ResumeLayout(false);
             this.reportGroupBox.ResumeLayout(false);
             this.ticketGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -492,7 +506,8 @@
         private System.Windows.Forms.Button openMyReports;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button openCreateReports;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
