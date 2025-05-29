@@ -72,7 +72,7 @@
             this.openSignUpButton.FlatAppearance.BorderSize = 0;
             this.openSignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openSignUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSignUpButton.Location = new System.Drawing.Point(289, 12);
+            this.openSignUpButton.Location = new System.Drawing.Point(344, 13);
             this.openSignUpButton.Name = "openSignUpButton";
             this.openSignUpButton.Size = new System.Drawing.Size(143, 30);
             this.openSignUpButton.TabIndex = 3;
@@ -88,7 +88,7 @@
             this.openSignInButton.FlatAppearance.BorderSize = 0;
             this.openSignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openSignInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSignInButton.Location = new System.Drawing.Point(128, 12);
+            this.openSignInButton.Location = new System.Drawing.Point(183, 13);
             this.openSignInButton.Name = "openSignInButton";
             this.openSignInButton.Size = new System.Drawing.Size(143, 30);
             this.openSignInButton.TabIndex = 3;
@@ -102,9 +102,9 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 38);
+            this.label1.Size = new System.Drawing.Size(166, 38);
             this.label1.TabIndex = 2;
-            this.label1.Text = "CSWT";
+            this.label1.Text = "Отдел АСУ";
             // 
             // exitButton
             // 
@@ -127,7 +127,7 @@
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.бДToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(448, 15);
+            this.menuStrip1.Location = new System.Drawing.Point(503, 16);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(98, 24);
             this.menuStrip1.TabIndex = 4;
@@ -145,7 +145,7 @@
             // settingDBToolStripMenuItem
             // 
             this.settingDBToolStripMenuItem.Name = "settingDBToolStripMenuItem";
-            this.settingDBToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingDBToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.settingDBToolStripMenuItem.Text = "Настройки БД";
             this.settingDBToolStripMenuItem.Click += new System.EventHandler(this.settingDBToolStripMenuItem_Click);
             // 

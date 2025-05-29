@@ -85,9 +85,9 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 38);
+            this.label1.Size = new System.Drawing.Size(166, 38);
             this.label1.TabIndex = 6;
-            this.label1.Text = "CSWT";
+            this.label1.Text = "Отдел АСУ";
             // 
             // menuStrip1
             // 
@@ -95,9 +95,9 @@
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.бДToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(111, 16);
+            this.menuStrip1.Location = new System.Drawing.Point(184, 16);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(98, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(218, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 

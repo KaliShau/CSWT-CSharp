@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using CSWT.src.core;
-using CSWT.src.shared.services.ticket;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CSWT.src.modules.Ticket
 {
@@ -20,7 +18,8 @@ namespace CSWT.src.modules.Ticket
             if (_sessionContext.is_ticket_update == true)
             {
                 _controller.InitTicket(EnumInitTicket.Update, _sessionContext.ticket_id, titleBox, descriptionBox, solutionBox, createdAtLabel, updateButton, priorityBox, statusBox);
-            } else
+            }
+            else
             {
                 _controller.InitTicket(EnumInitTicket.NoUpdate, _sessionContext.ticket_id, titleBox, descriptionBox, solutionBox, createdAtLabel, updateButton, priorityBox, statusBox);
             }
@@ -72,5 +71,17 @@ namespace CSWT.src.modules.Ticket
                 _controller.InitTicket(EnumInitTicket.NoUpdate, _sessionContext.ticket_id, titleBox, descriptionBox, solutionBox, createdAtLabel, updateButton, priorityBox, statusBox);
             }
         }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.SaveToDocx(_sessionContext.ticket_id);
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _controller.Print(_sessionContext.ticket_id);
+        }
+
+
     }
 }

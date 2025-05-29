@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CSWT.src.core.db;
 using CSWT.src.shared.services.comment;
-using CSWT.src.shared.services.ticket;
 using CSWT.src.shared.utils;
 
 namespace CSWT.src.modules.Ticket
@@ -19,7 +13,7 @@ namespace CSWT.src.modules.Ticket
     }
     public class TicketController
     {
-         TicketModel _model;
+        TicketModel _model;
         UserContext _userContext;
         public TicketController(TicketModel model, UserContext userContext)
         {
@@ -55,7 +49,8 @@ namespace CSWT.src.modules.Ticket
                 titleBox.Enabled = true;
                 descriptionBox.Enabled = true;
                 updateButton.Visible = true;
-            } else
+            }
+            else
             {
                 titleBox.Enabled = false;
                 descriptionBox.Enabled = false;
@@ -131,5 +126,41 @@ namespace CSWT.src.modules.Ticket
             _model.UpdateTicket(title, description, ID);
         }
 
+        public void SaveToDocx(int ID)
+        {
+            var ticket = _model.GetTicketByID(ID);
+            var comments = _model.GetCommentsByTicketId(ID);
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Word Documents (*.docx)|*.docx",
+                FileName = $"Заявка_{ticket.ID}_{DateTime.Now:yyyyMMdd_HHmm}.docx"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    new SaveToFile().SaveTicketToDocx(saveFileDialog.FileName, ticket, comments);
+                    MessageBox.Show("Заявка успешно сохранена!", "Успех",
+                                  MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при сохранении заявки: {ex.Message}", "Ошибка",
+                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        public void Print(int ID)
+        {
+            var printer = new PrintTicket();
+
+            var ticket = _model.GetTicketByID(ID);
+            var comments = _model.GetCommentsByTicketId(ID);
+
+            printer.Print(ticket, comments);
+        }
     }
 }
