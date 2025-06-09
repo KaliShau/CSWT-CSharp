@@ -1,7 +1,7 @@
 {
-  "Host": "localhost",
+  "Host": "195.133.30.143",
   "Port": "5432",
   "Database": "cswt",
-  "Username": "postgres",
-  "Password": "root"
+  "Username": "user",
+  "Password": "gEIC\\GCH1HER\u003C\\"
 }
