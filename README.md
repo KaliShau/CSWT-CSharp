@@ -74,6 +74,16 @@
 - Разработка мобильного приложения.
 - Интеграция с другими медицинскими системами.
 
+## Картинки
+
+![Game Screenshot](./assets/sign-in.png)
+
+![Game Screenshot](./assets/tickets.png)
+
+![Game Screenshot](./assets/ticket.png)
+
+![Game Screenshot](./assets/report.png)
+
 ## Контакты
 
 Разработчик: Федоренко Андрей Юрьевич  
