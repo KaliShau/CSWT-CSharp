@@ -83,9 +83,3 @@
 ![Game Screenshot](./assets/ticket.png)
 
 ![Game Screenshot](./assets/report.png)
-
-## Контакты
-
-Разработчик: Федоренко Андрей Юрьевич  
-ГАПОУ КК «Лабинский аграрный техникум»  
-2025 г.
